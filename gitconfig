@@ -1,0 +1,39 @@
+[user]
+  name = Brian Ray
+  email = brian.ray1@gmail.com
+
+[alias]
+  co = checkout
+  ci = commit
+  st = status -u
+  br = branch
+  df = diff -C
+  ds = !git df --staged
+  a = add -A
+
+  l = log --decorate
+  ls = !git l --stat
+  lr = !git l --reverse
+  lg = !git l -p
+  lgr = !git lg --reverse
+
+  cp = cherry-pick
+
+  branch-name = !git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \\(.*\\)/\\1/'
+  temp = !git a && git ci -m \"`git branch-name` temp ...\"
+  rh = reset HEAD^
+
+[color]
+  ui = auto
+
+[gc]
+  pruneexpire = 30 days
+
+[branch]
+  # make 'git pull' default to 'git pull --rebase'
+  autosetuprebase = always
+
+[remote "origin"]
+  # only push the current branch to its corresponding remote branch
+  # so we don't accidentally push stable along with master
+  push = HEAD
