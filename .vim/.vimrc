@@ -9,8 +9,6 @@ set number
 set history=1000
 set title              " Show the filepath (terminal)
 set gcr=n:blinkon0     " No blinking cursor in Normal mode
-set splitright         " Put a new vertical split window on the right
-set splitbelow         " Put a new horizontal split window below
 set showcmd            " Display incomplete commands
 let mapleader = ","    " Change leader from \ to , (e.g. for Command-T)
 set wildmenu           " Better tab-completion in command mode
@@ -47,6 +45,21 @@ set expandtab      " Expand tab character to spaces
 set softtabstop=2  " Indent by 2 spaces when pressing <TAB>
 set shiftwidth=2   " Indent by 2 spaces when using >>, <<, == etc.
 set autoindent     " Keep indentation from previous line
+
+
+
+" ---------------------------------------------------------------------------
+" Splits
+" ---------------------------------------------------------------------------
+
+set splitright         " Put a new vertical split window on the right
+set splitbelow         " Put a new horizontal split window below
+
+" Use Ctrl-[kjhl] to select the active split
+nmap <silent> <C-k> :wincmd k<CR>
+nmap <silent> <C-j> :wincmd j<CR>
+nmap <silent> <C-h> :wincmd h<CR>
+nmap <silent> <C-l> :wincmd l<CR>
 
 
 
