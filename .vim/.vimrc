@@ -45,6 +45,7 @@ set expandtab      " Expand tab character to spaces
 set softtabstop=2  " Indent by 2 spaces when pressing <TAB>
 set shiftwidth=2   " Indent by 2 spaces when using >>, <<, == etc.
 set autoindent     " Keep indentation from previous line
+set listchars=eol:$,tab:>-,trail:-,nbsp:%  " Show more hidden chars when 'list' is set
 
 
 
@@ -52,8 +53,8 @@ set autoindent     " Keep indentation from previous line
 " Splits
 " ---------------------------------------------------------------------------
 
-set splitright         " Put a new vertical split window on the right
-set splitbelow         " Put a new horizontal split window below
+set splitright  " Put a new vertical split window on the right
+set splitbelow  " Put a new horizontal split window below
 
 " Use Ctrl-[kjhl] to select the active split
 nmap <silent> <C-k> :wincmd k<CR>
