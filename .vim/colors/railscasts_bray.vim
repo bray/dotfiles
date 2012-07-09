@@ -49,7 +49,9 @@ hi link htmlEndTag                  xmlEndTag
 "highlight Normal                    guifg=#E6E1DC guibg=#232323
 "highlight Normal                    guifg=#E6E1DC guibg=#1B1B1B
 " bray WORKS (this actually sets it to #1B1B1B - same as Textmate)
-highlight Normal                    guifg=#E6E1DC guibg=#232323
+"highlight Normal                    guifg=#E6E1DC guibg=#232323
+" sets exactly to #2F2F2F after Snow Leopard upgrade
+highlight Normal                    guifg=#E6E1DC guibg=#2F2F2F
 highlight Cursor                    guifg=#000000 ctermfg=0 guibg=#FFFFFF ctermbg=15
 highlight CursorLine                guibg=#000000 ctermbg=233 cterm=NONE
 
