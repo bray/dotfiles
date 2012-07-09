@@ -9,7 +9,8 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 let $GIT_SSL_NO_VERIFY = 'true'
 
-Bundle 'wincent/Command-T'
+"Bundle 'wincent/Command-T'
+Bundle 'kien/ctrlp.vim'
 Bundle 'tpope/vim-rails'
 Bundle 'msanders/snipmate.vim'
 Bundle 'scrooloose/nerdtree'
