@@ -34,3 +34,4 @@ let g:CommandTMaxFiles = 50000 " Scan for more files if within a larger project 
 " Enable % to work for def/end, if/else/end, etc.
 source /usr/share/vim/vim72/macros/matchit.vim
 
+let g:UltiSnipsSnippetDirectories=["UltiSnips", "custom_ultisnips"]
