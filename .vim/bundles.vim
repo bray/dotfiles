@@ -18,6 +18,7 @@ Bundle 'tpope/vim-surround'
 Bundle 'kana/vim-textobj-user'
 Bundle 'nelstrom/vim-textobj-rubyblock'
 Bundle 'tpope/vim-fugitive'
+Bundle 'vim-scripts/sessionman.vim'
 
 filetype plugin indent on
 
