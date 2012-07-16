@@ -102,5 +102,6 @@ set directory=~/.vim/swp//,.
 if has("gui_running")
   colorscheme railscasts_bray
   set guifont=Monaco:h13
+  set guioptions-=T
   runtime bundles.vim
 end
