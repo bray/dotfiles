@@ -38,6 +38,7 @@ let g:CommandTMaxFiles = 50000 " Scan for more files if within a larger project 
 set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 
 " UltiSnips
-let g:UltiSnipsSnippetDirectories=["UltiSnips", "custom_ultisnips"]
-let g:UltiSnipsEditSplit="vertical"
 set viminfo='100,<50,s10,h,!
+let g:UltiSnipsSnippetDirectories=["UltiSnips", "custom_ultisnips"]
+let g:UltiSnipsDontReverseSearchPath="1"
+let g:UltiSnipsEditSplit="vertical"
