@@ -13,9 +13,9 @@ set showcmd            " Display incomplete commands
 let mapleader = ","    " Change leader from \ to , (e.g. for Command-T)
 set wildmenu           " Better tab-completion in command mode
 set wildmode=list,full
-set scrolloff=3        " Give 3 lines of context when scrolling up or down
-nnoremap <C-e> 3<C-e>  " Scroll down a little faster
-nnoremap <C-y> 3<C-y>  " Scroll up a little faster
+" Scroll up and down a little faster
+nnoremap <C-e> 3<C-e>
+nnoremap <C-y> 3<C-y>
 vnoremap <C-e> 3<C-e>
 vnoremap <C-y> 3<C-y>
 
