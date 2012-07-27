@@ -10,7 +10,7 @@ set history=1000
 set title              " Show the filepath (terminal)
 set gcr=n:blinkon0     " No blinking cursor in Normal mode
 set showcmd            " Display incomplete commands
-let mapleader = ","    " Change leader from \ to , (e.g. for Command-T)
+let mapleader = ","    " Change leader from \ to ,
 set wildmenu           " Better tab-completion in command mode
 set wildmode=list,full
 " Scroll up and down a little faster
@@ -29,7 +29,9 @@ set ignorecase
 set smartcase
 set incsearch
 set hlsearch
-nmap <silent> <leader>n :silent :nohlsearch<CR> " ,n instead of :nohl
+
+" ,n instead of :nohl
+nmap <silent> <leader>n :silent :nohlsearch<CR>
 
 " No need to escape special regex chars in search
 nnoremap / /\v
@@ -92,6 +94,15 @@ noremap <silent> <leader>rtw :%s/\s\+$//g<cr>``
 " ---------------------------------------------------------------------------
 
 set directory=~/.vim/swp//,.
+
+
+
+" ---------------------------------------------------------------------------
+" Quickfix Mode
+" ---------------------------------------------------------------------------
+
+map <leader>j :cn<cr>
+map <leader>k :cp<cr>
 
 
 
