@@ -19,14 +19,16 @@ Bundle 'kana/vim-textobj-user'
 Bundle 'nelstrom/vim-textobj-rubyblock'
 Bundle 'tpope/vim-fugitive'
 Bundle 'vim-scripts/sessionman.vim'
+Bundle 'vim-scripts/CmdlineComplete'
+Bundle 'mileszs/ack.vim'
 
 filetype plugin indent on
 
 
 
-"  ---------------------------------------------------------------------------
-"  Plugin Config
-"  ---------------------------------------------------------------------------
+" ---------------------------------------------------------------------------
+" Plugin Config
+" ---------------------------------------------------------------------------
 
 " Enable % to work for def/end, if/else/end, etc.
 source /usr/share/vim/vim72/macros/matchit.vim
@@ -36,6 +38,9 @@ let g:CommandTMaxFiles = 50000 " Scan for more files if within a larger project 
 
 " Fugitive
 set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
+
+" NERDTree
+map <leader>d :execute 'NERDTreeToggle ' . getcwd()<CR>
 
 " UltiSnips
 set viminfo='100,<50,s10,h,!
