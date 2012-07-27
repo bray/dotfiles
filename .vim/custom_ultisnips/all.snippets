@@ -1,0 +1,18 @@
+snippet today "today's date as a string" i
+`date +%Y-%m-%d`
+endsnippet
+
+
+snippet date "date as a string" i
+`date +%Y`-${2:`date +%m`-${1:`date +%d`}}
+endsnippet
+
+
+snippet now "current time a string" i
+`date +'%Y-%m-%d %H:%M'`
+endsnippet
+
+
+snippet datetime "time a string" i
+`date +%Y`-${2:`date +%m`-${1:`date +%d`}} ${3:`date +%H:%M`}
+endsnippet
