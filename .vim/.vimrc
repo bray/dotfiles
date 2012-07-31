@@ -19,6 +19,8 @@ nnoremap <C-y> 3<C-y>
 vnoremap <C-e> 3<C-e>
 vnoremap <C-y> 3<C-y>
 
+set linebreak          " Don't split lines in the middle of words
+
 
 
 " ---------------------------------------------------------------------------
