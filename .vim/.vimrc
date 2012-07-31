@@ -113,6 +113,9 @@ map <leader>k :cp<cr>
 if has("gui_running")
   colorscheme railscasts_bray
   set guifont=Monaco:h13
-  set guioptions-=T
+
   runtime bundles.vim
+
+  set guioptions-=T
+  set cursorline         " Highlight the current line
 end
