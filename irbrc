@@ -4,5 +4,7 @@ IRB.conf[:AUTO_INDENT] = true
 
 require 'rubygems'
 require 'wirble'
+require 'interactive_editor'
+
 Wirble.init
 Wirble.colorize
