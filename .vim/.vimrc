@@ -85,6 +85,7 @@ set sessionoptions-=options
 
 let @c = '[m]MI#'  " Comment out the current method
 let @y = 'yypki#j'   " Comment out line and copy
+let @h = 'f:xf ce:'  " Convert old Ruby hash (:a => 'b') to new Ruby hash (a: 'b')
 
 " Remove trailing whitespace
 noremap <silent> <leader>rtw :%s/\s\+$//g<cr>``
