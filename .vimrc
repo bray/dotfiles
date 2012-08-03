@@ -21,6 +21,14 @@ vnoremap <C-y> 3<C-y>
 
 set linebreak          " Don't split lines in the middle of words
 
+" Visually select the text that was last edited/pasted
+nmap gV `[v`]
+
+" Restore the line and window positions when re-opening a buffer
+" (instead of only the line position)
+au BufLeave * let b:winview = winsaveview()
+au BufEnter * if(exists('b:winview')) | call winrestview(b:winview) | endif
+
 
 
 " ---------------------------------------------------------------------------
@@ -129,12 +137,12 @@ map <leader>k :cp<cr>
 " ---------------------------------------------------------------------------
 
 if has("gui_running")
+  source ~/.vim/bundles.vim
+
   colorscheme railscasts_bray
   set guifont=Monaco:h13
-  set macmeta            " Set Alt as the Meta key (e.g. for cmdmode movement)
 
-  runtime bundles.vim
-
-  set guioptions-=T
+  set guioptions-=T      " Remove toolbar
   set cursorline         " Highlight the current line
+  set macmeta            " Set Alt as the Meta key (e.g. for cmdmode movement)
 end
