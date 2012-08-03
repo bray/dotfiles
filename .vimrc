@@ -101,6 +101,21 @@ set directory=~/.vim/swp//,.
 
 
 " ---------------------------------------------------------------------------
+" Command-Line Mode
+" ---------------------------------------------------------------------------
+
+cnoremap <C-a> <Home>
+cnoremap <C-e> <End>
+cnoremap <M-b> <S-Left>
+cnoremap <M-f> <S-Right>
+cnoremap <M-BS> <C-w>
+cnoremap <M-d> <S-Right><C-w>
+cnoremap <C-k> <Up>
+cnoremap <C-j> <Down>
+
+
+
+" ---------------------------------------------------------------------------
 " Quickfix Mode
 " ---------------------------------------------------------------------------
 
@@ -110,12 +125,13 @@ map <leader>k :cp<cr>
 
 
 " ---------------------------------------------------------------------------
-" Set extra options when running in GUI mode
+" GUI Options
 " ---------------------------------------------------------------------------
 
 if has("gui_running")
   colorscheme railscasts_bray
   set guifont=Monaco:h13
+  set macmeta            " Set Alt as the Meta key (e.g. for cmdmode movement)
 
   runtime bundles.vim
 
