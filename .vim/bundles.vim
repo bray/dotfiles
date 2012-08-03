@@ -21,6 +21,7 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'vim-scripts/sessionman.vim'
 Bundle 'vim-scripts/CmdlineComplete'
 Bundle 'mileszs/ack.vim'
+Bundle 'AutoTag'
 
 filetype plugin indent on
 
