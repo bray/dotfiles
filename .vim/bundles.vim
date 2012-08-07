@@ -31,11 +31,14 @@ filetype plugin indent on
 " Plugin Config
 " ---------------------------------------------------------------------------
 
-" Enable % to work for def/end, if/else/end, etc.
+" Matchit - Enable % to work for def/end, if/else/end, etc.
 source /usr/share/vim/vim72/macros/matchit.vim
 
-" CommandT
-let g:CommandTMaxFiles = 50000 " Scan for more files if within a larger project (default is 10000)
+" CtrlP
+let g:ctrlp_map = '<leader>f'
+nnoremap <leader>b :CtrlPBuffer<CR>
+nnoremap <leader>m :CtrlPMRUFiles<CR>
+nnoremap <leader>t :CtrlPTag<CR>
 
 " Fugitive
 set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
