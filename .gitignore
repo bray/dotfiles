@@ -1,3 +1,5 @@
 bundle
 *.swp
 sessions
+*.un~
+undo

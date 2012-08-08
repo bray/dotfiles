@@ -103,10 +103,12 @@ noremap <silent> <leader>rtw :%s/\s\+$//g<cr>``
 
 
 " ---------------------------------------------------------------------------
-" Backups (.swp files)
+" Backups and Persistence
 " ---------------------------------------------------------------------------
 
 set directory=~/.vim/swp//,.
+set undofile  " Persist undo history
+set undodir=~/.vim/undo
 
 
 
