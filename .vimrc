@@ -10,9 +10,11 @@ set history=1000
 set title              " Show the filepath (terminal)
 set gcr=n:blinkon0     " No blinking cursor in Normal mode
 set showcmd            " Display incomplete commands
-let mapleader = ","    " Change leader from \ to ,
+let mapleader=","      " Change leader from \ to ,
 set wildmenu           " Better tab-completion in command mode
-set wildmode=list,full
+set wildmode=list:full
+set wildignore+=*/.git/*,*/.hg/*,*/.svn/*
+
 " Scroll up and down a little faster
 nnoremap <C-e> 3<C-e>
 nnoremap <C-y> 3<C-y>
