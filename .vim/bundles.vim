@@ -22,6 +22,7 @@ Bundle 'vim-scripts/sessionman.vim'
 Bundle 'vim-scripts/CmdlineComplete'
 Bundle 'mileszs/ack.vim'
 Bundle 'AutoTag'
+Bundle 'sjl/gundo.vim'
 
 filetype plugin indent on
 
@@ -54,3 +55,7 @@ let g:UltiSnipsEditSplit="vertical"
 
 " AutoTag
 let g:autotagVerbosityLevel=40 " ERROR instead of the default WARNING
+
+" Gundo
+nnoremap <F5> :GundoToggle<CR>
+let g:gundo_preview_bottom=1
