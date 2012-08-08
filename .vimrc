@@ -147,4 +147,6 @@ if has("gui_running")
   set guioptions-=T      " Remove toolbar
   set cursorline         " Highlight the current line
   set macmeta            " Set Alt as the Meta key (e.g. for cmdmode movement)
+else
+  set term=ansi
 end
