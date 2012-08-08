@@ -51,3 +51,6 @@ set viminfo='100,<50,s10,h,!
 let g:UltiSnipsSnippetDirectories=["UltiSnips", "custom_ultisnips"]
 let g:UltiSnipsDontReverseSearchPath="1"
 let g:UltiSnipsEditSplit="vertical"
+
+" AutoTag
+let g:autotagVerbosityLevel=40 " ERROR instead of the default WARNING
