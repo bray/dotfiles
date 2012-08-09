@@ -7,6 +7,7 @@ filetype plugin indent on
 
 set number
 set history=1000
+set visualbell t_vb=   " Disable audio error bell
 set title              " Show the filepath (terminal)
 set gcr=n:blinkon0     " No blinking cursor in Normal mode
 set showcmd            " Display incomplete commands
