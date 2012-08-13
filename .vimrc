@@ -15,6 +15,7 @@ let mapleader=","      " Change leader from \ to ,
 set wildmenu           " Better tab-completion in command mode
 set wildmode=list:full
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/*
+set autoread           " Autoload outside changes
 
 " Scroll up and down a little faster
 nnoremap <C-e> 3<C-e>
