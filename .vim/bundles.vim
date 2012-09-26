@@ -23,6 +23,7 @@ Bundle 'vim-scripts/CmdlineComplete'
 Bundle 'mileszs/ack.vim'
 Bundle 'AutoTag'
 Bundle 'sjl/gundo.vim'
+Bundle 'bbommarito/vim-slim'
 
 filetype plugin indent on
 

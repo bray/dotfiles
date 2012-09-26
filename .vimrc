@@ -33,6 +33,9 @@ nmap gV `[v`]
 au BufLeave * let b:winview = winsaveview()
 au BufEnter * if(exists('b:winview')) | call winrestview(b:winview) | endif
 
+" Disable accidentally typing K, which I'll never use
+nnoremap K ""
+vnoremap K ""
 
 
 " ---------------------------------------------------------------------------

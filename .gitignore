@@ -3,3 +3,4 @@ bundle
 sessions
 *.un~
 undo
+.rvmrc
