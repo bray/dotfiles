@@ -4,3 +4,4 @@ sessions
 *.un~
 undo
 .rvmrc
+.zshrc.local
