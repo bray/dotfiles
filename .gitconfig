@@ -37,5 +37,6 @@
   # only push the current branch to its corresponding remote branch
   # so we don't accidentally push stable along with master
   push = HEAD
+
 [core]
   excludesfile = ~/.gitignore
