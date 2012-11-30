@@ -37,6 +37,10 @@ au BufEnter * if(exists('b:winview')) | call winrestview(b:winview) | endif
 nnoremap K ""
 vnoremap K ""
 
+" Better marks
+nnoremap ' `
+nnoremap ` '
+
 
 " ---------------------------------------------------------------------------
 " Search
