@@ -25,16 +25,20 @@ endsnippet
 ###########
 
 snippet de "describe '' do" !b
-describe '$1' do
+describe "$1" do
 endsnippet
 
-
 snippet des "describe '' do end" !b
-describe '$1' do
+describe "$1" do
   $0
 end
 endsnippet
 
+snippet con "context '' do end" !b
+context "$1" do
+  $0
+end
+endsnippet
 
 snippet it "it '' do" !b
 it "$1" do
@@ -42,52 +46,48 @@ it "$1" do
 end
 endsnippet
 
-
 snippet itv "it validation specs" b
-it "should ensure $1 when validating" do
+it "ensures $1 when validating" do
   ${VISUAL}.expects(:$2)
   ${VISUAL}.valid?
 end
 
-it "should add an error if $3" do
+it "adds an error if $3" do
   ${0:# TODO}
   ${VISUAL}.send(:$2)
   ${VISUAL}.errors[:base].should include('')
 end
 
-it "should ensure $1" do
+it "ensures $1" do
   # TODO
   ${VISUAL}.send(:$2)
   ${VISUAL}.errors.should be_empty
 end
 endsnippet
 
-
 snippet itbv "it before validation specs" b
-it "should $1 before validating" do
+it "$1 before validating" do
   ${VISUAL}.expects(:$2)
   ${VISUAL}.valid?
 end
 
-it "should $1" do
+it "$1" do
   ${0:# TODO}
   ${VISUAL}.send(:$2)
 end
 endsnippet
 
-
 snippet itas "it after save specs" b
-it "should $1 after saving" do
+it "$1 after saving" do
   ${VISUAL}.expects(:$2)
   ${VISUAL}.save
 end
 
-it "should $1" do
+it "$1" do
   ${0:# TODO}
   ${VISUAL}.send(:$2)
 end
 endsnippet
-
 
 snippet .t "times(#)" i
 .times(${1:2})
