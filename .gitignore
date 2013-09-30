@@ -5,3 +5,7 @@ sessions
 undo
 .rvmrc
 .zshrc.local
+.netrwhist
+.ruby-version
+config/initializers/sql_logging.rb
+jmeter*
