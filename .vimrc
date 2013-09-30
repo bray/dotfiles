@@ -55,8 +55,8 @@ set hlsearch
 nmap <silent> <leader>n :silent :nohlsearch<CR>
 
 " No need to escape special regex chars in search
-nnoremap / /\v
-nnoremap ? ?\v
+"nnoremap / /\v
+"nnoremap ? ?\v
 
 
 
