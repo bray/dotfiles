@@ -24,6 +24,10 @@ Bundle 'mileszs/ack.vim'
 Bundle 'AutoTag'
 Bundle 'sjl/gundo.vim'
 Bundle 'bbommarito/vim-slim'
+Bundle 'nelstrom/vim-markdown-preview'
+Bundle 'plasticboy/vim-markdown'
+Bundle 'vim-scripts/greplace.vim'
+Bundle 'kchmck/vim-coffee-script'
 
 filetype plugin indent on
 
