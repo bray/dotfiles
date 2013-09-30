@@ -3,6 +3,10 @@
 ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="bray"
 DISABLE_AUTO_UPDATE="true"
+export EDITOR="vi"
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
+export FREI0R_PATH=/usr/local/lib/frei0r-1
 
 plugins=(git history-substring-search osx)
 
