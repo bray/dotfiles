@@ -153,12 +153,12 @@ map <leader>k :cp<cr>
 if has("gui_running")
   source ~/.vim/bundles.vim
 
-  colorscheme railscasts_bray
   set guifont=Monaco:h13
-
   set guioptions-=T      " Remove toolbar
-  set cursorline         " Highlight the current line
   set macmeta            " Set Alt as the Meta key (e.g. for cmdmode movement)
 else
   set term=ansi
 end
+
+colorscheme railscasts_bray
+set cursorline         " Highlight the current line
