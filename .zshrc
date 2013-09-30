@@ -30,8 +30,14 @@ alias gx='gitx --all'
 alias vim='mvim -v'
 alias vi='vim'
 
+export BUNDLE_GEMFILE=Gemfile.local
+#alias bundle_local='bundle install --gemfile Gemfile.local'
+#alias server_local='BUNDLE_GEMFILE=Gemfile.local bundle exec rails s'
+alias bundle_default='bundle install --gemfile Gemfile'
+
 alias sc='ruby script/console'
-alias rc='rails console'
+alias rc_orig='rails console'
+alias rc='BUNDLE_GEMFILE=Gemfile.local rails console'
 alias rs='ruby script/spec -O spec/spec.opts'
 #alias rspecs='ruby script/spec_server' # use 'spork' instead
 
