@@ -36,8 +36,8 @@ export BUNDLE_GEMFILE=Gemfile.local
 alias bundle_default='bundle install --gemfile Gemfile'
 
 alias sc='ruby script/console'
-alias rc_orig='rails console'
-alias rc='BUNDLE_GEMFILE=Gemfile.local rails console'
+alias rc_orig='spring rails console'
+alias rc='BUNDLE_GEMFILE=Gemfile.local spring rails console'
 alias rs='ruby script/spec -O spec/spec.opts'
 #alias rspecs='ruby script/spec_server' # use 'spork' instead
 
