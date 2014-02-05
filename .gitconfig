@@ -22,6 +22,7 @@
   branch-name = !git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \\(.*\\)/\\1/'
   temp = !git a && git ci -m \"`git branch-name` temp ...\"
   rh = reset HEAD^
+  rhard = reset --hard HEAD^
 
 [color]
   ui = auto
