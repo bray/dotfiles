@@ -2,3 +2,6 @@
 --type-set=slim=.slim
 --ignore-dir=bundle
 --ignore-dir=node_modules
+--type-set=coffee=.coffee
+--type-set=jade=.jade
+--type-set=json=.json
