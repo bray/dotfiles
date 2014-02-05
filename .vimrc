@@ -41,6 +41,10 @@ vnoremap K ""
 nnoremap ' `
 nnoremap ` '
 
+" Disable folding
+set nofoldenable
+set foldminlines=99999
+
 
 " ---------------------------------------------------------------------------
 " Search
