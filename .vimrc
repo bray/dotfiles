@@ -17,6 +17,14 @@ set wildmode=list:full
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/*
 set autoread           " Autoload outside changes
 
+" Get out of insert mode much more easily
+inoremap jk <Esc>
+inoremap kj <Esc>
+inoremap JK <Esc>
+inoremap KJ <Esc>
+vnoremap ii <Esc>
+vnoremap II <Esc>
+
 " Scroll up and down a little faster
 nnoremap <C-e> 3<C-e>
 nnoremap <C-y> 3<C-y>
