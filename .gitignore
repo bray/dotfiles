@@ -9,3 +9,5 @@ undo
 .ruby-version
 config/initializers/sql_logging.rb
 jmeter*
+
+bray.xcuserdatad/
