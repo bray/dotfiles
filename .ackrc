@@ -5,3 +5,4 @@
 --type-set=coffee=.coffee
 --type-set=jade=.jade
 --type-set=json=.json
+--type-set=hbs=.hbs
