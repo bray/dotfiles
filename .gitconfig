@@ -23,6 +23,7 @@
   temp = !git a && git ci -m \"`git branch-name` temp ...\"
   rh = reset HEAD^
   rhard = reset --hard HEAD^
+  sort-br = for-each-ref --sort=-committerdate --format='%(committerdate:short) %(refname:short)' refs/heads/
 
 [color]
   ui = auto
