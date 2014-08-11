@@ -28,6 +28,7 @@ Bundle 'nelstrom/vim-markdown-preview'
 Bundle 'plasticboy/vim-markdown'
 Bundle 'vim-scripts/greplace.vim'
 Bundle 'kchmck/vim-coffee-script'
+Bundle 'tpope/vim-abolish'
 
 filetype plugin indent on
 
