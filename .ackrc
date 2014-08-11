@@ -6,3 +6,5 @@
 --type-set=jade=.jade
 --type-set=json=.json
 --type-set=hbs=.hbs
+--type-add=yaml=.sls,.sls_sample
+--type-set=jinja=.jinja,.jinja_sample

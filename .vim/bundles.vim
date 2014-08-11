@@ -29,6 +29,8 @@ Bundle 'plasticboy/vim-markdown'
 Bundle 'vim-scripts/greplace.vim'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'tpope/vim-abolish'
+Bundle 'saltstack/salt-vim'
+Bundle 'Glench/Vim-Jinja2-Syntax'
 
 filetype plugin indent on
 
