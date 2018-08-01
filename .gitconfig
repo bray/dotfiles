@@ -44,3 +44,8 @@
 
 [core]
   excludesfile = ~/.gitignore
+
+[apply]
+  whitespace = warn
+[credential]
+	helper = osxkeychain
