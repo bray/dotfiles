@@ -41,7 +41,7 @@ filetype plugin indent on
 " ---------------------------------------------------------------------------
 
 " Matchit - Enable % to work for def/end, if/else/end, etc.
-source /usr/share/vim/vim73/macros/matchit.vim
+source /usr/share/vim/vim80/macros/matchit.vim
 
 " CtrlP
 let g:ctrlp_map = '<leader>f'
