@@ -154,6 +154,7 @@ cnoremap <C-j> <Down>
 " ---------------------------------------------------------------------------
 
 map <leader>j :cn<cr>
+map <leader>m :cn<cr>
 map <leader>k :cp<cr>
 
 
