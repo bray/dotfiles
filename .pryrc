@@ -1,3 +1,5 @@
+Pry.config.history.file = ".pry_history"
+
 def r; reload! end
 Pry.config.pager = false
 
