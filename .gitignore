@@ -1,3 +1,4 @@
+.DS_Store
 bundle
 *.swp
 sessions
@@ -6,8 +7,16 @@ undo
 .rvmrc
 .zshrc.local
 .netrwhist
-.ruby-version
+#.ruby-version
 config/initializers/sql_logging.rb
 jmeter*
 
 bray.xcuserdatad/
+.pryrc
+.pry_history
+
+
+
+
+
+Gemfile.local*
