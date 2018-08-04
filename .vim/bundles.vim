@@ -3,10 +3,14 @@
 " ---------------------------------------------------------------------------
 
 filetype off  " Must be off before Vundle has run
+"set nocompatible              " be iMproved, required
 
-set rtp+=~/.dotfiles/.vim/bundle/vundle/
-call vundle#rc()
-Bundle 'gmarik/vundle'
+set rtp+=~/.dotfiles/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
 let $GIT_SSL_NO_VERIFY = 'true'
 
 Bundle 'kien/ctrlp.vim'
@@ -32,8 +36,10 @@ Bundle 'tpope/vim-abolish'
 Bundle 'saltstack/salt-vim'
 Bundle 'Glench/Vim-Jinja2-Syntax'
 
-filetype plugin indent on
+filetype plugin indent on " required
 
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
 
 
 " ---------------------------------------------------------------------------
