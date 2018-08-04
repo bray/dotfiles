@@ -6,6 +6,11 @@ syntax on
 filetype plugin indent on
 set nocompatible              " be iMproved, required
 
+" Fix vim (and imp) incompatibility with Python 3 (and UltiSnips)
+if has('python3') && !has('patch-8.1.201')
+  silent! python3 1
+endif
+
 set number
 set history=1000
 set visualbell t_vb=   " Disable audio error bell
