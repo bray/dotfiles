@@ -4,6 +4,7 @@
 
 syntax on
 filetype plugin indent on
+set nocompatible              " be iMproved, required
 
 set number
 set history=1000
