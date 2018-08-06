@@ -4,6 +4,9 @@
 --ignore-dir=node_modules
 --ignore-dir=log/
 --ignore-file=is:.pry_history
+--ignore-dir=tmp/
+--ignore-dir=public/assets/
+--ignore-dir=vendor/assets/
 --type-set=coffee=.coffee
 --type-set=jade=.jade
 --type-set=json=.json
