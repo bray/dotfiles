@@ -215,11 +215,10 @@ let g:UltiSnipsEditSplit="vertical"
 let g:autotagVerbosityLevel=40 " ERROR instead of the default WARNING
 
 
-" Gundo
-" -----
+" Undotree
+" --------
 
-nnoremap <F5> :GundoToggle<CR>
-let g:gundo_preview_bottom=1
+nnoremap <F5> :UndotreeToggle<cr>
 
 
 " FZF
