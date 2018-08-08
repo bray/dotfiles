@@ -38,6 +38,7 @@ Bundle 'saltstack/salt-vim'
 Bundle 'Glench/Vim-Jinja2-Syntax'
 Bundle 'junegunn/fzf.vim'
 Bundle 'pbogut/fzf-mru.vim'
+Bundle 'brookhong/ag.vim'
 
 filetype plugin indent on " required
 
