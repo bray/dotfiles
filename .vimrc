@@ -210,6 +210,12 @@ let g:autotagVerbosityLevel=40 " ERROR instead of the default WARNING
 
 nnoremap <F5> :UndotreeToggle<cr>
 
+" Set global undo directory to avoid undo files everywhere
+if has("persistent_undo")
+    set undodir=~/.undodir/
+    set undofile
+endif
+
 
 " FZF
 " ---
