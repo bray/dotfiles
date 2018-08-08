@@ -178,16 +178,6 @@ map <leader>k :cp<cr>
 source /usr/share/vim/vim80/macros/matchit.vim
 
 
-" CtrlP
-" -----
-
-"let g:ctrlp_map = '<leader>f'
-"let g:ctrlp_custom_ignore = 'bundle'
-"nnoremap <leader>b :CtrlPBuffer<CR>
-"nnoremap <leader>m :CtrlPMRUFiles<CR>
-"nnoremap <leader>t :CtrlPTag<CR>
-
-
 " Fugitive
 " --------
 
