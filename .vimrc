@@ -238,6 +238,16 @@ imap <C-x><C-l> <plug>(fzf-complete-line)
 map <leader>m :FZFMru<cr>
 
 
+" Ack / ag
+" --------
+
+" Shortcut to :Ag
+nnoremap \ :Ag<SPACE>
+
+" Search for word under cursor
+nnoremap K :Ag "\b<C-R><C-W>\b"<CR>
+
+
 
 " ---------------------------------------------------------------------------
 " GUI Options
