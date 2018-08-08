@@ -162,7 +162,7 @@ cnoremap <C-j> <Down>
 " ---------------------------------------------------------------------------
 
 map <leader>j :cn<cr>
-map <leader>m :cn<cr>
+"map <leader>m :cn<cr>
 map <leader>k :cp<cr>
 
 
@@ -230,6 +230,12 @@ map <leader>f :FZF<cr>
 
 " Override vim's C-xC-l line completion so it uses FZF
 imap <C-x><C-l> <plug>(fzf-complete-line)
+
+
+" FZF-MRU
+" -------
+
+map <leader>m :FZFMru<cr>
 
 
 
