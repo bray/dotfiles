@@ -26,7 +26,7 @@ Bundle 'vim-scripts/sessionman.vim'
 Bundle 'vim-scripts/CmdlineComplete'
 Bundle 'mileszs/ack.vim'
 Bundle 'AutoTag'
-Bundle 'sjl/gundo.vim'
+"Bundle 'sjl/gundo.vim'
 "Bundle 'bbommarito/vim-slim'
 Bundle 'slim-template/vim-slim.git'
 Bundle 'nelstrom/vim-markdown-preview'
@@ -39,6 +39,7 @@ Bundle 'Glench/Vim-Jinja2-Syntax'
 Bundle 'junegunn/fzf.vim'
 Bundle 'pbogut/fzf-mru.vim'
 Bundle 'brookhong/ag.vim'
+Bundle 'mbbill/undotree'
 
 filetype plugin indent on " required
 
