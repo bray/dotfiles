@@ -227,6 +227,10 @@ endif
 " Shortcut to :FZF
 map <leader>f :FZF<cr>
 
+
+" FZF.vim
+" ---
+
 " Override vim's C-xC-l line completion so it uses FZF
 imap <C-x><C-l> <plug>(fzf-complete-line)
 
