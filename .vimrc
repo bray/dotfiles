@@ -222,6 +222,16 @@ nnoremap <F5> :GundoToggle<CR>
 let g:gundo_preview_bottom=1
 
 
+" FZF
+" ---
+
+" Shortcut to :FZF
+map <leader>f :FZF<cr>
+
+" Override vim's C-xC-l line completion so it uses FZF
+imap <C-x><C-l> <plug>(fzf-complete-line)
+
+
 
 " ---------------------------------------------------------------------------
 " GUI Options
