@@ -13,7 +13,7 @@ Plugin 'VundleVim/Vundle.vim'
 
 let $GIT_SSL_NO_VERIFY = 'true'
 
-Bundle 'kien/ctrlp.vim'
+"Bundle 'kien/ctrlp.vim'
 Bundle 'tpope/vim-rails'
 Bundle 'SirVer/ultisnips'
 Bundle 'scrooloose/nerdtree'
@@ -36,6 +36,8 @@ Bundle 'kchmck/vim-coffee-script'
 Bundle 'tpope/vim-abolish'
 Bundle 'saltstack/salt-vim'
 Bundle 'Glench/Vim-Jinja2-Syntax'
+Bundle 'junegunn/fzf.vim'
+Bundle 'pbogut/fzf-mru.vim'
 
 filetype plugin indent on " required
 

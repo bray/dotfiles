@@ -11,6 +11,8 @@ if has('python3') && !has('patch-8.1.201')
   silent! python3 1
 endif
 
+set rtp+=/usr/local/opt/fzf
+
 set number
 set history=1000
 set visualbell t_vb=   " Disable audio error bell
