@@ -234,6 +234,9 @@ map <leader>f :FZF<cr>
 " Override vim's C-xC-l line completion so it uses FZF
 imap <C-x><C-l> <plug>(fzf-complete-line)
 
+" Complete (dictionary) word
+imap <C-x><C-k> <plug>(fzf-complete-word)
+
 
 " FZF-MRU
 " -------
