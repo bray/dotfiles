@@ -275,7 +275,8 @@ let g:airline_powerline_fonts = 1
 if has("gui_running")
   source ~/.vim/bundles.vim
 
-  set guifont=Monaco:h13
+  "set guifont=Monaco:h13
+  set guifont=Monaco\ for\ Powerline:h13
   set guioptions-=T      " Remove toolbar
   set macmeta            " Set Alt as the Meta key (e.g. for cmdmode movement)
 else
