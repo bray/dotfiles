@@ -191,7 +191,10 @@ set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 " NERDTree
 " --------
 
-map <leader>d :execute 'NERDTreeToggle ' . getcwd()<CR>
+"map <leader>d :execute 'NERDTreeToggle ' . getcwd()<CR>
+map <leader>d :NERDTreeToggle<CR>
+map <leader>M :NERDTreeMirror<CR>
+map <leader>D :NERDTreeFind<CR>
 
 
 " UltiSnips
