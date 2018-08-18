@@ -28,6 +28,9 @@ set linebreak          " Don't split lines in the middle of words
 
 let mapleader=","      " Change leader from \ to ,
 
+" Reveal in Finder - opens finder to folder of the file that is currently open
+command! Rif execute '!open %:p:h'
+
 " Get out of insert mode much more easily
 inoremap jk <Esc>
 inoremap kj <Esc>
