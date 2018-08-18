@@ -13,8 +13,9 @@ endif
 
 set rtp+=/usr/local/opt/fzf
 
-set number
-set history=1000
+set number             " Show line numbers
+set fillchars+=vert:\  " Remove the \| in vertical splits
+set history=1000       " Remember 1000 lines of history
 set visualbell t_vb=   " Disable audio error bell
 set title              " Show the filepath (terminal)
 set gcr=n:blinkon0     " No blinking cursor in Normal mode
