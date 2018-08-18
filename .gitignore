@@ -16,8 +16,5 @@ bray.xcuserdatad/
 .pry_history
 public/assets/
 
-
-
-
-
 Gemfile.local*
+.vim/swp/*
