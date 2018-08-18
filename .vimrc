@@ -229,7 +229,7 @@ endif
 " ---
 
 " Shortcut to :FZF
-map <leader>f :FZF<cr>
+map <leader>f :Files<cr>
 
 
 " FZF.vim
