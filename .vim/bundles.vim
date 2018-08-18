@@ -17,7 +17,7 @@ let $GIT_SSL_NO_VERIFY = 'true'
 Bundle 'tpope/vim-rails'
 Bundle 'SirVer/ultisnips'
 Bundle 'scrooloose/nerdtree'
-Bundle 'scrooloose/nerdcommenter'
+"Bundle 'scrooloose/nerdcommenter'
 Bundle 'tpope/vim-surround'
 Bundle 'kana/vim-textobj-user'
 Bundle 'nelstrom/vim-textobj-rubyblock'
@@ -40,6 +40,7 @@ Bundle 'junegunn/fzf.vim'
 Bundle 'pbogut/fzf-mru.vim'
 Bundle 'brookhong/ag.vim'
 Bundle 'mbbill/undotree'
+Bundle 'tpope/vim-commentary'
 
 filetype plugin indent on " required
 
