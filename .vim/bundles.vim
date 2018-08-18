@@ -41,6 +41,8 @@ Bundle 'pbogut/fzf-mru.vim'
 Bundle 'brookhong/ag.vim'
 Bundle 'mbbill/undotree'
 Bundle 'tpope/vim-commentary'
+Bundle 'vim-airline/vim-airline'
+Bundle 'vim-airline/vim-airline-themes'
 
 filetype plugin indent on " required
 
