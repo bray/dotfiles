@@ -261,6 +261,12 @@ nnoremap \ :Ag<SPACE>
 nnoremap K :Ag "\b<C-R><C-W>\b"<CR>
 
 
+" vim-airline
+" -----------
+
+let g:airline_powerline_fonts = 1
+
+
 
 " ---------------------------------------------------------------------------
 " GUI Options
