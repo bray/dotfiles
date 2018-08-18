@@ -20,11 +20,13 @@ set visualbell t_vb=   " Disable audio error bell
 set title              " Show the filepath (terminal)
 set gcr=n:blinkon0     " No blinking cursor in Normal mode
 set showcmd            " Display incomplete commands
-let mapleader=","      " Change leader from \ to ,
 set wildmenu           " Better tab-completion in command mode
 set wildmode=list:full
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/*
 set autoread           " Autoload outside changes
+set linebreak          " Don't split lines in the middle of words
+
+let mapleader=","      " Change leader from \ to ,
 
 " Get out of insert mode much more easily
 inoremap jk <Esc>
@@ -39,8 +41,6 @@ nnoremap <C-e> 3<C-e>
 nnoremap <C-y> 3<C-y>
 vnoremap <C-e> 3<C-e>
 vnoremap <C-y> 3<C-y>
-
-set linebreak          " Don't split lines in the middle of words
 
 " Visually select the text that was last edited/pasted
 nmap gV `[v`]
