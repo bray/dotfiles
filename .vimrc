@@ -103,6 +103,9 @@ set listchars=eol:$,tab:>-,trail:-,nbsp:%  " Show more hidden chars when 'list' 
 set splitright  " Put a new vertical split window on the right
 set splitbelow  " Put a new horizontal split window below
 
+nmap <leader>v :vs<CR>
+nmap <leader>s :sp<CR>
+
 " Use Ctrl-[kjhl] to select the active split
 nmap <silent> <C-k> :wincmd k<CR>
 nmap <silent> <C-j> :wincmd j<CR>
