@@ -268,6 +268,8 @@ nnoremap K :Ag "\b<C-R><C-W>\b"<CR>
 " -----------
 
 let g:airline_powerline_fonts = 1
+"let g:airline_theme = 'simple' " default is 'dark'
+let g:airline_theme = 'dark' " default is 'dark'
 
 
 
