@@ -10,7 +10,7 @@ export PATH=$PATH:$GOPATH/bin
 export FREI0R_PATH=/usr/local/lib/frei0r-1
 
 export TERM=xterm-256color
-[ -n "$TMUX" ] && export TERM=screen-256color
+#[ -n "$TMUX" ] && export TERM=screen-256color
 
 
 #export SSL_CERT_FILE=/usr/local/etc/openssl/cert.pem

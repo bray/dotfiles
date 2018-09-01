@@ -285,6 +285,8 @@ tmux_conf_copy_to_os_clipboard=false
 # BRAY
 
 
+set -g default-terminal "xterm-256color"
+
 # Set prefix to C-Space
 set -g prefix C-Space
 
