@@ -335,3 +335,6 @@ bind -T copy-mode-vi MouseDown1Pane select-pane \;\
 # Split current window
 bind - split-window -h # vertically
 bind _ split-window -v # horizontally
+
+# Move to last active window
+bind Tab last-window
