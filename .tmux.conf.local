@@ -313,6 +313,9 @@ bind -n S-Right swap-window -t +1
 # No delay for escape key press
 set -sg escape-time 0
 
+# Slightly longer status messages display time
+set -g display-time 1000
+
 # Fix scrolling, and allow clicking a pane to focus it
 # BUT if it's off, then I can copy to clipboard w/o holding Option ...
 set -g mouse on
