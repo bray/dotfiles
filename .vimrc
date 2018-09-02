@@ -182,7 +182,9 @@ map <leader>k :cp<cr>
 " -------
 
 " Enable % to work for def/end, if/else/end, etc.
-source /usr/share/vim/vim80/macros/matchit.vim
+if filereadable('/usr/share/vim/vim80/macros/matchit.vim')
+  source /usr/share/vim/vim80/macros/matchit.vim
+endif
 
 
 " Fugitive
