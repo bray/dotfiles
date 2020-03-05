@@ -36,11 +36,14 @@ Bundle 'kchmck/vim-coffee-script'
 Bundle 'tpope/vim-abolish'
 Bundle 'saltstack/salt-vim'
 Bundle 'Glench/Vim-Jinja2-Syntax'
+
 Bundle 'junegunn/fzf.vim'
 Bundle 'pbogut/fzf-mru.vim'
+
 Bundle 'brookhong/ag.vim'
 Bundle 'mbbill/undotree'
 Bundle 'tpope/vim-commentary'
+
 Bundle 'vim-airline/vim-airline'
 Bundle 'vim-airline/vim-airline-themes'
 
