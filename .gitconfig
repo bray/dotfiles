@@ -10,6 +10,9 @@
   df = diff -C
   ds = !git df --staged
   a = add -A
+  sp = stash pop
+  sl = stash list
+  sd = stash drop
 
   l = log --decorate
   ls = !git l --stat
