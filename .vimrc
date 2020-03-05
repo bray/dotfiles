@@ -69,6 +69,9 @@ nnoremap ` '
 set nofoldenable
 set foldminlines=99999
 
+" Include - when doing keyword completion (C-n and C-p)
+set iskeyword+=\-
+
 
 " ---------------------------------------------------------------------------
 " Search
