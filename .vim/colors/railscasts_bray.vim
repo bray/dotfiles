@@ -91,7 +91,10 @@ highlight rubyClass                 guifg=#FFFFFF ctermfg=15
 highlight rubyConstant              guifg=#DA4939 ctermfg=167
 highlight rubyInstanceVariable      guifg=#D0D0FF ctermfg=189
 highlight rubyInterpolation         guifg=#519F50 ctermfg=107
-highlight rubyLocalVariableOrMethod guifg=#D0D0FF ctermfg=189
+"highlight rubyLocalVariableOrMethod guifg=#D0D0FF ctermfg=189
+"highlight rubyLocalVariableOrMethod guifg=#551A8B ctermfg=189
+highlight rubyLocalVariableOrMethod guifg=#0000FF ctermfg=7
+highlight rubyKeywordAsMethod       guifg=#0000FF ctermfg=7
 highlight rubyPredefinedConstant    guifg=#DA4939 ctermfg=167
 highlight rubyPseudoVariable        guifg=#FFC66D ctermfg=221
 highlight rubyStringDelimiter       guifg=#A5C261 ctermfg=143
