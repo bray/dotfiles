@@ -49,6 +49,10 @@ Bundle 'vim-airline/vim-airline-themes'
 
 "Bundle 'phanviet/vim-monokai-pro'
 Bundle 'drewtempelmeyer/palenight.vim'
+
+Bundle 'easymotion/vim-easymotion'
+
+
 filetype plugin indent on " required
 
 " All of your Plugins must be added before the following line
