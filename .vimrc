@@ -27,6 +27,8 @@ set autoread           " Autoload outside changes
 set linebreak          " Don't split lines in the middle of words
 set cursorline         " Highlight the current line
 set regexpengine=1     " Use old regexp engine (faster?)
+set noshowcmd          " Don't show command in bottom line (faster?)
+
 
 let mapleader=","      " Change leader from \ to ,
 
