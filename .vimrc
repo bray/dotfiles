@@ -25,6 +25,7 @@ set wildmode=list:full
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/*
 set autoread           " Autoload outside changes
 set linebreak          " Don't split lines in the middle of words
+set cursorline         " Highlight the current line
 
 let mapleader=","      " Change leader from \ to ,
 
