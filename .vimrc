@@ -136,10 +136,12 @@ set sessionoptions-=options
 " Macros
 " ---------------------------------------------------------------------------
 
-let @c = '[m]MI#'    " Comment out the current method
-let @y = 'yypki#j'   " Comment out line and copy
-let @h = 'f:xf ce:'  " Convert old Ruby hash (:a => 'b') to new Ruby hash (a: 'b')
-let @u = 'YpVr-'     " Underline heading
+let @c = '[m]MI#' " Comment out the current method
+let @y = 'yypki#j'  " Comment out line and copy
+let @u = 'YpVr-'      " Underline heading
+let @h = 'f:xf ce:' " Convert old Ruby hash (:a => 'b') to new Ruby hash (a: 'b')
+let @b = "r:f'xbh"    " Convert string into symbol
+let @s = "r'ea'bh"  " Convert symbol into string
 
 " Remove trailing whitespace
 noremap <silent> <leader>rtw :%s/\s\+$//g<cr>``
