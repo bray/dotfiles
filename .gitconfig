@@ -31,6 +31,8 @@
 
   mf = merge --no-ff
 
+  ancestor = "!if git merge-base --is-ancestor \"$1\" HEAD; then echo I DO contain commit \"$1\"; else echo I DO NOT contain commit \"$1\"; fi #"
+
 [color]
   ui = auto
 
