@@ -209,6 +209,7 @@ set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 map <leader>d :NERDTreeToggle<CR>
 map <leader>M :NERDTreeMirror<CR>
 map <leader>D :NERDTreeFind<CR>
+let NERDTreeShowLineNumbers=1
 
 
 " UltiSnips
