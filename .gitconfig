@@ -25,8 +25,10 @@
   branch-name = !git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \\(.*\\)/\\1/'
   temp = !git a && git ci -m \"`git branch-name` temp ...\"
   rh = reset HEAD^
-  rhard = "!if [ -n \"$1\" ]; then git reset --hard \"$1\"; else git reset --hard HEAD^; fi #"
+  #rhard = "!if [ -n \"$1\" ]; then git reset --hard \"$1\"; else git reset --hard HEAD^; fi #"
+  rhard = reset --hard
   rhead = reset --hard HEAD
+  rprev = reset --hard HEAD^
   sort-br = for-each-ref --sort=-committerdate --format='%(committerdate:short) %(refname:short)' refs/heads/
 
   mf = merge --no-ff
