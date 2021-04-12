@@ -73,7 +73,7 @@ if [[ -e ~/.zshrc.local ]]; then source ~/.zshrc.local; fi
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
-export PATH="/usr/local/opt/mysql@5.5/bin:$PATH"
+export PATH="/usr/local/opt/mysql@5.6/bin:$PATH"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
