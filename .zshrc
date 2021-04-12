@@ -81,4 +81,7 @@ export PKG_CONFIG_PATH="/usr/local/opt/libxml2/lib/pkgconfig"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
+export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
+export ZSH_AUTOSUGGEST_MANUAL_REBIND='yes'
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
