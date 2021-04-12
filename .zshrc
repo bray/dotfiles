@@ -75,6 +75,10 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 export PATH="/usr/local/opt/mysql@5.6/bin:$PATH"
 
+export LDFLAGS="-L/usr/local/opt/libxml2/lib"
+export CPPFLAGS="-I/usr/local/opt/libxml2/include"
+export PKG_CONFIG_PATH="/usr/local/opt/libxml2/lib/pkgconfig"
+
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
