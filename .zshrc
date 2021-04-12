@@ -85,3 +85,7 @@ export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 export ZSH_AUTOSUGGEST_MANUAL_REBIND='yes'
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# Enable autocomplete for the `aws` commands
+autoload bashcompinit && bashcompinit
+complete -C '/usr/local/bin/aws_completer' aws
