@@ -11,6 +11,12 @@ def copy_token(user)
   Clipboard.copy user.api_client.user_token
 end
 
+def pbcopy(input)
+  str = input.to_s
+  IO.popen('pbcopy', 'w') { |f| f << str }
+  str
+end
+
 def puts_last(lines_count)
   puts Readline::HISTORY.entries[(-2 - lines_count + 1)..-2].join("\n")
 end
