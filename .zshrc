@@ -42,6 +42,16 @@ alias gx='gitx --all'
 alias vim='mvim -v'
 alias vi='vim'
 
+# Git shortcuts
+alias gx='gitx --all'
+alias gci='git ci'
+alias gt='git temp'
+alias gs='git stash'
+alias grh='git rh'
+alias ga='git add .'
+alias gpl='git pull'
+alias gmf='git mf'
+
 #alias bundle_local='bundle install --gemfile Gemfile.local'
 #alias server_local='BUNDLE_GEMFILE=Gemfile.local bundle exec rails s'
 export BUNDLE_GEMFILE=Gemfile.local
