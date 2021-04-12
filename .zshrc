@@ -16,7 +16,7 @@ export TERM=xterm-256color
 #export SSL_CERT_FILE=/usr/local/etc/openssl/cert.pem
 
 
-plugins=(git history-substring-search osx)
+plugins=(git history-substring-search osx zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
