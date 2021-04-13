@@ -358,6 +358,7 @@ setenv -g TMUX_PLUGIN_MANAGER_PATH "$HOME/.tmux/plugins/"
 set -g @tpm_plugins '          \
   tmux-plugins/tpm             \
   tmux-plugins/tmux-sensible   \
+  laktak/extrakto              \
 '
 
 ###########################
