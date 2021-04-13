@@ -345,3 +345,24 @@ bind Tab last-window
 
 
 bind c new-window -c "#{pane_current_path}"
+
+
+
+
+# TMUX Plugin Manager (TPM)
+###########################
+
+setenv -g TMUX_PLUGIN_MANAGER_PATH "$HOME/.tmux/plugins/"
+
+# List of plugins
+set -g @tpm_plugins '          \
+  tmux-plugins/tpm             \
+'
+
+###########################
+
+
+
+
+# Initialize TMUX Plugin Manager (keep this line at the very bottom of tmux.conf)
+run '~/.tmux/plugins/tpm/tpm'
