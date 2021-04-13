@@ -339,7 +339,7 @@ bind - split-window -h # vertically
 bind _ split-window -v # horizontally
 
 # Move to last active window
-bind Tab last-window
+####bind Tab last-window
 
 
 
