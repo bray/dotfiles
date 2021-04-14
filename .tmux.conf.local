@@ -5,17 +5,35 @@
 
 
 
-set -g default-terminal "xterm-256color"
-
 # Set prefix to C-Space
 set -g prefix C-Space
 
-# History limit
-set -g history-limit 5000
+set -g default-terminal "xterm-256color"
+
+
+
+##################################################
+# Windows/Panes
+##################################################
+
+# Open new windows at the current path
+bind c new-window -c "#{pane_current_path}"
 
 # Move between windows
 bind -n M-p previous-window
 bind -n M-n next-window
+
+# Split current window
+bind - split-window -h # vertically
+bind _ split-window -v # horizontally
+
+# Reorder windows
+bind -n S-Left swap-window -t -1
+bind -n S-Right swap-window -t +1
+
+# Move to last active window
+####bind Tab last-window
+
 
 # Move between panes
 #bind -n C-h select-pane -L
@@ -28,9 +46,14 @@ bind l select-pane -R
 bind k select-pane -U
 bind j select-pane -D
 
-# Reorder windows
-bind -n S-Left swap-window -t -1
-bind -n S-Right swap-window -t +1
+
+
+##################################################
+# Misc
+##################################################
+
+# History limit
+set -g history-limit 5000
 
 # No delay for escape key press
 set -sg escape-time 0
@@ -38,13 +61,15 @@ set -sg escape-time 0
 # Slightly longer status messages display time
 set -g display-time 1000
 
+
+
+##################################################
+# Mouse/Scrolling
+##################################################
+
 # Fix scrolling, and allow clicking a pane to focus it
 # BUT if it's off, then I can copy to clipboard w/o holding Option ...
 set -g mouse on
-
-# When scrolling with trackpad, reduce number of scrolled rows per tick to 1 (default is 5)
-bind -T copy-mode-vi WheelUpPane select-pane \; send-keys -X -N 1 scroll-up
-bind -T copy-mode-vi WheelDownPane select-pane \; send-keys -X -N 1 scroll-down
 
 # Fix copy/paste
 # Do not copy selection and cancel copy mode on drag end event
@@ -54,23 +79,15 @@ bind -T copy-mode-vi MouseDown1Pane select-pane \;\
   send-keys -X copy-pipe "pbcopy" \;\
   send-keys -X clear-selection
 
-# Split current window
-bind - split-window -h # vertically
-bind _ split-window -v # horizontally
-
-# Move to last active window
-####bind Tab last-window
+# When scrolling with trackpad, reduce number of scrolled rows per tick to 1 (default is 5)
+bind -T copy-mode-vi WheelUpPane select-pane \; send-keys -X -N 1 scroll-up
+bind -T copy-mode-vi WheelDownPane select-pane \; send-keys -X -N 1 scroll-down
 
 
 
-
-bind c new-window -c "#{pane_current_path}"
-
-
-
-
+##################################################
 # TMUX Plugin Manager (TPM)
-###########################
+##################################################
 
 setenv -g TMUX_PLUGIN_MANAGER_PATH "$HOME/.tmux/plugins/"
 
@@ -80,9 +97,6 @@ set -g @tpm_plugins '          \
   tmux-plugins/tmux-sensible   \
   laktak/extrakto              \
 '
-
-###########################
-
 
 
 
