@@ -28,6 +28,7 @@ set linebreak          " Don't split lines in the middle of words
 set cursorline         " Highlight the current line
 set regexpengine=1     " Use old regexp engine (faster?)
 set noshowcmd          " Don't show command in bottom line (faster?)
+set noshowmode         " Don't show -- INSERT -- in bottom line (vim-airline shows this in status line)
 
 
 let mapleader=","      " Change leader from \ to ,
