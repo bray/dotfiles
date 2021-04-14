@@ -56,9 +56,6 @@ bind j select-pane -D
 # Misc
 ##################################################
 
-# History limit
-set -g history-limit 5000
-
 # No delay for escape key press
 set -sg escape-time 0
 
