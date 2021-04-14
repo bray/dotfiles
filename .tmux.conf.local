@@ -5,12 +5,14 @@
 
 
 
+##################################################
+# Basics
+##################################################
+
 # Set prefix to C-Space
 set -g prefix C-Space
 
 set -g default-terminal "xterm-256color"
-
-tmux_conf_theme_status_right='#{pairing}#{prefix}  %-m/%d/%y | #{username} | #{hostname} '
 
 
 
@@ -55,6 +57,12 @@ bind j select-pane -D
 ##################################################
 # Misc
 ##################################################
+
+# Right status bar
+tmux_conf_theme_status_right='#{pairing}#{prefix}  %-m/%d/%y | #{username} | #{hostname} '
+
+# Increase line history limit
+set -g history-limit 5000
 
 # No delay for escape key press
 set -sg escape-time 0
