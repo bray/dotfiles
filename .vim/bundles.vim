@@ -5,7 +5,7 @@
 filetype off  " Must be off before Vundle has run
 "set nocompatible              " be iMproved, required
 
-set rtp+=~/.dotfiles/.vim/bundle/Vundle.vim
+set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 " let Vundle manage Vundle, required
