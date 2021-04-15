@@ -39,6 +39,7 @@ set cursorline         " Highlight the current line
 set regexpengine=1     " Use old regexp engine (faster?)
 set noshowcmd          " Don't show command in bottom line (faster?)
 set noshowmode         " Don't show -- INSERT -- in bottom line (vim-airline shows this in status line)
+set pastetoggle=<C-t>  " CTRL-p toggles paste mode
 
 
 let mapleader=","      " Change leader from \ to ,
