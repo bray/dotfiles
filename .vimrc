@@ -203,6 +203,10 @@ map <leader>k :cp<cr>
 " Plugin Config
 " ---------------------------------------------------------------------------
 
+" Enable Vundle
+source ~/.vim/bundles.vim
+
+
 " Matchit
 " -------
 
@@ -334,13 +338,11 @@ let g:EasyMotion_smartcase = 1
 " GUI Options
 " ---------------------------------------------------------------------------
 
-if has("gui_running")
-  source ~/.vim/bundles.vim
 
-  "set guifont=Monaco:h13
-  set guifont=Monaco\ for\ Powerline:h13
-  set guioptions-=T      " Remove toolbar
-  set macmeta            " Set Alt as the Meta key (e.g. for cmdmode movement)
+if has("gui_running")
+  set guifont=Monaco\ for\ Powerline:h13  " Set font
+  set guioptions-=T                       " Remove toolbar
+  set macmeta                             " Set Alt as the Meta key (e.g. for cmdmode movement)
 else
   set term=ansi
 end
