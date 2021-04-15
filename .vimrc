@@ -40,6 +40,7 @@ set regexpengine=1     " Use old regexp engine (faster?)
 set noshowcmd          " Don't show command in bottom line (faster?)
 set noshowmode         " Don't show -- INSERT -- in bottom line (vim-airline shows this in status line)
 set pastetoggle=<C-t>  " CTRL-p toggles paste mode
+set ttimeoutlen=0      " Make escape go back to normal mode instantly
 
 
 let mapleader=","      " Change leader from \ to ,
