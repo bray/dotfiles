@@ -7,9 +7,19 @@ filetype plugin indent on
 set nocompatible              " be iMproved, required
 
 " Fix vim (and imp) incompatibility with Python 3 (and UltiSnips)
-if has('python3') && !has('patch-8.1.201')
-  silent! python3 1
+"if has('python3') && !has('patch-8.1.201')
+"  silent! python3 1
+"endif
+"" Python Setting {
+"  set pythondll=/usr/local/Frameworks/Python.framework/Versions/3.7/Python
+"  set pythonhome=/usr/local/Frameworks/Python.framework/Versions/3.7
+"  set pythonthreedll=/usr/local/Frameworks/Python.framework/Versions/3.7/Python
+"  set pythonthreehome=/usr/local/Frameworks/Python.framework/Versions/3.7
+"" }
+
+if has('python')
 endif
+
 
 set rtp+=/usr/local/opt/fzf
 
