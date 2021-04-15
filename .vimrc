@@ -343,8 +343,6 @@ if has("gui_running")
   set guifont=Monaco\ for\ Powerline:h13  " Set font
   set guioptions-=T                       " Remove toolbar
   set macmeta                             " Set Alt as the Meta key (e.g. for cmdmode movement)
-else
-  set term=ansi
 end
 
 
