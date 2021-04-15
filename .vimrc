@@ -352,3 +352,6 @@ let g:palenight_terminal_italics=1
 if (has("termguicolors"))
   set termguicolors
 endif
+
+" Set the style for the highlighted current line
+hi CursorLine term=bold cterm=bold guibg=Grey15
