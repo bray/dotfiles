@@ -13,9 +13,12 @@ Plugin 'VundleVim/Vundle.vim'
 
 let $GIT_SSL_NO_VERIFY = 'true'
 
+if has("gui_running")
+  Bundle 'SirVer/ultisnips'
+end
+
 "Bundle 'kien/ctrlp.vim'
 Bundle 'tpope/vim-rails'
-Bundle 'SirVer/ultisnips'
 Bundle 'scrooloose/nerdtree'
 "Bundle 'scrooloose/nerdcommenter'
 Bundle 'tpope/vim-surround'
