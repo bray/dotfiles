@@ -345,5 +345,10 @@ else
   set term=ansi
 end
 
-colorscheme railscasts_bray
-set cursorline         " Highlight the current line
+
+colorscheme palenight
+let g:palenight_terminal_italics=1
+
+if (has("termguicolors"))
+  set termguicolors
+endif
