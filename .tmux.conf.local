@@ -37,20 +37,13 @@ bind _ split-window -v # horizontally
 bind -n S-Left swap-window -t -1
 bind -n S-Right swap-window -t +1
 
-# Move to last active window
-####bind Tab last-window
-
-
 # Move between panes
-#bind -n C-h select-pane -L
-##bind -n C-l select-pane -R # conflicts w/ clear screen
-##bind -n C-k select-pane -U # conflicts w/ clear screen
-#bind -n C-j select-pane -D
-
-bind h select-pane -L
-bind l select-pane -R
-bind k select-pane -U
-bind j select-pane -D
+# Use Alt here instead of Ctrl to avoid conflicts with vim,
+# but still use the same chars for navigation
+bind -n M-h select-pane -L
+bind -n M-l select-pane -R
+bind -n M-k select-pane -U
+bind -n M-j select-pane -D
 
 
 
