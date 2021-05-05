@@ -317,6 +317,8 @@ let g:airline_theme = 'dark' " default is 'dark'
 " `s{char}{char}{label}`
 " Need more keystroke, but on average, it may be more comfortable.
 nmap <Space> <Plug>(easymotion-overwin-f2)
+" This is needed instead of easymotion-overwin-f2 on Macs (except local) because overwin doesn't work there ...
+"nmap <Space> <Plug>(easymotion-s2)
 
 " Turn on case insensitive feature
 let g:EasyMotion_smartcase = 1
