@@ -271,7 +271,7 @@ map <leader>f :Files<cr>
 
 
 " FZF.vim
-" ---
+" -------
 
 " Override vim's C-xC-l line completion so it uses FZF
 imap <C-x><C-l> <plug>(fzf-complete-line)
@@ -286,8 +286,8 @@ imap <C-x><C-k> <plug>(fzf-complete-word)
 map <leader>m :FZFMru<cr>
 
 
-" Ack / ag
-" --------
+" The Silver Searcher (ag)
+" ------------------------
 
 " Shortcut to :Ag
 nnoremap \ :Ag<SPACE>
