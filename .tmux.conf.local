@@ -59,7 +59,7 @@ tmux_conf_theme_right_separator_main='' #   Powerline symbols or the standalo
 tmux_conf_theme_right_separator_sub=''  #   PowerlineSymbols.otf font
 
 # Right status bar
-tmux_conf_theme_status_right='#{prefix}  %-m/%d/%y | #{username} | #{hostname} '
+tmux_conf_theme_status_right='#{prefix}  %B %-d , %-I:%M %p %Z | #{username} | #{hostname} '
 
 # Increase line history limit
 set -g history-limit 5000
