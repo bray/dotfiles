@@ -114,3 +114,7 @@ set -g @tpm_plugins '          \
   tmux-plugins/tmux-sensible   \
   laktak/extrakto              \
 '
+
+# Extrakto Config
+set -g @extrakto_split_size '20'
+set -g @extrakto_fzf_layout 'reverse'
