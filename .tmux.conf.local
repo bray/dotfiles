@@ -10,6 +10,8 @@
 ##################################################
 
 # Set prefix to C-Space
+set -gu prefix2
+unbind C-a
 set -g prefix C-Space
 
 set -g default-terminal "xterm-256color"
