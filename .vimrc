@@ -286,14 +286,14 @@ imap <C-x><C-k> <plug>(fzf-complete-word)
 map <leader>m :FZFMru<cr>
 
 
-" The Silver Searcher (ag)
-" ------------------------
+" ripgrep (rg)
+" ------------
 
-" Shortcut to :Ag
-nnoremap \ :Ag<SPACE>
+" Shortcut to :Rg
+nnoremap \ :Rg<SPACE>
 
 " Search for word under cursor
-nnoremap K :Ag "\b<C-R><C-W>\b"<CR>
+nnoremap K :Rg "\b<C-R><C-W>\b"<CR>
 
 
 " vim-airline

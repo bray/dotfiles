@@ -42,8 +42,8 @@ Bundle 'Glench/Vim-Jinja2-Syntax'
 Bundle 'junegunn/fzf'
 Bundle 'junegunn/fzf.vim'
 Bundle 'pbogut/fzf-mru.vim'
+Bundle 'jremmen/vim-ripgrep'
 
-Bundle 'brookhong/ag.vim'
 Bundle 'mbbill/undotree'
 Bundle 'tpope/vim-commentary'
 
