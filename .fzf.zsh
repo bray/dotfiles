@@ -18,6 +18,7 @@ source "/usr/local/opt/fzf/shell/key-bindings.zsh"
 export FZF_DEFAULT_COMMAND="fd --type f --exclude .git"
 export FZF_DEFAULT_OPTS="--height 40% --layout=reverse --multi --bind='ctrl-d:half-page-down,ctrl-u:half-page-up'"
 
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_CTRL_T_OPTS="--preview '(bat --color=always --style=numbers --line-range=:200 {} || tree -C {}) 2> /dev/null'"
 
 export FZF_ALT_C_COMMAND="fd --type d --exclude .git"
