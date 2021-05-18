@@ -85,8 +85,9 @@ set foldminlines=99999
 " Include - when doing keyword completion (C-n and C-p)
 set iskeyword+=\-
 
-" Copy the relative file path to the clipboard
+" Copy the relative file path to the system clipboard
 nmap ,cp :let @*=expand("%")<CR>
+
 
 
 " ---------------------------------------------------------------------------
