@@ -16,7 +16,7 @@ source "/usr/local/opt/fzf/shell/key-bindings.zsh"
 # bray Customizations
 # -------------------
 export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
-export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --multi'
+export FZF_DEFAULT_OPTS="--height 40% --layout=reverse --multi --bind='ctrl-d:half-page-down,ctrl-u:half-page-up'"
 
 export FZF_CTRL_T_OPTS="--preview '(bat --color=always --style=numbers --line-range=:200 {} || tree -C {}) 2> /dev/null'"
 
