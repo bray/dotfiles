@@ -231,6 +231,7 @@ map <leader>d :NERDTreeToggle<CR>
 map <leader>M :NERDTreeMirror<CR>
 map <leader>D :NERDTreeFind<CR>
 let NERDTreeShowLineNumbers=1
+let NERDTreeShowHidden=1
 
 
 " UltiSnips
