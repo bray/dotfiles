@@ -217,12 +217,6 @@ if filereadable('/usr/share/vim/vim80/macros/matchit.vim')
 endif
 
 
-" Fugitive
-" --------
-
-set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
-
-
 " NERDTree
 " --------
 
