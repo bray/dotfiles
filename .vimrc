@@ -269,6 +269,11 @@ map <leader>f :Files<cr>
 " FZF.vim
 " -------
 
+" Override the default Files command
+" to use preview (with my options)
+command! -bang -nargs=? -complete=dir Files
+    \ call fzf#vim#files(<q-args>, {'options': ['--preview', $FZF_CTRL_T_PREVIEW_OPTS]}, <bang>0)
+
 " Override vim's C-xC-l line completion so it uses FZF
 imap <C-x><C-l> <plug>(fzf-complete-line)
 
