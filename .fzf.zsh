@@ -16,7 +16,7 @@ source "/usr/local/opt/fzf/shell/key-bindings.zsh"
 # bray Customizations
 # -------------------
 export FZF_DEFAULT_COMMAND="fd --type f --exclude .git"
-export FZF_DEFAULT_OPTS="--height 40% --layout=reverse --multi --bind='ctrl-d:half-page-down,ctrl-u:half-page-up'"
+export FZF_DEFAULT_OPTS="--height 40% --layout=reverse --multi --bind='ctrl-d:half-page-down,ctrl-u:half-page-up' --pointer='▶' --marker='✗'"
 
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
