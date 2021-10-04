@@ -343,7 +343,7 @@ let g:EasyMotion_smartcase = 1
 
 
 if has("gui_running")
-  set guifont=Monaco\ for\ Powerline:h14  " Set font
+  set guifont=Monaco\ for\ Powerline:h15  " Set font
   set guioptions-=T                       " Remove toolbar
   set macmeta                             " Set Alt as the Meta key (e.g. for cmdmode movement)
 end
