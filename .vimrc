@@ -294,7 +294,7 @@ map <leader>m :FZFMru<cr>
 nnoremap \ :Rg<SPACE>
 
 " Search for word under cursor
-nnoremap K :Rg "\b<C-R><C-W>\b"<CR>
+nnoremap K :Rg "\\b<C-R><C-W>\\b"<CR>
 
 
 " vim-airline
