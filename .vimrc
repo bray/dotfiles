@@ -17,7 +17,7 @@ set nocompatible              " be iMproved, required
 "  set pythonthreehome=/usr/local/Frameworks/Python.framework/Versions/3.7
 "" }
 
-if has('python')
+if has('python3')
 endif
 
 
