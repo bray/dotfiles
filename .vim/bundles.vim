@@ -56,6 +56,7 @@ Bundle 'drewtempelmeyer/palenight.vim'
 Bundle 'easymotion/vim-easymotion'
 
 Bundle 'romainl/vim-cool'
+Bundle 'airblade/vim-gitgutter'
 
 
 filetype plugin indent on " required

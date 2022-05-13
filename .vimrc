@@ -337,6 +337,24 @@ let g:EasyMotion_smartcase = 1
 
 
 
+" vim-gitgutter
+" -------------
+
+set updatetime=100
+set signcolumn=yes
+
+" Navigate hunks (better than the default of ]c and [c)
+nmap ]h <Plug>(GitGutterNextHunk)
+nmap [h <Plug>(GitGutterPrevHunk)
+
+" Operate on current hunk
+omap ih <Plug>(GitGutterTextObjectInnerPending)
+omap ah <Plug>(GitGutterTextObjectOuterPending)
+xmap ih <Plug>(GitGutterTextObjectInnerVisual)
+xmap ah <Plug>(GitGutterTextObjectOuterVisual)
+
+
+
 " vim-cool
 " --------
 
