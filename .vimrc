@@ -41,7 +41,6 @@ set noshowcmd          " Don't show command in bottom line (faster?)
 set noshowmode         " Don't show -- INSERT -- in bottom line (vim-airline shows this in status line)
 set pastetoggle=<C-t>  " CTRL-t toggles paste mode
 set ttimeoutlen=0      " Make escape go back to normal mode instantly
-set shortmess-=S       " Show # of matches (in bottom right corner) when searching
 
 
 let mapleader=","      " Change leader from \ to ,
