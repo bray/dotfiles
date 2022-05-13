@@ -1,63 +1,52 @@
 " ---------------------------------------------------------------------------
-" Vundle Plugins
+" vim-plug Plugins
 " ---------------------------------------------------------------------------
 
-filetype off  " Must be off before Vundle has run
-"set nocompatible              " be iMproved, required
+call plug#begin('~/.vim/plugged')
 
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
-
-let $GIT_SSL_NO_VERIFY = 'true'
 
 if has("gui_running")
-  Bundle 'SirVer/ultisnips'
+  Plug 'SirVer/ultisnips'
 end
 
-"Bundle 'kien/ctrlp.vim'
-Bundle 'tpope/vim-rails'
-Bundle 'scrooloose/nerdtree'
-"Bundle 'scrooloose/nerdcommenter'
-Bundle 'tpope/vim-surround'
-Bundle 'kana/vim-textobj-user'
-Bundle 'nelstrom/vim-textobj-rubyblock'
-Bundle 'vim-scripts/sessionman.vim'
-Bundle 'vim-scripts/CmdlineComplete'
-Bundle 'mileszs/ack.vim'
-"Bundle 'AutoTag'
-"Bundle 'sjl/gundo.vim'
-Bundle 'nelstrom/vim-markdown-preview'
-Bundle 'plasticboy/vim-markdown'
-Bundle 'vim-scripts/greplace.vim'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'tpope/vim-abolish'
-Bundle 'saltstack/salt-vim'
-Bundle 'Glench/Vim-Jinja2-Syntax'
+"Plug 'kien/ctrlp.vim'
+Plug 'tpope/vim-rails'
+Plug 'scrooloose/nerdtree'
+"Plug 'scrooloose/nerdcommenter'
+Plug 'tpope/vim-surround'
+Plug 'kana/vim-textobj-user'
+Plug 'nelstrom/vim-textobj-rubyblock'
+Plug 'vim-scripts/sessionman.vim'
+Plug 'vim-scripts/CmdlineComplete'
+Plug 'mileszs/ack.vim'
+"Plug 'AutoTag'
+"Plug 'sjl/gundo.vim'
+Plug 'nelstrom/vim-markdown-preview'
+Plug 'plasticboy/vim-markdown'
+Plug 'vim-scripts/greplace.vim'
+Plug 'kchmck/vim-coffee-script'
+Plug 'tpope/vim-abolish'
+Plug 'saltstack/salt-vim'
+Plug 'Glench/Vim-Jinja2-Syntax'
 
-Bundle 'junegunn/fzf'
-Bundle 'junegunn/fzf.vim'
-Bundle 'pbogut/fzf-mru.vim'
-Bundle 'jremmen/vim-ripgrep'
+Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
+Plug 'pbogut/fzf-mru.vim'
+Plug 'jremmen/vim-ripgrep'
 
-Bundle 'mbbill/undotree'
+Plug 'mbbill/undotree'
 
-Bundle 'vim-airline/vim-airline'
-Bundle 'vim-airline/vim-airline-themes'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
-"Bundle 'phanviet/vim-monokai-pro'
-Bundle 'drewtempelmeyer/palenight.vim'
+"Plug 'phanviet/vim-monokai-pro'
+Plug 'drewtempelmeyer/palenight.vim'
 
-Bundle 'easymotion/vim-easymotion'
+Plug 'easymotion/vim-easymotion'
 
-Bundle 'romainl/vim-cool'
-Bundle 'airblade/vim-gitgutter'
-Bundle 'tomtom/tcomment_vim'
+Plug 'romainl/vim-cool'
+Plug 'airblade/vim-gitgutter'
+Plug 'tomtom/tcomment_vim'
 
 
-filetype plugin indent on " required
-
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
+call plug#end()
