@@ -337,6 +337,14 @@ let g:EasyMotion_smartcase = 1
 
 
 
+" vim-cool
+" --------
+
+" Show number of matches when searching
+let g:CoolTotalMatches = 1
+
+
+
 " ---------------------------------------------------------------------------
 " GUI Options
 " ---------------------------------------------------------------------------
