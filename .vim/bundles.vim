@@ -45,7 +45,6 @@ Bundle 'pbogut/fzf-mru.vim'
 Bundle 'jremmen/vim-ripgrep'
 
 Bundle 'mbbill/undotree'
-Bundle 'tpope/vim-commentary'
 
 Bundle 'vim-airline/vim-airline'
 Bundle 'vim-airline/vim-airline-themes'
@@ -57,6 +56,7 @@ Bundle 'easymotion/vim-easymotion'
 
 Bundle 'romainl/vim-cool'
 Bundle 'airblade/vim-gitgutter'
+Bundle 'tomtom/tcomment_vim'
 
 
 filetype plugin indent on " required
