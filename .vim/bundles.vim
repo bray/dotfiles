@@ -29,6 +29,7 @@ Plug 'romainl/vim-cool' " Disables search highlighting when done searching
 Plug 'airblade/vim-gitgutter' " Show git diff markers next to line numbers
 Plug 'tpope/vim-endwise' " Auto-add end after def, if, etc.
 Plug 'tomtom/tcomment_vim' " Easily (un-)comment lines
+Plug 'kana/vim-arpeggio' " Better jk -> <Esc>
 
 
 call plug#end()

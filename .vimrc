@@ -48,14 +48,6 @@ let mapleader=","      " Change leader from \ to ,
 " Reveal in Finder - opens finder to folder of the file that is currently open
 command! Rif execute '!open %:p:h'
 
-" Get out of insert mode much more easily
-inoremap jk <Esc>
-inoremap kj <Esc>
-inoremap JK <Esc>
-inoremap KJ <Esc>
-vnoremap ii <Esc>
-vnoremap II <Esc>
-
 " Scroll up and down a little faster
 nnoremap <C-e> 3<C-e>
 nnoremap <C-y> 3<C-y>
@@ -360,6 +352,17 @@ xmap ah <Plug>(GitGutterTextObjectOuterVisual)
 
 " Show number of matches when searching
 let g:CoolTotalMatches = 1
+
+
+
+" vim-arpeggio
+" ------------
+
+call arpeggio#load()
+Arpeggioimap jk <Esc>
+Arpeggiocmap jk 
+Arpeggioimap JK <Esc>
+Arpeggiocmap JK 
 
 
 
