@@ -16,7 +16,7 @@ export TERM=xterm-256color
 #export SSL_CERT_FILE=/usr/local/etc/openssl/cert.pem
 
 
-plugins=(git history-substring-search osx zsh-autosuggestions)
+plugins=(git history-substring-search osx zsh-autosuggestions zsh-git-fzf)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -86,6 +86,18 @@ export ZSH_AUTOSUGGEST_MANUAL_REBIND='yes'
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+
 # Enable autocomplete for the `aws` commands
 autoload bashcompinit && bashcompinit
 complete -C '/usr/local/bin/aws_completer' aws
+
+
+##### git-fzf Plugin Config #####
+
+git-fzf-checkout-bindkey() { echo; git-fzf checkout; zle reset-prompt; }
+zle -N git-fzf-checkout-bindkey
+bindkey '^o' git-fzf-checkout-bindkey
+
+git-fzf-log-bindkey() { git-fzf log; }
+zle -N git-fzf-log-bindkey
+bindkey '^l' git-fzf-log-bindkey
