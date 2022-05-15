@@ -291,7 +291,6 @@ let g:airline_powerline_fonts = 1
 let g:airline_theme = 'dark' " default is 'dark'
 
 
-
 " vim-easymotion
 " --------------
 
@@ -322,7 +321,6 @@ let g:EasyMotion_smartcase = 1
 " map  N <Plug>(easymotion-prev)
 
 
-
 " vim-gitgutter
 " -------------
 
@@ -340,13 +338,11 @@ xmap ih <Plug>(GitGutterTextObjectInnerVisual)
 xmap ah <Plug>(GitGutterTextObjectOuterVisual)
 
 
-
 " vim-cool
 " --------
 
 " Show number of matches when searching
 let g:CoolTotalMatches = 1
-
 
 
 " vim-arpeggio
@@ -364,13 +360,11 @@ Arpeggiocmap JK 
 " GUI Options
 " ---------------------------------------------------------------------------
 
-
 if has("gui_running")
   set guifont=Monaco\ for\ Powerline:h15  " Set font
   set guioptions-=T                       " Remove toolbar
   set macmeta                             " Set Alt as the Meta key (e.g. for cmdmode movement)
 end
-
 
 colorscheme palenight
 let g:palenight_terminal_italics=1
