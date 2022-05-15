@@ -229,12 +229,6 @@ let g:UltiSnipsDontReverseSearchPath="1"
 let g:UltiSnipsEditSplit="vertical"
 
 
-" AutoTag
-" -------
-
-let g:autotagVerbosityLevel=40 " ERROR instead of the default WARNING
-
-
 " Undotree
 " --------
 
