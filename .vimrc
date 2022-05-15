@@ -196,7 +196,7 @@ map <leader>k :cp<cr>
 " Plugin Config
 " ---------------------------------------------------------------------------
 
-" Enable Vundle
+" Enable vim-plug
 source ~/.vim/bundles.vim
 
 
