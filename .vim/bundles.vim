@@ -15,7 +15,6 @@ Plug 'kana/vim-textobj-user' " Required by vim-textobj-rubyblock
 Plug 'nelstrom/vim-textobj-rubyblock' " Custom text object for selecting Ruby blocks
 Plug 'vim-scripts/CmdlineComplete' " Complete command-line (: / etc.) via Ctrl-P or Ctrl-N
 Plug 'kchmck/vim-coffee-script' " Syntax, etc. for CoffeeScript
-
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } " Awesome fuzzy search
 Plug 'junegunn/fzf.vim' " Bundle of fzf scripts
 Plug 'pbogut/fzf-mru.vim' " MRU for FZF
