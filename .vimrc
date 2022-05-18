@@ -338,12 +338,6 @@ xmap ih <Plug>(GitGutterTextObjectInnerVisual)
 xmap ah <Plug>(GitGutterTextObjectOuterVisual)
 
 
-" vim-cool
-" --------
-
-" Show number of matches when searching
-let g:CoolTotalMatches = 1
-
 
 " vim-arpeggio
 " ------------
