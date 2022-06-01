@@ -109,7 +109,6 @@ set expandtab      " Expand tab character to spaces
 set softtabstop=2  " Indent by 2 spaces when pressing <TAB>
 set shiftwidth=2   " Indent by 2 spaces when using >>, <<, == etc.
 set autoindent     " Keep indentation from previous line
-set listchars=eol:$,tab:>-,trail:-,nbsp:%  " Show more hidden chars when 'list' is set
 
 
 
