@@ -60,8 +60,8 @@ nmap gV `[v`]
 
 " Restore the line and window positions when re-opening a buffer
 " (instead of only the line position)
-au BufLeave * let b:winview = winsaveview()
-au BufEnter * if(exists('b:winview')) | call winrestview(b:winview) | endif
+autocmd BufLeave * let b:winview = winsaveview()
+autocmd BufEnter * if(exists('b:winview')) | call winrestview(b:winview) | endif
 
 " Disable accidentally typing K, which I'll never use
 nnoremap K ""
@@ -363,4 +363,4 @@ if (has("termguicolors"))
 endif
 
 " Set the style for the highlighted current line
-hi CursorLine term=bold cterm=bold guibg=Grey15
+highlight CursorLine term=bold cterm=bold guibg=Grey15
