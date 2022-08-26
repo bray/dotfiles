@@ -186,9 +186,9 @@ cnoremap <C-j> <Down>
 " Quickfix Mode
 " ---------------------------------------------------------------------------
 
-map <leader>j :cn<cr>
+nnoremap <leader>j :cn<cr>
 "map <leader>m :cn<cr>
-map <leader>k :cp<cr>
+nnoremap <leader>k :cp<cr>
 
 
 
@@ -243,7 +243,8 @@ endif
 " ---
 
 " Shortcut to :FZF
-map <leader>f :Files<cr>
+nnoremap <leader>f :Files<cr>
+nnoremap <silent> <leader>h :History<cr>
 
 
 " FZF.vim
@@ -264,7 +265,7 @@ imap <C-x><C-k> <plug>(fzf-complete-word)
 " FZF-MRU
 " -------
 
-map <leader>m :FZFMru<cr>
+nnoremap <leader>m :FZFMru<cr>
 
 
 " ripgrep (rg)
