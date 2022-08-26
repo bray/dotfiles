@@ -366,3 +366,14 @@ endif
 " Set the style for the highlighted current line
 highlight CursorLine term=bold cterm=bold guibg=Grey15
 highlight QuickFixLine ctermbg=256 guibg=#334659
+
+
+
+" ---------------------------------------------------------------------------
+" Terminal Options
+" ---------------------------------------------------------------------------
+
+if !has("gui_running")
+  let &t_SI = "\e[5 q"  " Set the cursor to a blinking bar when in Insert mode (like it already does in GUI)
+  let &t_EI = "\e[2 q"  " Set the cursor to a block otherwise (like it already does in GUI)
+end
