@@ -364,3 +364,4 @@ endif
 
 " Set the style for the highlighted current line
 highlight CursorLine term=bold cterm=bold guibg=Grey15
+highlight QuickFixLine ctermbg=256 guibg=#334659
