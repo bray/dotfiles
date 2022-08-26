@@ -350,9 +350,10 @@ Arpeggiocmap JK 
 " ---------------------------------------------------------------------------
 
 if has("gui_running")
-  set guifont=Monaco\ for\ Powerline:h15  " Set font
-  set guioptions-=T                       " Remove toolbar
-  set macmeta                             " Set Alt as the Meta key (e.g. for cmdmode movement)
+  set guifont=Monaco\ for\ Powerline:h15                        " Set font
+  set guioptions-=T                                             " Remove toolbar
+  set macmeta                                                   " Set Alt as the Meta key (e.g. for cmdmode movement)
+  set guicursor+=i-ci:ver25-blinkwait250-blinkon400-blinkoff250 " Insert mode defaults except start blinking quicker
 end
 
 colorscheme palenight
