@@ -322,6 +322,14 @@ let g:EasyMotion_smartcase = 1
 set updatetime=100
 set signcolumn=yes
 
+" This fixes ,h from taking a few seconds
+" Because gutter has default mappings like ,hs etc., so when you type <leader>h
+" vim waits to see if you'll continue with the rest of another mapping, if
+" not, uses <leader>h
+" So I'll need to remap those if I want to use them
+" :verbose map <leader>h
+let g:gitgutter_map_keys = 0
+
 " Navigate hunks (better than the default of ]c and [c)
 nmap ]h <Plug>(GitGutterNextHunk)
 nmap [h <Plug>(GitGutterPrevHunk)
