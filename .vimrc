@@ -244,7 +244,7 @@ endif
 
 " Shortcut to :FZF
 nnoremap <leader>f :Files<cr>
-nnoremap <silent> <leader>h :History<cr>
+nnoremap <leader>h :History<cr>
 
 
 " FZF.vim
