@@ -31,7 +31,7 @@ bindkey "$terminfo[kcud1]" history-substring-search-down
 unsetopt correct_all
 setopt correct
 
-alias l='exa -la --group --header'
+alias l='exa -la --group --header --group-directories-first'
 alias lL='ls -lahL'
 alias rm='rm -i'
 alias top='top -o rsize'
