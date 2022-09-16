@@ -9,7 +9,7 @@ if has("gui_running")
   Plug 'SirVer/ultisnips'
 end
 
-Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/nerdtree' " File system explorer
 Plug 'tpope/vim-surround' " Delete/change/add parentheses/quotes, etc.
 Plug 'kana/vim-textobj-user' " Required by vim-textobj-rubyblock
 Plug 'nelstrom/vim-textobj-rubyblock' " Custom text object for selecting Ruby blocks
