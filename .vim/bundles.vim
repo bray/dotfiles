@@ -5,10 +5,7 @@
 call plug#begin('~/.vim/plugged')
 
 
-if has("gui_running")
-  Plug 'SirVer/ultisnips'
-end
-
+Plug 'SirVer/ultisnips' " Snippets engine
 Plug 'scrooloose/nerdtree' " File system explorer
 Plug 'tpope/vim-surround' " Delete/change/add parentheses/quotes, etc.
 Plug 'kana/vim-textobj-user' " Required by vim-textobj-rubyblock
