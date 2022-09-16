@@ -6,6 +6,7 @@ call plug#begin('~/.vim/plugged')
 
 
 Plug 'SirVer/ultisnips' " Snippets engine
+Plug 'honza/vim-snippets' " A bunch of snippets
 Plug 'scrooloose/nerdtree' " File system explorer
 Plug 'tpope/vim-surround' " Delete/change/add parentheses/quotes, etc.
 Plug 'kana/vim-textobj-user' " Required by vim-textobj-rubyblock
