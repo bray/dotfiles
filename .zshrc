@@ -110,3 +110,4 @@ bindkey '^l' git-fzf-log-bindkey
 . $HOME/.asdf/asdf.sh
 fpath=(${ASDF_DIR}/completions $fpath)
 autoload -Uz compinit && compinit
+source "${XDG_CONFIG_HOME:-$HOME/.config}/asdf-direnv/zshrc"
