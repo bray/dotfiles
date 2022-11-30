@@ -54,6 +54,7 @@ alias grh='git rh'
 alias ga='git add .'
 alias gpl='git pull'
 alias gmf='git mf'
+alias gp='git push'
 
 #alias bundle_local='bundle install --gemfile Gemfile.local'
 #alias server_local='BUNDLE_GEMFILE=Gemfile.local bundle exec rails s'
