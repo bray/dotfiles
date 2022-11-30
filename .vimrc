@@ -204,10 +204,8 @@ source ~/.vim/bundles.vim
 " Matchit
 " -------
 
-" Enable % to work for def/end, if/else/end, etc.
-if filereadable('/usr/share/vim/vim80/macros/matchit.vim')
-  source /usr/share/vim/vim80/macros/matchit.vim
-endif
+" Built-in plugin: enable % to work for def/end, if/else/end, etc.
+runtime macros/matchit.vim
 
 
 " NERDTree
