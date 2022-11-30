@@ -105,3 +105,8 @@ bindkey '^o' git-fzf-checkout-bindkey
 git-fzf-log-bindkey() { git-fzf log; }
 zle -N git-fzf-log-bindkey
 bindkey '^l' git-fzf-log-bindkey
+
+# asdf Config
+. $HOME/.asdf/asdf.sh
+fpath=(${ASDF_DIR}/completions $fpath)
+autoload -Uz compinit && compinit
