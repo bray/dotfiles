@@ -36,8 +36,8 @@ bind - split-window -h # vertically
 bind _ split-window -v # horizontally
 
 # Reorder windows
-bind -n S-Left swap-window -t -1
-bind -n S-Right swap-window -t +1
+bind h swap-window -t -1 \; previous-window
+bind l swap-window -t +1 \; next-window
 
 # Move between panes
 # Use Alt here instead of Ctrl to avoid conflicts with vim,
