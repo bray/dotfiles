@@ -146,7 +146,7 @@ set sessionoptions-=options
 " ---------------------------------------------------------------------------
 
 let @c = '[m]MI#' " Comment out the current method
-let @y = 'yypki#j'  " Comment out line and copy
+let @y = 'gccyypgcc'  " Comment out line and copy (using gcc from the tcomment_vim plugin)
 let @u = 'YpVr-'      " Underline heading
 let @h = 'f:xf ce:' " Convert old Ruby hash (:a => 'b') to new Ruby hash (a: 'b')
 let @b = "r:f'xbh"    " Convert string into symbol
