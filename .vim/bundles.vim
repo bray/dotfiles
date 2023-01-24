@@ -27,6 +27,7 @@ Plug 'tpope/vim-endwise' " Auto-add end after def, if, etc.
 Plug 'tomtom/tcomment_vim' " Easily (un-)comment lines
 Plug 'kana/vim-arpeggio' " Better jk -> <Esc>
 Plug 'ludovicchabant/vim-gutentags' " Automatically manage tags
+Plug 'jeffkreeftmeijer/vim-numbertoggle' " Tiny plugin for better line numbers
 
 
 call plug#end()
