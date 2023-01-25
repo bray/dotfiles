@@ -43,6 +43,7 @@ set noshowmode         " Don't show -- INSERT -- in bottom line (vim-airline sho
 set pastetoggle=<C-t>  " CTRL-t toggles paste mode
 set ttimeoutlen=0      " Make escape go back to normal mode instantly
 set shortmess-=S       " Show # of matches (in bottom right corner) when searching
+set hidden             " Allow switching buffers without first writing changes
 
 
 let mapleader=","      " Change leader from \ to ,
