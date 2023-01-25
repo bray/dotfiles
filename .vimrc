@@ -248,6 +248,8 @@ endif
 " Shortcut to :FZF
 nnoremap <leader>f :Files<cr>
 nnoremap <leader>h :History<cr>
+nnoremap <leader>H :History:<cr>
+nnoremap <leader>b :Buffers<cr>
 
 
 " FZF.vim
