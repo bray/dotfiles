@@ -270,6 +270,11 @@ imap <C-x><C-k> <plug>(fzf-complete-word)
 " FZF-MRU
 " -------
 
+
+" Set window position & size, add preview window
+command! -bang -nargs=? FZFMru call fzf_mru#actions#mru(<q-args>, {'window': {'width': 0.9, 'height': 0.6}, 'options': ['--preview', $FZF_CTRL_T_PREVIEW_OPTS]}, <bang>0)
+
+" Mapping
 nnoremap <leader>m :FZFMru<cr>
 
 
