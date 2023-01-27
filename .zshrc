@@ -71,10 +71,6 @@ alias rs='ruby script/spec -O spec/spec.opts'
 alias sync_evernote='/code/geeknote/gnsync.py --path ~/Documents/EvernoteGeeknote'
 alias evernote_sync='sync_evernote'
 
-
-# Much more config, specific to my setup
-if [[ -e ~/.zshrc.local ]]; then source ~/.zshrc.local; fi
-
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 export PATH="/usr/local/opt/mysql@5.6/bin:$PATH"
@@ -105,6 +101,22 @@ bindkey '^o' git-fzf-checkout-bindkey
 git-fzf-log-bindkey() { git-fzf log; }
 zle -N git-fzf-log-bindkey
 bindkey '^l' git-fzf-log-bindkey
+
+
+##### Keep all below this at the bottom #####
+
+# More config, specific to my setup
+if [[ -e ~/.zshrc.local ]]; then source ~/.zshrc.local; fi
+
+# Include any additional config in ~/.zsh.d/
+include_dir=~/.zsh.d
+if [[ -d $include_dir ]]; then
+  for file in ${include_dir}/**/*.zsh; do
+    if [[ -e "$file" ]]; then
+      source "$file"
+    fi
+  done
+fi
 
 # asdf Config
 . $HOME/.asdf/asdf.sh
