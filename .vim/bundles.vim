@@ -5,8 +5,11 @@
 call plug#begin('~/.vim/plugged')
 
 
-Plug 'SirVer/ultisnips' " Snippets engine
-Plug 'honza/vim-snippets' " A bunch of snippets
+if has('python3')
+  Plug 'SirVer/ultisnips' " Snippets engine
+  Plug 'honza/vim-snippets' " A bunch of snippets
+endif
+
 Plug 'scrooloose/nerdtree', {'tag': '5.0.0'} " File system explorer
 Plug 'tpope/vim-surround' " Delete/change/add parentheses/quotes, etc.
 Plug 'kana/vim-textobj-user' " Required by vim-textobj-rubyblock
