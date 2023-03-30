@@ -31,6 +31,7 @@ Plug 'tomtom/tcomment_vim' " Easily (un-)comment lines
 Plug 'kana/vim-arpeggio' " Better jk -> <Esc>
 Plug 'ludovicchabant/vim-gutentags' " Automatically manage tags
 Plug 'jeffkreeftmeijer/vim-numbertoggle' " Tiny plugin for better line numbers
+Plug 'tpope/vim-fugitive' " Various :Git commands
 
 
 call plug#end()
