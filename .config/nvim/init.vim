@@ -10,9 +10,6 @@ let &packpath = &runtimepath
 "
 " ---------------------------------------------------------------------------
 
-syntax on
-filetype plugin indent on
-
 let g:python3_host_prog = '~/.asdf/shims/python3'
 
 set rtp+=/usr/local/opt/fzf
