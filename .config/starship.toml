@@ -24,7 +24,7 @@ truncation_length = 0
 
 [git_branch]
 style = "yellow"
-format = '[\($branch(:$remote_branch)]($style)\) '
+format = '[\($branch(:$remote_branch)\)]($style) '
 
 [git_metrics]
 disabled = false
