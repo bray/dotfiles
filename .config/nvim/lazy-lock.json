@@ -1,3 +1,4 @@
 {
-  "lazy.nvim": { "branch": "main", "commit": "5f13f69851d2b244891d77590db9e3370197facc" }
+  "lazy.nvim": { "branch": "main", "commit": "5f13f69851d2b244891d77590db9e3370197facc" },
+  "palenight.vim": { "branch": "master", "commit": "847fcf5b1de2a1f9c28fdcc369d009996c6bf633" }
 }
