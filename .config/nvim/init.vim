@@ -191,8 +191,10 @@ nnoremap <leader>k :cp<cr>
 " Plugin Config
 " ---------------------------------------------------------------------------
 
-" Enable vim-plug
-source ~/.vim/bundles.vim
+lua << EOF
+  -- Load Lazy.nvim plugins
+  require 'plugins'
+EOF
 
 
 " Matchit
