@@ -39,6 +39,7 @@ require('lazy').setup({
       require("which-key").setup()
     end,
   },
+  { 'numToStr/Comment.nvim', opts = {} },      -- gc to comment/uncomment lines/blocks
 })
 
 
