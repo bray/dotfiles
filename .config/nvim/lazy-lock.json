@@ -1,6 +1,7 @@
 {
   "lazy.nvim": { "branch": "main", "commit": "903f0fe542fc35b74f3c09494f9c175346dfa76d" },
   "palenight.vim": { "branch": "master", "commit": "847fcf5b1de2a1f9c28fdcc369d009996c6bf633" },
+  "tmuxline.vim": { "branch": "master", "commit": "4119c553923212cc67f4e135e6f946dc3ec0a4d6" },
   "vim-airline": { "branch": "master", "commit": "5891a3f7bedb5d0b23a546189a607836913814bb" },
   "vim-airline-themes": { "branch": "master", "commit": "dd81554c2231e438f6d0e8056ea38fd0e80ac02a" },
   "vim-arpeggio": { "branch": "master", "commit": "01c8fc1a72ef58e490ee0490c65ee313b1b6e843" },

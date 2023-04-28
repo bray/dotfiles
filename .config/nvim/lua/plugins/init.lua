@@ -2,6 +2,7 @@
 --    https://github.com/folke/lazy.nvim
 --    `:help lazy.nvim.txt` for more info
 local lazypath = vim.fn.stdpath 'data' .. '/lazy/lazy.nvim'
+
 if not vim.loop.fs_stat(lazypath) then
   vim.fn.system {
     'git',
@@ -20,6 +21,7 @@ require('lazy').setup({
   'kana/vim-arpeggio',                -- Better jk -> <Esc>
   'vim-airline/vim-airline',          -- Statusline config
   'vim-airline/vim-airline-themes',   -- Statusline themes
+  'edkolev/tmuxline.vim',             -- Needed only to update tmux statusline
   'tpope/vim-fugitive',               -- Various :Git commands
 })
 
