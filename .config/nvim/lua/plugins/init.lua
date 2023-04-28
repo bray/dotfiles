@@ -23,6 +23,7 @@ require('lazy').setup({
   'vim-airline/vim-airline-themes',   -- Statusline themes
   'edkolev/tmuxline.vim',             -- Needed only to update tmux statusline
   'tpope/vim-fugitive',               -- Various :Git commands
+  'lewis6991/gitsigns.nvim',          -- Git line statuses in the sign column and more integration
 })
 
 
