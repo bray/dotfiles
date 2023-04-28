@@ -16,10 +16,3 @@ vim.g.airline_symbols.maxlinenr = '☰ '
 vim.g.airline_symbols.dirty='⚡'
 
 vim.g.airline_theme = 'cobalt2'
-
-
--------------------
--- gitsigns.nvim --
--------------------
-
-require('gitsigns').setup()

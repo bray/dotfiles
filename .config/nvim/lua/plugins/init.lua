@@ -25,12 +25,12 @@ require('lazy').setup({
       vim.cmd.colorscheme 'palenight'
     end,
   },
-  'kana/vim-arpeggio',                -- Better jk -> <Esc>
-  'vim-airline/vim-airline',          -- Statusline config
-  'vim-airline/vim-airline-themes',   -- Statusline themes
-  'edkolev/tmuxline.vim',             -- Needed only to update tmux statusline
-  'tpope/vim-fugitive',               -- Various :Git commands
-  'lewis6991/gitsigns.nvim',          -- Git line statuses in the sign column and more integration
+  'kana/vim-arpeggio',                         -- Better jk -> <Esc>
+  'vim-airline/vim-airline',                   -- Statusline config
+  'vim-airline/vim-airline-themes',            -- Statusline themes
+  'edkolev/tmuxline.vim',                      -- Needed only to update tmux statusline
+  'tpope/vim-fugitive',                        -- Various :Git commands
+  { 'lewis6991/gitsigns.nvim', opts = {} },    -- Git diff markers in the sign column and other integration
 })
 
 
