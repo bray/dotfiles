@@ -367,9 +367,6 @@ if has("gui_running")
   set guicursor+=i-ci:ver25-blinkwait250-blinkon400-blinkoff250 " Insert mode defaults except start blinking quicker
 end
 
-colorscheme palenight
-let g:palenight_terminal_italics=1
-
 if (has("termguicolors"))
   set termguicolors
 endif

@@ -17,7 +17,14 @@ vim.opt.rtp:prepend(lazypath)
 
 
 require('lazy').setup({
-  'drewtempelmeyer/palenight.vim',    -- Color theme
+  {
+    'drewtempelmeyer/palenight.vim',  -- Color theme
+    lazy = false,
+    priority = 1000,
+    config = function()
+      vim.cmd.colorscheme 'palenight'
+    end,
+  },
   'kana/vim-arpeggio',                -- Better jk -> <Esc>
   'vim-airline/vim-airline',          -- Statusline config
   'vim-airline/vim-airline-themes',   -- Statusline themes
