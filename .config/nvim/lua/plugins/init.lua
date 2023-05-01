@@ -32,11 +32,11 @@ require('lazy').setup({
   'tpope/vim-fugitive',                        -- Various :Git commands
   { 'lewis6991/gitsigns.nvim', opts = {} },    -- Git diff markers in the sign column and other integration
   {
-    "folke/which-key.nvim",                    -- Show popup of keybindings when typing
+    'folke/which-key.nvim',                    -- Show popup of keybindings when typing
     config = function()
       vim.o.timeout = true
       vim.o.timeoutlen = 300
-      require("which-key").setup()
+      require('which-key').setup()
     end,
   },
   { 'numToStr/Comment.nvim', opts = {} },      -- gc to comment/uncomment lines/blocks
