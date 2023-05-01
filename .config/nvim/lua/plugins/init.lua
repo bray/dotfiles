@@ -40,6 +40,7 @@ require('lazy').setup({
     end,
   },
   { 'numToStr/Comment.nvim', opts = {} },      -- gc to comment/uncomment lines/blocks
+  'jeffkreeftmeijer/vim-numbertoggle',         -- Tiny plugin for better line numbers
 })
 
 
