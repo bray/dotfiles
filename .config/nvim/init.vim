@@ -357,32 +357,17 @@ Arpeggiocmap JK 
 
 
 " ---------------------------------------------------------------------------
-" GUI Options
+" Terminal UI Options
 " ---------------------------------------------------------------------------
 
-if has("gui_running")
-  set guifont=Monaco\ for\ Powerline:h15                        " Set font
-  set guioptions-=T                                             " Remove toolbar
-  set macmeta                                                   " Set Alt as the Meta key (e.g. for cmdmode movement)
-  set guicursor+=i-ci:ver25-blinkwait250-blinkon400-blinkoff250 " Insert mode defaults except start blinking quicker
-end
+" Set cursor for Neovim
+" Note: the blink intervals and some other settings here (e.g. vert width) are NOT configurable in any terminal, only GUIs :(
+set guicursor+=i-ci:ver25-blinkwait250-blinkon400-blinkoff250
 
-if (has("termguicolors"))
+if has("termguicolors")
   set termguicolors
 endif
 
 " Set the style for the highlighted current line
 highlight CursorLine term=bold cterm=bold guibg=Grey15
 highlight QuickFixLine ctermbg=256 guibg=#334659
-
-
-
-" ---------------------------------------------------------------------------
-" Terminal Options
-" ---------------------------------------------------------------------------
-
-if !has("gui_running")
-  let &t_SI = "\e[5 q"  " Set the cursor to a blinking bar when in Insert mode (like it already does in GUI)
-  let &t_SR = "\e[3 q"  " Set the cursor to a blinking underscore when in Replace mode (like it already does in GUI)
-  let &t_EI = "\e[2 q"  " Set the cursor to a block otherwise (like it already does in GUI)
-end
