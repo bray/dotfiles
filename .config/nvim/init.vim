@@ -12,8 +12,6 @@ let &packpath = &runtimepath
 
 let g:python3_host_prog = '~/.asdf/shims/python3'
 
-set rtp+=/usr/local/opt/fzf
-
 set number             " Show line numbers
 set fillchars+=vert:\  " Remove the \| in vertical splits
 set history=2000       " Remember 2000 lines of history
@@ -232,42 +230,6 @@ nnoremap <F5> :UndotreeToggle<cr>
 if !exists('g:undotree_WindowLayout')
   let g:undotree_WindowLayout = 2
 endif
-
-
-" FZF
-" ---
-
-" Shortcut to :FZF
-nnoremap <leader>f :Files<cr>
-nnoremap <leader>h :History<cr>
-nnoremap <leader>H :History:<cr>
-nnoremap <leader>b :Buffers<cr>
-
-
-" FZF.vim
-" -------
-
-" Override the default Files command
-" to use preview (with my options)
-command! -bang -nargs=? -complete=dir Files
-    \ call fzf#vim#files(<q-args>, {'options': ['--preview', $FZF_CTRL_T_PREVIEW_OPTS]}, <bang>0)
-
-" Override vim's C-xC-l line completion so it uses FZF
-imap <C-x><C-l> <plug>(fzf-complete-line)
-
-" Complete (dictionary) word
-imap <C-x><C-k> <plug>(fzf-complete-word)
-
-
-" FZF-MRU
-" -------
-
-
-" Set window position & size, add preview window
-command! -bang -nargs=? FZFMru call fzf_mru#actions#mru(<q-args>, {'window': {'width': 0.9, 'height': 0.6}, 'options': ['--preview', $FZF_CTRL_T_PREVIEW_OPTS]}, <bang>0)
-
-" Mapping
-nnoremap <leader>m :FZFMru<cr>
 
 
 " ripgrep (rg)
