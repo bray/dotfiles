@@ -280,15 +280,6 @@ nnoremap \ :Rg<SPACE>
 nnoremap K :Rg "\\b<C-R><C-W>\\b"<CR>
 
 
-" vim-airline
-" -----------
-
-let g:airline_powerline_fonts = 1
-"let g:airline_theme = 'simple' " default is 'dark'
-let g:airline_theme = 'dark' " default is 'dark'
-let g:airline_section_y = ''
-
-
 " vim-easymotion
 " --------------
 
