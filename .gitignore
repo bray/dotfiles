@@ -11,12 +11,11 @@ undo
 #.ruby-version
 config/initializers/sql_logging.rb
 jmeter*
-
 bray.xcuserdatad/
 .pryrc
 .pry_history
 public/assets/
-
 Gemfile.local*
 .vim/swp/*
 tags
+.config/tmux/plugins/
