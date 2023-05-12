@@ -41,6 +41,22 @@ require('lazy').setup({
   },
   { 'numToStr/Comment.nvim', opts = {} },      -- gc to comment/uncomment lines/blocks
   'jeffkreeftmeijer/vim-numbertoggle',         -- Tiny plugin for better line numbers
+  {
+    'nvim-telescope/telescope.nvim', tag = '0.1.1',
+    dependencies = { 'nvim-lua/plenary.nvim' },
+    config = function()
+      local builtin = require('telescope.builtin')
+      vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
+      vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
+      vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
+      vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
+      -- TODO: add whatever else is useful
+    end,
+  },
+  {
+    'nvim-telescope/telescope-fzf-native.nvim',
+    build = 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build'
+  },
   { 'jremmen/vim-ripgrep' },
 })
 

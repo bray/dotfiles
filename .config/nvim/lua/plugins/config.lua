@@ -16,3 +16,11 @@ vim.g.airline_symbols.maxlinenr = '☰ '
 vim.g.airline_symbols.dirty='⚡'
 
 vim.g.airline_theme = 'cobalt2'
+
+
+-----------------
+--  telescope  --
+-----------------
+
+require('telescope').setup()
+require('telescope').load_extension('fzf')
