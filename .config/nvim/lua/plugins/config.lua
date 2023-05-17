@@ -33,8 +33,8 @@ require('telescope').load_extension('fzf')
 local wk = require("which-key")
 wk.register({
   ["<leader>"] = {
-    name = "Telescope",
     f = {
+      name = "Telescope",
       f = "Files",
       g = "Live Grep",
       b = "Buffers",
