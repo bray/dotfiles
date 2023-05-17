@@ -1,6 +1,6 @@
------------------
--- vim-airline --
------------------
+-------------------
+--  vim-airline  --
+-------------------
 
 vim.g['airline#extensions#tmuxline#enabled'] = 0
 
@@ -24,3 +24,22 @@ vim.g.airline_theme = 'cobalt2'
 
 require('telescope').setup()
 require('telescope').load_extension('fzf')
+
+
+-----------------
+--  which-key  --
+-----------------
+
+local wk = require("which-key")
+wk.register({
+  ["<leader>"] = {
+    name = "Telescope",
+    f = {
+      f = "Files",
+      g = "Live Grep",
+      b = "Buffers",
+      h = "Help Tags",
+      t = "Telescope (builtin pickers)",
+    },
+  },
+})
