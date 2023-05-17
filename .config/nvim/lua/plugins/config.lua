@@ -43,3 +43,11 @@ wk.register({
     },
   },
 })
+
+
+--------------------
+--  Comment.nvim  --
+--------------------
+
+local ft = require('Comment.ft')
+ft.set('text', '#%s')
