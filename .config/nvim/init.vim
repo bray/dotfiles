@@ -183,6 +183,9 @@ cnoremap <C-j> <Down>
 nnoremap <silent><C-n> :cn<cr>
 nnoremap <silent><C-p> :cp<cr>
 
+" Close the Quickfix window
+nnoremap <silent><leader>q :cclose<cr>
+
 
 
 " ---------------------------------------------------------------------------
