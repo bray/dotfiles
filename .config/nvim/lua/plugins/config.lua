@@ -34,6 +34,36 @@ vim.keymap.set('n', '<leader>ft', builtin.builtin, {})
 -- TODO: add whatever else is useful
 
 
+------------------
+--  bufferline  --
+------------------
+
+require("bufferline").setup {
+  options = {
+    mode = "tabs"
+  }
+}
+
+local opts = { noremap = true }
+
+-- New tab
+vim.keymap.set('n', '<A-t>', '<cmd>tabnew<cr>', opts)
+
+-- Close tab
+vim.keymap.set('n', '<A-w>', '<C-w>q', opts)
+
+-- Move to previous/next
+vim.keymap.set('n', 'H', 'gT', opts)
+vim.keymap.set('n', 'L', 'gt', opts)
+
+-- Re-order to previous/next
+vim.keymap.set('n', '<leader>H', '<cmd>tabmove -<cr>', opts)
+vim.keymap.set('n', '<leader>L', '<cmd>tabmove +<cr>', opts)
+
+-- Pick a tab by file letter (this maps <C-/>)
+vim.keymap.set('n', '<C-_>', '<cmd>BufferLinePick<cr>', opts)
+
+
 -----------------
 --  which-key  --
 -----------------

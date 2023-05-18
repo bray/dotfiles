@@ -55,6 +55,11 @@ require('lazy').setup({
       vim.g.rg_highlight = true
     end,
   },
+  {
+    'akinsho/bufferline.nvim',                       -- Prettier tabs
+    version = "v4.1.0",
+    dependencies = 'nvim-tree/nvim-web-devicons'
+  },
 })
 
 
