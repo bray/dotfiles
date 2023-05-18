@@ -179,9 +179,9 @@ cnoremap <C-j> <Down>
 " Quickfix Mode
 " ---------------------------------------------------------------------------
 
-nnoremap <leader>j :cn<cr>
-"map <leader>m :cn<cr>
-nnoremap <leader>k :cp<cr>
+" Navigate up and down
+nnoremap <silent><C-n> :cn<cr>
+nnoremap <silent><C-p> :cp<cr>
 
 
 
