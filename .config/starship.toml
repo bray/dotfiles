@@ -20,6 +20,7 @@ format = '[$time]($style) '
 
 [directory]
 truncation_length = 0
+use_logical_path = false
 
 [git_branch]
 style = "yellow"
