@@ -26,12 +26,11 @@ require('telescope').setup()
 require('telescope').load_extension('fzf')
 
 local builtin = require('telescope.builtin')
-vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
-vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
-vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
-vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
-vim.keymap.set('n', '<leader>ft', builtin.builtin, {})
--- TODO: add whatever else is useful
+vim.keymap.set('n', '<leader>f', builtin.find_files, {})
+vim.keymap.set('n', '<leader>tg', builtin.live_grep, {})
+vim.keymap.set('n', '<leader>tb', builtin.buffers, {})
+vim.keymap.set('n', '<leader>th', builtin.help_tags, {})
+vim.keymap.set('n', '<leader>tt', builtin.builtin, {})
 
 
 ------------------
@@ -71,9 +70,9 @@ vim.keymap.set('n', '<C-_>', '<cmd>BufferLinePick<cr>', opts)
 local wk = require("which-key")
 wk.register({
   ["<leader>"] = {
-    f = {
+    f = "Find Files (Telescope)",
+    t = {
       name = "Telescope",
-      f = "Files",
       g = "Live Grep",
       b = "Buffers",
       h = "Help Tags",
