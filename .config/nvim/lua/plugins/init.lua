@@ -17,14 +17,15 @@ vim.opt.rtp:prepend(lazypath)
 
 
 require('lazy').setup({
-  {
-    'drewtempelmeyer/palenight.vim',                 -- Color theme
+  { -- Color theme
+    'drewtempelmeyer/palenight.vim',
     lazy = false,
     priority = 1000,
     config = function()
       vim.cmd.colorscheme 'palenight'
     end,
   },
+
   'kana/vim-arpeggio',                               -- Better jk -> <Esc>
   'vim-airline/vim-airline',                         -- Statusline config
   'vim-airline/vim-airline-themes',                  -- Statusline themes
@@ -32,32 +33,38 @@ require('lazy').setup({
   'tpope/vim-fugitive',                              -- Various :Git commands
   'tpope/vim-rhubarb',                               -- Enables :GBrowse to open files/lines on Github
   { 'lewis6991/gitsigns.nvim', opts = {} },          -- Git diff markers in the sign column and other integration
-  {
-    'folke/which-key.nvim',                          -- Show popup of keybindings when typing
+
+  { -- Show popup of keybindings when typing
+    'folke/which-key.nvim',
     config = function()
       vim.o.timeout = true
       vim.o.timeoutlen = 300
       require('which-key').setup()
     end,
   },
+
   { 'numToStr/Comment.nvim', opts = {} },            -- gc to comment/uncomment lines/blocks
   'jeffkreeftmeijer/vim-numbertoggle',               -- Tiny plugin for better line numbers
-  {
-    'nvim-telescope/telescope.nvim', tag = '0.1.1',  -- Find, Filter, Preview, Pick
+
+  { -- Find, Filter, Preview, Pick
+    'nvim-telescope/telescope.nvim', tag = '0.1.1',
     dependencies = { 'nvim-lua/plenary.nvim' },
   },
-  {
-    'nvim-telescope/telescope-fzf-native.nvim',      -- Enable fzf in Telescope
+
+  { -- Enable fzf in Telescope
+    'nvim-telescope/telescope-fzf-native.nvim',
     build = 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build'
   },
-  {
-    'jremmen/vim-ripgrep',                           -- ripgrep in vim
+
+  { -- ripgrep in vim
+    'jremmen/vim-ripgrep',
     config = function()
       vim.g.rg_highlight = true
     end,
   },
-  {
-    'akinsho/bufferline.nvim',                       -- Prettier tabs
+
+  { -- Prettier tabs
+    'akinsho/bufferline.nvim',
     version = "v4.1.0",
     dependencies = 'nvim-tree/nvim-web-devicons'
   },
