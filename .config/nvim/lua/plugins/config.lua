@@ -37,9 +37,9 @@ vim.keymap.set('n', '<leader>tt', builtin.builtin, {})
 --  bufferline  --
 ------------------
 
-require("bufferline").setup {
+require('bufferline').setup {
   options = {
-    mode = "tabs"
+    mode = 'tabs'
   }
 }
 
@@ -67,16 +67,16 @@ vim.keymap.set('n', '<C-_>', '<cmd>BufferLinePick<cr>', opts)
 --  which-key  --
 -----------------
 
-local wk = require("which-key")
+local wk = require('which-key')
 wk.register({
-  ["<leader>"] = {
-    f = "Find Files (Telescope)",
+  ['<leader>'] = {
+    f = 'Find Files (Telescope)',
     t = {
-      name = "Telescope",
-      g = "Live Grep",
-      b = "Buffers",
-      h = "Help Tags",
-      t = "Telescope (builtin pickers)",
+      name = 'Telescope',
+      g = 'Live Grep',
+      b = 'Buffers',
+      h = 'Help Tags',
+      t = 'Telescope (builtin pickers)',
     },
   },
 })
@@ -95,7 +95,7 @@ ft.set('text', '#%s')
 ------------------
 
 require'nvim-treesitter.configs'.setup {
-  ensure_installed = { "c", "lua", "vim", "vimdoc", "query", "ruby" },
+  ensure_installed = { 'c', 'lua', 'vim', 'vimdoc', 'query', 'ruby' },
   auto_install = true,
   highlight = {
     enable = true

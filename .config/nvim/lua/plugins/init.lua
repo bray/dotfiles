@@ -65,13 +65,13 @@ require('lazy').setup({
 
   { -- Prettier tabs
     'akinsho/bufferline.nvim',
-    version = "v4.1.0",
+    version = 'v4.1.0',
     dependencies = 'nvim-tree/nvim-web-devicons'
   },
 
   { -- Better syntax highlighting
     'nvim-treesitter/nvim-treesitter',
-    build = ":TSUpdate"
+    build = ':TSUpdate'
   },
 })
 
