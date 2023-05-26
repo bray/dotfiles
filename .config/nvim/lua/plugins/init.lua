@@ -17,6 +17,17 @@ vim.opt.rtp:prepend(lazypath)
 
 
 require('lazy').setup({
+  'edkolev/tmuxline.vim',                            -- Needed only to update tmux statusline
+  'jeffkreeftmeijer/vim-numbertoggle',               -- Tiny plugin for better line numbers
+  'kana/vim-arpeggio',                               -- Better jk -> <Esc>
+  'smartpde/telescope-recent-files',                 -- MRU files via Telescope
+  'tpope/vim-fugitive',                              -- Various :Git commands
+  'tpope/vim-rhubarb',                               -- Enables :GBrowse to open files/lines on Github
+  'vim-airline/vim-airline',                         -- Statusline config
+  'vim-airline/vim-airline-themes',                  -- Statusline themes
+  { 'lewis6991/gitsigns.nvim', opts = {} },          -- Git diff markers in the sign column and other integration
+  { 'numToStr/Comment.nvim', opts = {} },            -- gc to comment/uncomment lines/blocks
+
   { -- Color theme
     'drewtempelmeyer/palenight.vim',
     lazy = false,
@@ -25,15 +36,6 @@ require('lazy').setup({
       vim.cmd.colorscheme 'palenight'
     end,
   },
-
-  'kana/vim-arpeggio',                               -- Better jk -> <Esc>
-  'vim-airline/vim-airline',                         -- Statusline config
-  'vim-airline/vim-airline-themes',                  -- Statusline themes
-  'edkolev/tmuxline.vim',                            -- Needed only to update tmux statusline
-  'tpope/vim-fugitive',                              -- Various :Git commands
-  'tpope/vim-rhubarb',                               -- Enables :GBrowse to open files/lines on Github
-  { 'lewis6991/gitsigns.nvim', opts = {} },          -- Git diff markers in the sign column and other integration
-  'smartpde/telescope-recent-files',                 -- MRU files via Telescope
 
   { -- Show popup of keybindings when typing
     'folke/which-key.nvim',
@@ -44,8 +46,6 @@ require('lazy').setup({
     end,
   },
 
-  { 'numToStr/Comment.nvim', opts = {} },            -- gc to comment/uncomment lines/blocks
-  'jeffkreeftmeijer/vim-numbertoggle',               -- Tiny plugin for better line numbers
 
   { -- Find, Filter, Preview, Pick
     'nvim-telescope/telescope.nvim', tag = '0.1.1',
