@@ -33,6 +33,7 @@ require('lazy').setup({
   'tpope/vim-fugitive',                              -- Various :Git commands
   'tpope/vim-rhubarb',                               -- Enables :GBrowse to open files/lines on Github
   { 'lewis6991/gitsigns.nvim', opts = {} },          -- Git diff markers in the sign column and other integration
+  'smartpde/telescope-recent-files',                 -- MRU files via Telescope
 
   { -- Show popup of keybindings when typing
     'folke/which-key.nvim',

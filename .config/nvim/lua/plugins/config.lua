@@ -24,9 +24,11 @@ vim.g.airline_theme = 'cobalt2'
 
 require('telescope').setup()
 require('telescope').load_extension('fzf')
+require('telescope').load_extension('recent_files')
 
 local builtin = require('telescope.builtin')
 vim.keymap.set('n', '<leader>f', builtin.find_files, {})
+vim.keymap.set('n', '<leader>m', '<cmd>lua require("telescope").extensions.recent_files.pick()<cr>')
 vim.keymap.set('n', '<leader>tg', builtin.live_grep, {})
 vim.keymap.set('n', '<leader>tb', builtin.buffers, {})
 vim.keymap.set('n', '<leader>th', builtin.help_tags, {})
@@ -71,6 +73,7 @@ local wk = require('which-key')
 wk.register({
   ['<leader>'] = {
     f = 'Find Files (Telescope)',
+    m = 'MRU Files',
     t = {
       name = 'Telescope',
       g = 'Live Grep',
