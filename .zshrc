@@ -108,8 +108,8 @@ bindkey '^l' git-fzf-log-bindkey
 # More config, specific to my setup
 if [[ -e ~/.zshrc.local ]]; then source ~/.zshrc.local; fi
 
-# Include any additional config in ~/.zsh.d/
-include_dir=~/.zsh.d
+# Include any additional config in ~/.zsh/
+include_dir=~/.zsh
 if [[ -d $include_dir ]]; then
   for file in ${include_dir}/**/*.zsh; do
     if [[ -e "$file" ]]; then
