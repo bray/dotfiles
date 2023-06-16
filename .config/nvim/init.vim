@@ -79,6 +79,9 @@ nnoremap <silent> * *zz
 nnoremap <silent> # #zz
 nnoremap <silent> g* g*zz
 
+" Delete the previous word (MacVim already did this)
+imap <M-BS> <C-w>
+
 
 
 " ---------------------------------------------------------------------------
