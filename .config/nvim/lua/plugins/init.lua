@@ -74,6 +74,12 @@ require('lazy').setup({
     'nvim-treesitter/nvim-treesitter',
     build = ':TSUpdate'
   },
+
+  { -- File explorer in a buffer
+    'stevearc/oil.nvim',
+    opts = {},
+    dependencies = { 'nvim-tree/nvim-web-devicons' },
+  },
 })
 
 
