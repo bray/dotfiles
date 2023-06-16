@@ -72,8 +72,6 @@ set iskeyword+=\-
 " Copy the relative file path to the system clipboard
 nmap ,cp :let @*=expand("%")<CR>
 
-" Close the Quickfix window
-nnoremap <silent> <leader>q :cclose<CR>
 
 
 
