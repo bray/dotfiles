@@ -123,3 +123,6 @@ fi
 fpath=(${ASDF_DIR}/completions $fpath)
 autoload -Uz compinit && compinit
 source "${XDG_CONFIG_HOME:-$HOME/.config}/asdf-direnv/zshrc"
+
+# Shell prompt
+eval "$(starship init zsh)"
