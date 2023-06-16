@@ -82,6 +82,9 @@ nnoremap <silent> g* g*zz
 " Delete the previous word (MacVim already did this)
 imap <M-BS> <C-w>
 
+" Toggle paste mode
+nnoremap <leader>p <cmd>set invpaste<cr>
+
 
 
 " ---------------------------------------------------------------------------
