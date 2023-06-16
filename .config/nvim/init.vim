@@ -72,6 +72,12 @@ set iskeyword+=\-
 " Copy the relative file path to the system clipboard
 nmap ,cp :let @*=expand("%")<CR>
 
+" Automatically center search results
+nnoremap <silent> n nzz
+nnoremap <silent> N Nzz
+nnoremap <silent> * *zz
+nnoremap <silent> # #zz
+nnoremap <silent> g* g*zz
 
 
 
