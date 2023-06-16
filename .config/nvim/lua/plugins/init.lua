@@ -27,6 +27,7 @@ require('lazy').setup({
   'vim-airline/vim-airline-themes',                  -- Statusline themes
   { 'lewis6991/gitsigns.nvim', opts = {} },          -- Git diff markers in the sign column and other integration
   { 'numToStr/Comment.nvim', opts = {} },            -- gc to comment/uncomment lines/blocks
+  'phaazon/hop.nvim',                                -- Replacement for EasyMotion
 
   { -- Color theme
     'drewtempelmeyer/palenight.vim',
