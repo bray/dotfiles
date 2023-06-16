@@ -29,6 +29,7 @@ require('lazy').setup({
   { 'numToStr/Comment.nvim', opts = {} },            -- gc to comment/uncomment lines/blocks
   'phaazon/hop.nvim',                                -- Replacement for EasyMotion
   { 'echasnovski/mini.nvim', version = false },      -- Collection of "mini" plugins (none enabled by default)
+  'github/copilot.vim',                              -- AI: the future is NOW
 
   { -- Color theme
     'drewtempelmeyer/palenight.vim',
