@@ -85,6 +85,9 @@ imap <M-BS> <C-w>
 " Toggle paste mode
 nnoremap <leader>p <cmd>set invpaste<cr>
 
+" Use Cmd-c to copy to system clipboard
+vnoremap <M-c> "+y
+
 
 
 " ---------------------------------------------------------------------------
