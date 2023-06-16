@@ -155,3 +155,11 @@ require('hop').setup()
 vim.keymap.set('n', '<space>', '<cmd>HopChar2MW<cr>')
 vim.keymap.set('n', '<leader>hw', '<cmd>HopWord<cr>')
 vim.keymap.set('n', '<leader>hp', '<cmd>HopPattern<cr>')
+
+
+
+------------------
+--   mini.ai    --
+------------------
+
+require('mini.ai').setup()
