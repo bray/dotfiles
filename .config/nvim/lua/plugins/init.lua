@@ -28,6 +28,7 @@ require('lazy').setup({
   { 'lewis6991/gitsigns.nvim', opts = {} },          -- Git diff markers in the sign column and other integration
   { 'numToStr/Comment.nvim', opts = {} },            -- gc to comment/uncomment lines/blocks
   'phaazon/hop.nvim',                                -- Replacement for EasyMotion
+  { 'echasnovski/mini.nvim', version = false },      -- Collection of "mini" plugins (none enabled by default)
 
   { -- Color theme
     'drewtempelmeyer/palenight.vim',
