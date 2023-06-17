@@ -26,6 +26,9 @@ vim.g['airline#extensions#default#layout'] = {
   { 'x', 'z', 'warning', 'error' }
 }
 
+-- Display current branch
+vim.g.airline_section_b = '%{airline#util#wrap(airline#extensions#branch#get_head(),80)}'
+
 vim.g.airline_theme = 'cobalt2'
 
 
