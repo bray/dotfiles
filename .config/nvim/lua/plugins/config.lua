@@ -2,6 +2,10 @@
 --  vim-airline  --
 -------------------
 
+-- Performance improvements?
+vim.g.airline_extensions = {}
+vim.g.airline_highlighting_cache = 1
+
 vim.g['airline#extensions#tmuxline#enabled'] = 0
 vim.g['airline#extensions#tabline#enabled'] = 0
 
