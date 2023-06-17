@@ -29,6 +29,9 @@ vim.g['airline#extensions#default#layout'] = {
 -- Display current branch
 vim.g.airline_section_b = '%{airline#util#wrap(airline#extensions#branch#get_head(),80)}'
 
+-- Display prettier current line and column
+vim.g.airline_section_z = 'Line: %l / %L (%p%%) | Col: %c'
+
 vim.g.airline_theme = 'cobalt2'
 
 
