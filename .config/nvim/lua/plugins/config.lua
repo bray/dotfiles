@@ -19,6 +19,13 @@ temp_airline_symbols.dirty='⚡'
 -- temp_airline_symbols.maxlinenr = '☰ '
 vim.g.airline_symbols = temp_airline_symbols
 
+-- Remove the unused 'y' section
+-- (file encoding by default)
+vim.g['airline#extensions#default#layout'] = {
+  { 'a', 'b', 'c' },
+  { 'x', 'z', 'warning', 'error' }
+}
+
 vim.g.airline_theme = 'cobalt2'
 
 
