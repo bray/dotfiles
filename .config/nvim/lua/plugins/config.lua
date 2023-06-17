@@ -9,12 +9,15 @@ vim.g.airline_left_sep = ''
 vim.g.airline_left_alt_sep = ''
 vim.g.airline_right_sep = ''
 vim.g.airline_right_alt_sep = ''
-vim.g.airline_symbols.branch = ''
-vim.g.airline_symbols.colnr = ' ℅:'
-vim.g.airline_symbols.readonly = ''
-vim.g.airline_symbols.linenr = ' :'
-vim.g.airline_symbols.maxlinenr = '☰ '
-vim.g.airline_symbols.dirty='⚡'
+
+local temp_airline_symbols = vim.g.airline_symbols
+temp_airline_symbols.branch = ''
+temp_airline_symbols.readonly = ''
+temp_airline_symbols.dirty='⚡'
+-- temp_airline_symbols.colnr = ' ℅:'
+-- temp_airline_symbols.linenr = ' :'
+-- temp_airline_symbols.maxlinenr = '☰ '
+vim.g.airline_symbols = temp_airline_symbols
 
 vim.g.airline_theme = 'cobalt2'
 
