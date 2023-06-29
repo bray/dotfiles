@@ -119,7 +119,7 @@ ft.set('text', '#%s')
 --  Treesitter  --
 ------------------
 
-require'nvim-treesitter.configs'.setup {
+require('nvim-treesitter.configs').setup {
   ensure_installed = { 'c', 'lua', 'vim', 'vimdoc', 'query', 'ruby' },
   auto_install = true,
   highlight = {
