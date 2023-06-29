@@ -43,7 +43,16 @@ vim.g.airline_theme = 'cobalt2'
 --  telescope  --
 -----------------
 
-require('telescope').setup()
+require('telescope').setup({
+  defaults = {
+    mappings = {
+      i = {
+        ["<esc>"] = require("telescope.actions").close
+      },
+    },
+  },
+})
+
 require('telescope').load_extension('fzf')
 require('telescope').load_extension('recent_files')
 
