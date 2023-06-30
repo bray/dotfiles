@@ -193,3 +193,11 @@ vim.keymap.set('n', '<leader>hp', '<cmd>HopPattern<cr>')
 ------------------
 
 require('mini.ai').setup()
+
+
+
+-------------------
+-- mini.surround --
+-------------------
+
+require('mini.surround').setup()
