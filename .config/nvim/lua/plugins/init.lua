@@ -52,7 +52,10 @@ require('lazy').setup({
 
   { -- Find, Filter, Preview, Pick
     'nvim-telescope/telescope.nvim', tag = '0.1.1',
-    dependencies = { 'nvim-lua/plenary.nvim' },
+    dependencies = {
+      'nvim-lua/plenary.nvim',
+      'debugloop/telescope-undo.nvim'
+    },
   },
 
   { -- Enable fzf in Telescope
