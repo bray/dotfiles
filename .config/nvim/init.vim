@@ -227,16 +227,6 @@ let g:UltiSnipsDontReverseSearchPath="1"
 let g:UltiSnipsEditSplit="vertical"
 
 
-" Undotree
-" --------
-
-nnoremap <F5> :UndotreeToggle<cr>
-
-if !exists('g:undotree_WindowLayout')
-  let g:undotree_WindowLayout = 2
-endif
-
-
 " ripgrep (rg)
 " ------------
 
