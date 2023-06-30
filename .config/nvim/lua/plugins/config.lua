@@ -200,4 +200,10 @@ require('mini.ai').setup()
 -- mini.surround --
 -------------------
 
-require('mini.surround').setup()
+require('mini.surround').setup({
+  highlight_duration = 1000,
+  mappings = {
+    update_n_lines = '',
+    search_method = 'cover_or_nearest',
+  }
+})
