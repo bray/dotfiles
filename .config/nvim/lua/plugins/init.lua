@@ -30,6 +30,7 @@ require('lazy').setup({
   'phaazon/hop.nvim',                                -- Replacement for EasyMotion
   { 'echasnovski/mini.nvim', version = false },      -- Collection of "mini" plugins (none enabled by default)
   'github/copilot.vim',                              -- AI: the future is NOW
+  'mbbill/undotree',                                 -- Navigate the undo tree
 
   { -- Color theme
     'drewtempelmeyer/palenight.vim',

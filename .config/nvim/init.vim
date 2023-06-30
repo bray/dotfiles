@@ -170,7 +170,6 @@ noremap <silent> <leader>rtw :%s/\s\+$//g<cr>``
 
 set directory=~/.vim/swp//,.
 set undofile  " Persist undo history
-set undodir=~/.vim/undo
 
 
 
