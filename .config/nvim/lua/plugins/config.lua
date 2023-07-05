@@ -1,6 +1,6 @@
--------------------
---  vim-airline  --
--------------------
+---------------------
+--   vim-airline   --
+---------------------
 
 -- Performance improvements?
 vim.g.airline_extensions = {}
@@ -39,9 +39,10 @@ vim.g.airline_section_z = 'Line: %l / %L (%p%%) | Col: %c'
 vim.g.airline_theme = 'cobalt2'
 
 
------------------
---  telescope  --
------------------
+
+---------------------
+--    telescope    --
+---------------------
 
 require('telescope').setup({
   defaults = {
@@ -65,9 +66,9 @@ vim.keymap.set('n', '<leader>th', builtin.help_tags, {})
 vim.keymap.set('n', '<leader>tt', builtin.builtin, {})
 
 
-------------------
---  bufferline  --
-------------------
+--------------------
+--   bufferline   --
+--------------------
 
 require('bufferline').setup {
   options = {
@@ -95,9 +96,9 @@ vim.keymap.set('n', '<leader>L', '<cmd>tabmove +<cr>', opts)
 vim.keymap.set('n', '<C-_>', '<cmd>BufferLinePick<cr>', opts)
 
 
------------------
---  which-key  --
------------------
+---------------------
+--    which-key    --
+---------------------
 
 local wk = require('which-key')
 wk.register({
@@ -124,9 +125,9 @@ local ft = require('Comment.ft')
 ft.set('text', '#%s')
 
 
-------------------
---  Treesitter  --
-------------------
+--------------------
+--   Treesitter   --
+--------------------
 
 require('nvim-treesitter.configs').setup {
   ensure_installed = { 'c', 'lua', 'vim', 'vimdoc', 'query', 'ruby' },
@@ -137,9 +138,9 @@ require('nvim-treesitter.configs').setup {
 }
 
 
-------------------
---     Oil      --
-------------------
+---------------------
+--       Oil       --
+---------------------
 
 require('oil').setup {
   keymaps = {
@@ -176,9 +177,10 @@ vim.api.nvim_create_autocmd("User", {
 vim.keymap.set('n', '<leader>d', '<CMD>Oil<CR>')
 
 
-------------------
---     Hop      --
-------------------
+
+---------------------
+--       Hop       --
+---------------------
 
 require('hop').setup()
 
@@ -188,17 +190,17 @@ vim.keymap.set('n', '<leader>hp', '<cmd>HopPattern<cr>')
 
 
 
-------------------
---   mini.ai    --
-------------------
+---------------------
+--     mini.ai     --
+---------------------
 
 require('mini.ai').setup()
 
 
 
--------------------
--- mini.surround --
--------------------
+---------------------
+--  mini.surround  --
+---------------------
 
 require('mini.surround').setup({
   highlight_duration = 1000,
