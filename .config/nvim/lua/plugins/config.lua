@@ -79,7 +79,7 @@ require('bufferline').setup {
 local opts = { noremap = true }
 
 -- New tab
-vim.keymap.set('n', '<A-t>', '<cmd>tabnew<cr>', opts)
+vim.keymap.set('n', '<C-t>', '<cmd>tabnew<cr>', opts)
 
 -- Close tab
 vim.keymap.set('n', '<A-w>', '<C-w>q', opts)
