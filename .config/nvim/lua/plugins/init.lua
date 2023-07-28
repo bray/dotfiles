@@ -31,6 +31,7 @@ require('lazy').setup({
   { 'echasnovski/mini.nvim', version = false },      -- Collection of "mini" plugins (none enabled by default)
   'github/copilot.vim',                              -- AI: the future is NOW
   'mbbill/undotree',                                 -- Navigate the undo tree
+  'lukas-reineke/indent-blankline.nvim',             -- Show indent lines
 
   { -- Color theme
     'drewtempelmeyer/palenight.vim',

@@ -212,6 +212,16 @@ require('mini.surround').setup({
 
 
 
+----------------------
+-- indent_blankline --
+----------------------
+
+require("indent_blankline").setup()
+-- Only enable for YAML files
+vim.g.indent_blankline_filetype = { 'yaml' }
+
+
+
 --------------------
 --    Undotree    --
 --------------------
