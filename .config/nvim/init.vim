@@ -28,7 +28,7 @@ set cursorline         " Highlight the current line
 set regexpengine=1     " Use old regexp engine (faster?)
 set noshowcmd          " Don't show command in bottom line (faster?)
 set noshowmode         " Don't show -- INSERT -- in bottom line (vim-airline shows this in status line)
-set pastetoggle=<C-t>  " CTRL-t toggles paste mode
+set pastetoggle=<C-t>  " Ctrl-t toggles paste mode
 set ttimeoutlen=0      " Make escape go back to normal mode instantly
 set shortmess-=S       " Show # of matches (in bottom right corner) when searching
 set shortmess+=I       " Don't show startup screen when starting vim
