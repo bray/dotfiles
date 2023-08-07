@@ -9,6 +9,9 @@ gui:
     'br': '#11aaff' # use a light blue for branches beginning with 'br/'
 
 keybinding:
+  universal:
+    prevPage: '<c-u>' # go to next page in list
+    nextPage: '<c-d>' # go to previous page in list
   branches:
     createTag: null
     pushTag: null
