@@ -4,6 +4,8 @@ gui:
       - reverse
     selectedRangeBgColor:
       - reverse
+  branchColors:
+    'br': '#11aaff' # use a light blue for branches beginning with 'br/'
 
 customCommands:
   - key: 'P'
