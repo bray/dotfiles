@@ -4,6 +4,7 @@ gui:
       - reverse
     selectedRangeBgColor:
       - reverse
+  showFileTree: false
   branchColors:
     'br': '#11aaff' # use a light blue for branches beginning with 'br/'
 
