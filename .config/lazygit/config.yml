@@ -1,0 +1,7 @@
+customCommands:
+  - key: 'P'
+    command: "git push {{.SelectedRemote.RefName}} {{.SelectedLocalCommit.Sha}}:{{.SelectedLocalBranch.RefName}}"
+    context: "commits"
+    loadingText: "Pushing commit..."
+    description: "Push a specific commit (and any preceding)"
+    stream: yes
