@@ -32,6 +32,7 @@ require('lazy').setup({
   'github/copilot.vim',                              -- AI: the future is NOW
   'mbbill/undotree',                                 -- Navigate the undo tree
   'lukas-reineke/indent-blankline.nvim',             -- Show indent lines
+  'ludovicchabant/vim-gutentags',                    -- Automatically update ctags
 
   { -- Color theme
     'drewtempelmeyer/palenight.vim',
