@@ -1,3 +1,10 @@
+gui:
+  theme:
+    selectedLineBgColor:
+      - reverse
+    selectedRangeBgColor:
+      - reverse
+
 customCommands:
   - key: 'P'
     command: "git push {{.SelectedRemote.RefName}} {{.SelectedLocalCommit.Sha}}:{{.SelectedLocalBranch.RefName}}"
