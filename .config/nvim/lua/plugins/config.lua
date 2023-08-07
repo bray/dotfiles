@@ -233,3 +233,12 @@ vim.g.undotree_TreeNodeShape = '•'
 vim.g.undotree_SetFocusWhenToggle = 1
 vim.g.undotree_ShortIndicators = 1
 vim.g.undotree_SplitWidth = 30
+
+
+
+---------------------
+--    gutentags    --
+---------------------
+
+-- This can significantly shrink the size of the tags file and speed up rewriting it on save
+vim.g.gutentags_ctags_exclude = { 'node_modules', '*.css', '*.less', '*.scss', '*.js', '*.json' }
