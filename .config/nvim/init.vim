@@ -34,6 +34,7 @@ set shortmess-=S       " Show # of matches (in bottom right corner) when searchi
 set shortmess+=I       " Don't show startup screen when starting vim
 set hidden             " Allow switching buffers without first writing changes
 set breakindent        " Every wrapped line will continue visually indented
+set complete=.,w,b,u   " Don't search tags when doing i_Ctrl-n and i_Ctrl-p
 
 
 let mapleader=","      " Change leader from \ to ,
