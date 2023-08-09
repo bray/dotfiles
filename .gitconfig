@@ -17,11 +17,11 @@
   pl = pull
 
   l = log --decorate
-  ls = !git l --stat
-  lr = !git l --reverse
-  lg = !git l -p
-  lgr = !git lg --reverse
-  lt = !git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+  ls = l --stat
+  lr = l --reverse
+  lg = l -p
+  lgr = lg --reverse
+  lt = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 
   cp = cherry-pick
 
