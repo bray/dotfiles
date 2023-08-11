@@ -56,6 +56,29 @@
 [core]
   excludesfile = /Users/bray/.gitignore
 
+[diff]
+  # Show moved lines in a different color
+  colorMoved = default
+
+[delta]
+  syntax-theme = Dracula
+
+  # navigate: n/N to jump between commits and hunks
+  features = decorations navigate
+
+[delta "decorations"]
+  commit-decoration-style = blue ol bold
+  file-style = omit
+  hunk-header-style = file line-number syntax
+  hunk-header-line-number-style = red bold
+
+# e.g. git add -p
+[interactive]
+  diffFilter = delta --color-only
+
+[merge]
+  conflictstyle = diff3
+
 [apply]
   whitespace = warn
 [credential]
