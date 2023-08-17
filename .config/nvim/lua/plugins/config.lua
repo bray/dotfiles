@@ -1,3 +1,28 @@
+-- Default options for mappings
+local opts = { noremap = true }
+
+--------------------
+--  ripgrep (rg)  --
+--------------------
+
+-- Shortcut to :Rg
+vim.keymap.set('n', '\\', ':Rg<SPACE>', opts)
+
+-- Search for word under cursor
+vim.keymap.set('n', 'K', ':Rg "\\b<C-R><C-W>\\b"<CR>', opts)
+
+
+--------------------
+--  vim-arpeggio  --
+--------------------
+
+vim.fn['arpeggio#load']()
+vim.fn['arpeggio#map']('i', '', false, 'jk', '<Esc>')
+vim.fn['arpeggio#map']('i', '', false, 'JK', '<Esc>')
+vim.fn['arpeggio#map']('c', '', false, 'jk', '')
+vim.fn['arpeggio#map']('c', '', false, 'JK', '')
+
+
 ---------------------
 --   vim-airline   --
 ---------------------
@@ -76,7 +101,6 @@ require('bufferline').setup {
   }
 }
 
-local opts = { noremap = true }
 
 -- New tab
 vim.keymap.set('n', '<C-t>', '<cmd>tabnew<cr>', opts)
