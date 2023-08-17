@@ -10,32 +10,6 @@ let &packpath = &runtimepath
 "
 " ---------------------------------------------------------------------------
 
-let g:python3_host_prog = '~/.asdf/shims/python3'
-
-set number             " Show line numbers
-set fillchars+=vert:\  " Remove the \| in vertical splits
-set history=2000       " Remember 2000 lines of history
-set visualbell t_vb=   " Disable audio error bell
-set title              " Show the filepath (terminal)
-set gcr=n:blinkon0     " No blinking cursor in Normal mode
-set showcmd            " Display incomplete commands
-set wildmenu           " Better tab-completion in command mode
-set wildmode=list:full
-set wildignore+=*/.git/*,*/.hg/*,*/.svn/*
-set autoread           " Autoload outside changes
-set linebreak          " Don't split lines in the middle of words
-set cursorline         " Highlight the current line
-set regexpengine=1     " Use old regexp engine (faster?)
-set noshowcmd          " Don't show command in bottom line (faster?)
-set noshowmode         " Don't show -- INSERT -- in bottom line (vim-airline shows this in status line)
-set pastetoggle=<C-t>  " Ctrl-t toggles paste mode
-set ttimeoutlen=0      " Make escape go back to normal mode instantly
-set shortmess-=S       " Show # of matches (in bottom right corner) when searching
-set shortmess+=I       " Don't show startup screen when starting vim
-set hidden             " Allow switching buffers without first writing changes
-set breakindent        " Every wrapped line will continue visually indented
-set complete=.,w,b,u   " Don't search tags when doing i_Ctrl-n and i_Ctrl-p
-
 
 let mapleader=","      " Change leader from \ to ,
 
