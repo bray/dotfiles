@@ -27,6 +27,7 @@
 
   branch-name = !git rev-parse --abbrev-ref HEAD
   temp = !git a && OVERCOMMIT_DISABLE=1 git ci -m \"`git branch-name` temp ...\"
+  t = temp
   rh = reset HEAD^
   #rhard = "!if [ -n \"$1\" ]; then git reset --hard \"$1\"; else git reset --hard HEAD^; fi #"
   rhard = reset --hard
