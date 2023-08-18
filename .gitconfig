@@ -58,7 +58,8 @@
   push = HEAD
 
 [core]
-  excludesfile = /Users/bray/.gitignore
+  excludesfile = ~/.gitignore
+  pager = delta --line-numbers
 
 [diff]
   # Show moved lines in a different color
