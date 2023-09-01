@@ -1,6 +1,7 @@
 vim.opt.breakindent = true                          -- Every wrapped line will continue visually indented
 vim.opt.complete:remove('t')                        -- Don't search tags when doing i_Ctrl-n and i_Ctrl-p
 vim.opt.cursorline = true                           -- Highlight the current line
+vim.opt.fillchars:append('eob: ')                   -- Remove the annoying ~ at the end of a buffer
 vim.opt.history = 2000                              -- Remember 2000 lines of history
 vim.opt.number = true                               -- Show line numbers
 vim.opt.shortmess:append('I')                       -- Don't show startup screen when starting vim
