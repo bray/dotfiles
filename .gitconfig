@@ -29,7 +29,7 @@
   temp = !git a && OVERCOMMIT_DISABLE=1 git ci -m \"`git branch-name` temp ...\"
   t = temp
   rh = reset HEAD^
-  rht = "!if [[ $(git log --oneline -1 | grep \"temp ...\") ]]; then echo "Running \"g rh\""; g rh; else echo "No temp commit."; fi"
+  rt = "!if [[ $(git log --oneline -1 | grep \"temp ...\") ]]; then echo "Running \"git rh\""; git rh; else echo "No temp commit."; fi"
   #rhard = "!if [ -n \"$1\" ]; then git reset --hard \"$1\"; else git reset --hard HEAD^; fi #"
   rhard = reset --hard
   rhead = reset --hard HEAD
