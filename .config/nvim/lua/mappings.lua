@@ -8,3 +8,6 @@ vim.keymap.set('n', '<leader>p', '<cmd>set invpaste<cr>', opts)
 
 -- Use Cmd-c to copy to system clipboard
 vim.keymap.set('v', '<M-c>', '"+y', opts)
+
+-- Close the current window
+vim.keymap.set('n', '<C-q>', '<C-w>q', opts)
