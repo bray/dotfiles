@@ -33,6 +33,7 @@ require('lazy').setup({
   'mbbill/undotree',                                 -- Navigate the undo tree
   'lukas-reineke/indent-blankline.nvim',             -- Show indent lines
   'ludovicchabant/vim-gutentags',                    -- Automatically update ctags
+  'gbprod/yanky.nvim',                               -- Yank history
 
   { -- Color theme
     'drewtempelmeyer/palenight.vim',

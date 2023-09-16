@@ -273,3 +273,24 @@ vim.g.undotree_SplitWidth = 30
 
 -- This can significantly shrink the size of the tags file and speed up rewriting it on save
 vim.g.gutentags_ctags_exclude = { 'node_modules', '*.css', '*.less', '*.scss', '*.js', '*.json' }
+
+
+
+---------------------
+--      yanky      --
+---------------------
+require('yanky').setup({
+  highlight = {
+    on_yank = false,
+    timer = 200,
+  },
+})
+
+require("telescope").load_extension("yank_history")
+
+vim.keymap.set({'n','x'}, 'p', '<Plug>(YankyPutAfter)')
+vim.keymap.set({'n','x'}, 'P', '<Plug>(YankyPutBefore)')
+vim.keymap.set({'n','x'}, 'gp', '<Plug>(YankyGPutAfter)')
+vim.keymap.set({'n','x'}, 'gP', '<Plug>(YankyGPutBefore)')
+vim.keymap.set('n', '[p', '<Plug>(YankyCycleForward)')
+vim.keymap.set('n', ']p', '<Plug>(YankyCycleBackward)')
