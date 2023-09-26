@@ -89,6 +89,15 @@ require('lazy').setup({
     opts = {},
     dependencies = { 'nvim-tree/nvim-web-devicons' },
   },
+
+
+  { -- Highlight ranges of lines
+    'winston0410/range-highlight.nvim',
+    opts = {},
+    dependencies = {
+      'winston0410/cmd-parser.nvim',
+    },
+  },
 })
 
 
