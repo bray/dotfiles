@@ -238,6 +238,9 @@ require('mini.surround').setup({
   mappings = {
     update_n_lines = '',
     search_method = 'cover_or_nearest',
+    replace = 'gsr',
+    add = 'gsa',
+    delete = 'gsd',
   }
 })
 
