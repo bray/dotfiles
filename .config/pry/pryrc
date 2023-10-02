@@ -1,0 +1,19 @@
+Pry.config.prompt_name = File.basename(Dir.pwd)
+
+Pry::Prompt.add('bray', 'my custom prompt', ["\033[0;36m❯\033[0m", "\033[0;36m*\033[0m"]) do |context, nest_level, pry_instance, separator|
+  in_count = pry_instance.input_ring.count
+  name = pry_instance.config.prompt_name
+
+  context = Pry.view_clip(context)
+  context_text = " (#{context})" unless context.to_s == 'main'
+
+  nesting = ":#{nest_level}" unless nest_level == 0
+
+  "[#{in_count}] #{name}#{context_text}#{nesting} #{separator} "
+end
+
+Pry.config.prompt = Pry::Prompt[:bray]
+
+def r
+  reload!
+end
