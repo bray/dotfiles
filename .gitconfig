@@ -40,6 +40,7 @@
 
   ancestor = "!if git merge-base --is-ancestor \"$1\" HEAD; then echo I DO contain commit \"$1\"; else echo I DO NOT contain commit \"$1\"; fi #"
   reflogd = reflog --date=format:'%-m/%d %_I:%M:%S %p'
+  b = !git co $(git br --sort='-authordate' | fzf)
 
 
 [color]
