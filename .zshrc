@@ -44,6 +44,7 @@ alias gx='gitx --all'
 
 alias vim='mvim -v'
 alias vi='vim'
+alias g='git'
 
 #alias bundle_local='bundle install --gemfile Gemfile.local'
 #alias server_local='BUNDLE_GEMFILE=Gemfile.local bundle exec rails s'
