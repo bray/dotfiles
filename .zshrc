@@ -51,9 +51,7 @@ alias be='bundle exec'
 alias bundle_default='bundle install --gemfile Gemfile'
 
 alias sc='ruby script/console'
-alias rc_orig='spring rails console'
 alias rc='bundle exec rails console'
-alias rs='ruby script/spec -O spec/spec.opts'
 
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
