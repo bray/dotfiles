@@ -47,6 +47,7 @@ alias vi='vim'
 alias nv='nvim'
 alias g='git'
 
+alias be='bundle exec'
 alias bundle_default='bundle install --gemfile Gemfile'
 
 alias sc='ruby script/console'
