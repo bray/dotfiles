@@ -54,8 +54,6 @@ alias rc_orig='spring rails console'
 alias rc='bundle exec rails console'
 alias rs='ruby script/spec -O spec/spec.opts'
 
-alias sync_evernote='/code/geeknote/gnsync.py --path ~/Documents/EvernoteGeeknote'
-alias evernote_sync='sync_evernote'
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
