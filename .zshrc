@@ -47,17 +47,12 @@ alias vi='vim'
 alias nv='nvim'
 alias g='git'
 
-#alias bundle_local='bundle install --gemfile Gemfile.local'
-#alias server_local='BUNDLE_GEMFILE=Gemfile.local bundle exec rails s'
-export BUNDLE_GEMFILE=Gemfile.local
 alias bundle_default='bundle install --gemfile Gemfile'
 
 alias sc='ruby script/console'
 alias rc_orig='spring rails console'
-#alias rc='BUNDLE_GEMFILE=Gemfile.local spring rails console'
-alias rc='BUNDLE_GEMFILE=Gemfile.local bundle exec spring rails console'
+alias rc='bundle exec rails console'
 alias rs='ruby script/spec -O spec/spec.opts'
-#alias rspecs='ruby script/spec_server' # use 'spork' instead
 
 alias sync_evernote='/code/geeknote/gnsync.py --path ~/Documents/EvernoteGeeknote'
 alias evernote_sync='sync_evernote'
