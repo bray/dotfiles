@@ -66,6 +66,15 @@ require('lazy').setup({
     build = 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build'
   },
 
+  -- TEMP? It's currently much faster than Telescope and Telescope has a bug
+  -- where it hides all results after typing a few chars
+  {
+    'junegunn/fzf.vim',
+    dependencies = {
+      'junegunn/fzf',
+    },
+  },
+
   { -- ripgrep in vim
     'jremmen/vim-ripgrep',
     config = function()
