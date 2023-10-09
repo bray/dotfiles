@@ -56,7 +56,7 @@ require('lazy').setup({
 
 
   { -- Find, Filter, Preview, Pick
-    'nvim-telescope/telescope.nvim', tag = '0.1.1',
+    'nvim-telescope/telescope.nvim', tag = '0.1.3',
     dependencies = {
       'nvim-lua/plenary.nvim',
     },
@@ -67,9 +67,7 @@ require('lazy').setup({
     build = 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build'
   },
 
-  -- TEMP? It's currently much faster than Telescope and Telescope has a bug
-  -- where it hides all results after typing a few chars
-  {
+  { -- TEMP? It's currently much faster than Telescope
     'junegunn/fzf.vim',
     dependencies = {
       'junegunn/fzf',

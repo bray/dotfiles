@@ -17,7 +17,7 @@
   "range-highlight.nvim": { "branch": "master", "commit": "8b5e8ccb3460b2c3675f4639b9f54e64eaab36d9" },
   "telescope-fzf-native.nvim": { "branch": "main", "commit": "6c921ca12321edaa773e324ef64ea301a1d0da62" },
   "telescope-recent-files": { "branch": "main", "commit": "6893cda11625254cc7dc2ea76e0a100c7deeb028" },
-  "telescope.nvim": { "branch": "master", "commit": "776b509f80dd49d8205b9b0d94485568236d1192" },
+  "telescope.nvim": { "branch": "master", "commit": "54930e1abfc94409e1bb9266e752ef8379008592" },
   "tmuxline.vim": { "branch": "master", "commit": "4119c553923212cc67f4e135e6f946dc3ec0a4d6" },
   "undotree": { "branch": "master", "commit": "485f01efde4e22cb1ce547b9e8c9238f36566f21" },
   "vim-airline": { "branch": "master", "commit": "423fe9e2acbe64bd8637d0bedff132972d7603de" },
