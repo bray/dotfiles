@@ -7,7 +7,7 @@
   "fzf.vim": { "branch": "master", "commit": "f3b82091a651a643ef18b220cd3e154d76a54462" },
   "gitsigns.nvim": { "branch": "main", "commit": "256569c2fe697a3003dbd49ff474e5935af9066c" },
   "hop.nvim": { "branch": "master", "commit": "03f0434869f1f38868618198b5f4f2ab6d39aef2" },
-  "indent-blankline.nvim": { "branch": "master", "commit": "9637670896b68805430e2f72cf5d16be5b97a22a" },
+  "indent-blankline.nvim": { "branch": "master", "commit": "b808248f6a93ff4a2ed2932d68c6833ae167ecfc" },
   "lazy.nvim": { "branch": "main", "commit": "10d4371745f88837c78c8daab00c5be6e48abea4" },
   "mini.nvim": { "branch": "main", "commit": "0c50ef9d0b7cae1145f3365e7bcf9ed01bc00005" },
   "nvim-web-devicons": { "branch": "master", "commit": "2a125024a137677930efcfdf720f205504c97268" },

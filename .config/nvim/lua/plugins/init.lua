@@ -31,7 +31,6 @@ require('lazy').setup({
   { 'echasnovski/mini.nvim', version = false },      -- Collection of "mini" plugins (none enabled by default)
   'github/copilot.vim',                              -- AI: the future is NOW
   'mbbill/undotree',                                 -- Navigate the undo tree
-  'lukas-reineke/indent-blankline.nvim',             -- Show indent lines
   'tpope/vim-rails',                                 -- Rails helpers
   'ludovicchabant/vim-gutentags',                    -- Automatically update ctags
   'gbprod/yanky.nvim',                               -- Yank history
@@ -105,6 +104,12 @@ require('lazy').setup({
     dependencies = {
       'winston0410/cmd-parser.nvim',
     },
+  },
+
+  { -- Show indent lines
+    'lukas-reineke/indent-blankline.nvim',
+    main = 'ibl',
+    opts = {},
   },
 })
 

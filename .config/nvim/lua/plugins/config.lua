@@ -258,9 +258,14 @@ require('mini.surround').setup({
 -- indent_blankline
 --------------------------------------------------------------------------------
 
-require("indent_blankline").setup()
 -- Only enable for YAML files
-vim.g.indent_blankline_filetype = { 'yaml' }
+local hooks = require('ibl.hooks')
+hooks.register(hooks.type.ACTIVE, function(bufnr)
+  return vim.tbl_contains(
+    { 'yaml' },
+    vim.api.nvim_get_option_value('filetype', { buf = bufnr })
+  )
+end)
 
 
 
