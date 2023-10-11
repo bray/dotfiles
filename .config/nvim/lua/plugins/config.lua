@@ -255,6 +255,19 @@ require('mini.surround').setup({
 
 
 --------------------------------------------------------------------------------
+-- vim-rhubarb
+--------------------------------------------------------------------------------
+
+-- :GBrowse somehow broke recently and defining this command is now needed
+vim.api.nvim_create_user_command(
+  'Browse',
+  'silent execute "!open" shellescape(<q-args>,1)',
+  { nargs = 1 }
+)
+
+
+
+--------------------------------------------------------------------------------
 -- indent_blankline
 --------------------------------------------------------------------------------
 
