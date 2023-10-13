@@ -68,6 +68,13 @@ export PATH="$HOME/bin:$PATH"
 ##### Keep all below this at the bottom #####
 
 
+
+export _ZO_DATA_DIR="$HOME/.local/share/zoxide"
+export _ZO_ECHO=1
+export _ZO_EXCLUDE_DIRS=""
+eval "$(zoxide init zsh --no-cmd)"
+
+
 # Include any additional config in ~/.zsh/
 include_dir=~/.zsh
 if [[ -d $include_dir ]]; then
