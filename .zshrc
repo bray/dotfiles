@@ -67,8 +67,6 @@ export PATH="$HOME/bin:$PATH"
 
 ##### Keep all below this at the bottom #####
 
-# More config, specific to my setup
-if [[ -e ~/.zshrc.local ]]; then source ~/.zshrc.local; fi
 
 # Include any additional config in ~/.zsh/
 include_dir=~/.zsh

@@ -6,7 +6,7 @@ sessions
 *.un~
 undo
 .rvmrc
-.zshrc.local
+.zsh/local/
 .netrwhist
 #.ruby-version
 config/initializers/sql_logging.rb
