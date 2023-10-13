@@ -63,6 +63,8 @@ zle -N git-fzf-log-bindkey
 bindkey '^l' git-fzf-log-bindkey
 
 
+export PATH="$HOME/bin:$PATH"
+
 ##### Keep all below this at the bottom #####
 
 # More config, specific to my setup
