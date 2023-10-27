@@ -6,4 +6,5 @@ vim.cmd.source(vimrc)
 
 require 'options'
 require 'plugins'
+require 'commands'
 require 'mappings'
