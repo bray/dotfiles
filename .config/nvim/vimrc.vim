@@ -6,17 +6,6 @@ let &packpath = &runtimepath
 
 
 
-" ---------------------------------------------------------------------------
-" Macros
-" ---------------------------------------------------------------------------
-
-let @c = '[m]MI#' " Comment out the current method
-let @y = 'gccyypgcc'  " Comment out line and copy (using gcc from the tcomment_vim plugin)
-let @u = 'yypVr-'      " Underline heading
-let @h = 'f:xf ce:' " Convert old Ruby hash (:a => 'b') to new Ruby hash (a: 'b')
-let @b = "r:f'xbh"    " Convert string into symbol
-let @s = "r'ea'bh"  " Convert symbol into string
-
 " Remove trailing whitespace
 noremap <silent> <leader>rtw :%s/\s\+$//g<cr>``
 
