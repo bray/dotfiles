@@ -32,10 +32,8 @@ vim.opt.autoindent = true   -- Keep indentation from previous line
 -- Search
 --------------------------------------------------------------------------------
 
-vim.opt.ignorecase = true
-vim.opt.smartcase = true
-vim.opt.incsearch = true
-vim.opt.hlsearch = true
+vim.opt.ignorecase = true   -- Ignore case when searching
+vim.opt.smartcase = true    -- Ignore case when searching all lowercase, otherwise don't
 
 
 --------------------------------------------------------------------------------
