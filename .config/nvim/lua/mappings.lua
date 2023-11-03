@@ -2,9 +2,9 @@ local opts = { noremap = true }
 local opts_silent = { noremap = true, silent = true }
 
 -- Use Cmd-s to save
-vim.keymap.set("n", "<C-s>", ":w<CR>")
-vim.keymap.set("v", "<C-s>", "<C-c>:w<CR>")
-vim.keymap.set("i", "<C-s>", "<C-o>:w<CR>")
+vim.keymap.set('n', '<C-s>', '<cmd>w<CR>', opts)
+vim.keymap.set('v', '<C-s>', '<C-c>:w<CR>', opts)
+vim.keymap.set('i', '<C-s>', '<C-o>:w<CR>', opts)
 
 -- Delete the previous word (MacVim already did this)
 vim.keymap.set('i', '<M-BS>', '<C-w>', opts)
