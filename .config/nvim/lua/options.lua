@@ -44,5 +44,20 @@ vim.opt.splitright = true   -- Put a new vertical split window on the right
 vim.opt.splitbelow = true   -- Put a new horizontal split window below
 
 
+--------------------------------------------------------------------------------
+-- Visual
+--------------------------------------------------------------------------------
+
+-- Set termguicolors if supported
+if vim.fn.has('termguicolors') then
+  vim.opt.termguicolors = true
+end
+
+-- Set cursor style
+-- Note: the blink intervals and some other settings here (e.g. vert width) are NOT configurable in any terminal, only GUIs :(
+vim.opt.guicursor:append('i-ci:ver25-blinkwait250-blinkon400-blinkoff250')
+
+
+
 vim.g.python3_host_prog = '~/.asdf/shims/python3'   -- Change python3 path to use asdf shim
 vim.g.loaded_ruby_provider = 0                      -- No need for Ruby provider
