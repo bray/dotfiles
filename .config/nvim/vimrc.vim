@@ -3,60 +3,6 @@ set runtimepath^=~/.vim runtimepath+=~/.vim/after
 let &packpath = &runtimepath
 
 
-
-" ---------------------------------------------------------------------------
-"
-" Basics
-"
-" ---------------------------------------------------------------------------
-
-
-let mapleader=","      " Change leader from \ to ,
-
-" Reveal in Finder - opens finder to folder of the file that is currently open
-command! Rif execute '!open %:p:h'
-
-" Scroll up and down a little faster
-nnoremap <C-e> 3<C-e>
-nnoremap <C-y> 3<C-y>
-vnoremap <C-e> 3<C-e>
-vnoremap <C-y> 3<C-y>
-
-" Visually select the text that was last edited/pasted
-nmap gV `[v`]
-
-" Restore the line and window positions when re-opening a buffer
-" (instead of only the line position)
-autocmd BufLeave * let b:winview = winsaveview()
-autocmd BufEnter * if(exists('b:winview')) | call winrestview(b:winview) | endif
-
-" Disable accidentally typing K, which I'll never use
-nnoremap K ""
-vnoremap K ""
-
-" Better marks
-nnoremap ' `
-nnoremap ` '
-
-" Disable folding
-set nofoldenable
-set foldminlines=99999
-
-" Include - when doing keyword completion (C-n and C-p)
-set iskeyword+=\-
-
-" Copy the relative file path to the system clipboard
-nmap ,cp :let @*=expand("%")<CR>
-
-" Automatically center search results
-nnoremap <silent> n nzz
-nnoremap <silent> N Nzz
-nnoremap <silent> * *zz
-nnoremap <silent> # #zz
-nnoremap <silent> g* g*zz
-
-
-
 " ---------------------------------------------------------------------------
 " Search
 " ---------------------------------------------------------------------------

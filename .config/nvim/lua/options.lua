@@ -1,3 +1,6 @@
+-- Change leader key
+vim.g.mapleader = ','
+
 vim.opt.breakindent = true                          -- Every wrapped line will continue visually indented
 vim.opt.complete:remove('t')                        -- Don't search tags when doing i_Ctrl-n and i_Ctrl-p
 vim.opt.cursorline = true                           -- Highlight the current line
