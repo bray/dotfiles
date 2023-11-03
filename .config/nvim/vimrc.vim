@@ -3,32 +3,6 @@ set runtimepath^=~/.vim runtimepath+=~/.vim/after
 let &packpath = &runtimepath
 
 
-" ---------------------------------------------------------------------------
-" Search
-" ---------------------------------------------------------------------------
-
-set ignorecase
-set smartcase
-set incsearch
-set hlsearch
-
-" ,n instead of :nohl
-nmap <silent> <leader>n :silent :nohlsearch<CR>
-
-" No need to escape special regex chars in search
-"nnoremap / /\v
-"nnoremap ? ?\v
-
-
-
-" ---------------------------------------------------------------------------
-" Tabs & Spaces
-" ---------------------------------------------------------------------------
-
-set expandtab      " Expand tab character to spaces
-set softtabstop=2  " Indent by 2 spaces when pressing <TAB>
-set shiftwidth=2   " Indent by 2 spaces when using >>, <<, == etc.
-set autoindent     " Keep indentation from previous line
 
 
 

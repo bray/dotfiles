@@ -34,3 +34,6 @@ vim.keymap.set('n', 'N',  'Nzz',  opts_silent)
 vim.keymap.set('n', '*',  '*zz',  opts_silent)
 vim.keymap.set('n', '#',  '#zz',  opts_silent)
 vim.keymap.set('n', 'g*', 'g*zz', opts_silent)
+
+-- ,n instead of :nohl
+vim.keymap.set('n', '<leader>n', '<cmd>nohlsearch<CR>', opts)

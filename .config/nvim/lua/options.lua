@@ -12,5 +12,25 @@ vim.opt.showmode = false                            -- Don't show -- INSERT -- i
 vim.opt.signcolumn = 'yes'                          -- Always show the sign column (e.g. for gitsigns)
 vim.opt.ttimeoutlen = 0                             -- Make escape go back to normal mode instantly
 
+
+--------------------------------------------------------------------------------
+-- Tabs & Spaces
+--------------------------------------------------------------------------------
+
+vim.opt.expandtab = true      -- Expand tab character to spaces
+vim.opt.softtabstop = 2       -- Indent by 2 spaces when pressing <TAB>
+vim.opt.shiftwidth = 2        -- Indent by 2 spaces when using >>, <<, == etc.
+vim.opt.autoindent = true     -- Keep indentation from previous line
+
+
+--------------------------------------------------------------------------------
+-- Search
+--------------------------------------------------------------------------------
+
+vim.opt.ignorecase = true
+vim.opt.smartcase = true
+vim.opt.incsearch = true
+vim.opt.hlsearch = true
+
 vim.g.python3_host_prog = '~/.asdf/shims/python3'   -- Change python3 path to use asdf shim
 vim.g.loaded_ruby_provider = 0                      -- No need for Ruby provider
