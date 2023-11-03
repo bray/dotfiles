@@ -20,6 +20,10 @@ plugins=(history-substring-search osx zsh-autosuggestions zsh-git-fzf)
 
 source $ZSH/oh-my-zsh.sh
 
+# Fixes issue with tab-complete sometimes not working
+# (e.g. a tab would sometimes complete a capital letter instead of a list)
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
+
 # fix up/down arrow? keep this here
 bindkey "$terminfo[kcuu1]" history-substring-search-up
 bindkey "$terminfo[kcud1]" history-substring-search-down
