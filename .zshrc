@@ -5,9 +5,6 @@ ZSH_THEME="bray"
 #ZSH_THEME="zsh_git_timer"
 DISABLE_AUTO_UPDATE="true"
 export EDITOR="/usr/local/bin/mvim -v"
-export GOPATH=$HOME/go
-export PATH=$PATH:$GOPATH/bin
-export FREI0R_PATH=/usr/local/lib/frei0r-1
 
 export TERM=xterm-256color
 #[ -n "$TMUX" ] && export TERM=screen-256color
