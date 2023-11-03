@@ -11,6 +11,9 @@ vim.opt.shortmess:append('I')                       -- Don't show startup screen
 vim.opt.showmode = false                            -- Don't show -- INSERT -- in bottom line (vim-airline shows this in status line)
 vim.opt.signcolumn = 'yes'                          -- Always show the sign column (e.g. for gitsigns)
 vim.opt.ttimeoutlen = 0                             -- Make escape go back to normal mode instantly
+vim.opt.foldenable = false                          -- Disable folding
+vim.opt.iskeyword:append('-')                       -- Treat hyphens in words as part of the word
+vim.opt.undofile = true                             -- Persist undo history
 
 
 --------------------------------------------------------------------------------
