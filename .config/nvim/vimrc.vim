@@ -6,45 +6,7 @@ let &packpath = &runtimepath
 
 
 
-" Remove trailing whitespace
-noremap <silent> <leader>rtw :%s/\s\+$//g<cr>``
 
-
-
-" ---------------------------------------------------------------------------
-" Backups and Persistence
-" ---------------------------------------------------------------------------
-
-set directory=~/.vim/swp//,.
-set undofile  " Persist undo history
-
-
-
-" ---------------------------------------------------------------------------
-" Command-Line Mode
-" ---------------------------------------------------------------------------
-
-cnoremap <C-a> <Home>
-cnoremap <C-e> <End>
-cnoremap <M-b> <S-Left>
-cnoremap <M-f> <S-Right>
-cnoremap <M-BS> <C-w>
-cnoremap <M-d> <S-Right><C-w>
-cnoremap <C-k> <Up>
-cnoremap <C-j> <Down>
-
-
-
-" ---------------------------------------------------------------------------
-" Quickfix Mode
-" ---------------------------------------------------------------------------
-
-" Navigate up and down
-nnoremap <silent><C-n> :cn<cr>
-nnoremap <silent><C-p> :cp<cr>
-
-" Close the Quickfix window
-nnoremap <silent><leader>q :cclose<cr>
 
 
 

@@ -47,3 +47,18 @@ vim.keymap.set('n', '<C-k>', '<cmd>wincmd k<CR>', opts)
 vim.keymap.set('n', '<C-j>', '<cmd>wincmd j<CR>', opts)
 vim.keymap.set('n', '<C-h>', '<cmd>wincmd h<CR>', opts)
 vim.keymap.set('n', '<C-l>', '<cmd>wincmd l<CR>', opts)
+
+-- Command-line mode
+vim.keymap.set('c', '<C-a>', '<Home>', opts)
+vim.keymap.set('c', '<C-e>', '<End>', opts)
+vim.keymap.set('c', '<M-b>', '<S-Left>', opts)
+vim.keymap.set('c', '<M-f>', '<S-Right>', opts)
+vim.keymap.set('c', '<M-BS>', '<C-w>', opts)
+vim.keymap.set('c', '<M-d>', '<S-Right><C-w>', opts)
+vim.keymap.set('c', '<C-k>', '<Up>', opts)
+vim.keymap.set('c', '<C-j>', '<Down>', opts)
+
+-- Quickfix mode
+vim.keymap.set('n', '<C-n>', '<cmd>cn<cr>', opts)
+vim.keymap.set('n', '<C-p>', '<cmd>cp<cr>', opts)
+vim.keymap.set('n', '<leader>q', '<cmd>cclose<cr>', opts)
