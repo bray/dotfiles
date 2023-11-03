@@ -37,3 +37,13 @@ vim.keymap.set('n', 'g*', 'g*zz', opts_silent)
 
 -- ,n instead of :nohl
 vim.keymap.set('n', '<leader>n', '<cmd>nohlsearch<CR>', opts)
+
+-- Splits
+vim.keymap.set('n', '<leader>v', '<cmd>vs<CR>', opts)
+vim.keymap.set('n', '<leader>s', '<cmd>sp<CR>', opts)
+
+-- Use Ctrl-[kjhl] to select the active split
+vim.keymap.set('n', '<C-k>', '<cmd>wincmd k<CR>', opts)
+vim.keymap.set('n', '<C-j>', '<cmd>wincmd j<CR>', opts)
+vim.keymap.set('n', '<C-h>', '<cmd>wincmd h<CR>', opts)
+vim.keymap.set('n', '<C-l>', '<cmd>wincmd l<CR>', opts)

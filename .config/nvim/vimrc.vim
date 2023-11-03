@@ -7,35 +7,6 @@ let &packpath = &runtimepath
 
 
 " ---------------------------------------------------------------------------
-" Splits
-" ---------------------------------------------------------------------------
-
-set splitright  " Put a new vertical split window on the right
-set splitbelow  " Put a new horizontal split window below
-
-nmap <leader>v :vs<CR>
-nmap <leader>s :sp<CR>
-
-" Use Ctrl-[kjhl] to select the active split
-nmap <silent> <C-k> :wincmd k<CR>
-nmap <silent> <C-j> :wincmd j<CR>
-nmap <silent> <C-h> :wincmd h<CR>
-nmap <silent> <C-l> :wincmd l<CR>
-
-
-
-" ---------------------------------------------------------------------------
-" Sessions
-" ---------------------------------------------------------------------------
-
-" Remove options, which stores all 'options and mappings'
-" (which has the side effect of keeping old mappings that have been deleted,
-" e.g. from plugins that have been removed)
-set sessionoptions-=options
-
-
-
-" ---------------------------------------------------------------------------
 " Macros
 " ---------------------------------------------------------------------------
 

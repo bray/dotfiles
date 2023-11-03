@@ -32,5 +32,14 @@ vim.opt.smartcase = true
 vim.opt.incsearch = true
 vim.opt.hlsearch = true
 
+
+--------------------------------------------------------------------------------
+-- Splits
+--------------------------------------------------------------------------------
+
+vim.opt.splitright = true  -- Put a new vertical split window on the right
+vim.opt.splitbelow = true  -- Put a new horizontal split window below
+
+
 vim.g.python3_host_prog = '~/.asdf/shims/python3'   -- Change python3 path to use asdf shim
 vim.g.loaded_ruby_provider = 0                      -- No need for Ruby provider
