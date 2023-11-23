@@ -23,4 +23,4 @@ alias bundle_default='bundle install --gemfile Gemfile'
 alias sc='ruby script/console'
 alias rc='bundle exec rails console'
 
-alias z='__zoxide_zi'
+alias c='__zoxide_zi'
