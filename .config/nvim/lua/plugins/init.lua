@@ -34,6 +34,7 @@ require('lazy').setup({
   'tpope/vim-rails',                                 -- Rails helpers
   'ludovicchabant/vim-gutentags',                    -- Automatically update ctags
   'gbprod/yanky.nvim',                               -- Yank history
+  'nvim-pack/nvim-spectre',                          -- Global search & replace
 
   { -- Color theme
     'drewtempelmeyer/palenight.vim',

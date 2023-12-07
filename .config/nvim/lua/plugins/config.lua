@@ -323,3 +323,13 @@ vim.keymap.set({'n','x'}, 'gp', '<Plug>(YankyGPutAfter)')
 vim.keymap.set({'n','x'}, 'gP', '<Plug>(YankyGPutBefore)')
 vim.keymap.set('n', '[p', '<Plug>(YankyCycleForward)')
 vim.keymap.set('n', ']p', '<Plug>(YankyCycleBackward)')
+
+
+
+--------------------------------------------------------------------------------
+-- nvim-spectre
+--------------------------------------------------------------------------------
+require('spectre').setup({
+  live_update = true,
+  is_block_ui_break = true,
+})
