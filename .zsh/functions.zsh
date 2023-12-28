@@ -10,6 +10,10 @@ rubocop_staged() {
   staged_files=($(get_staged_ruby_files))
 
   if [[ ${#staged_files[@]} -gt 0 ]]; then
+    echo "Running rubocop on these files:\n"
+    printf '%s\n' "${staged_files[@]}"
+    echo
+
     bin/rubocop "${staged_files[@]}" $1
   else
     echo "No files are staged!"
