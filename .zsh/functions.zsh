@@ -1,13 +1,31 @@
 #!/usr/bin/env sh
 
-# Run rubocop on only git staged files
+get_staged_ruby_files() {
+  git diff --name-only --diff-filter=ACMR --cached | grep -E '.rb$'
+}
+
+# Run a command on only git staged Ruby files
+run_cmd_on_staged_files() {
+  local cmd=$1
+  shift
+  local staged_files=($(get_staged_ruby_files))
+
+  if [[ ${#staged_files[@]} -gt 0 ]]; then
+    echo "Running ${cmd} on these files:\n"
+    printf '%s\n' "${staged_files[@]}"
+    echo
+
+    "$cmd" "${staged_files[@]}" "$@"
+  else
+    echo "No Ruby files are staged!"
+  fi
+}
+
 # Can add an optional -a or -A flag
 rubocop_staged() {
-  staged_files=$(git diff --name-only --diff-filter=ACMR --cached | grep -E '.rb$' | tr '\n' ' ')
+  run_cmd_on_staged_files bin/rubocop "$@"
+}
 
-  if [[ ! -z "$staged_files" ]]; then
-    bundle exec rubocop $(echo $staged_files) $1
-  else
-    echo "No files are staged!"
-  fi
+rspec_staged() {
+  run_cmd_on_staged_files bin/rspec "$@"
 }
