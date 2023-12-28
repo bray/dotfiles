@@ -16,6 +16,6 @@ rubocop_staged() {
 
     bin/rubocop "${staged_files[@]}" "$@"
   else
-    echo "No files are staged!"
+    echo "No Ruby files are staged!"
   fi
 }
