@@ -19,3 +19,18 @@ rubocop_staged() {
     echo "No Ruby files are staged!"
   fi
 }
+
+# Run rspec on only git staged files
+rspec_staged() {
+  local staged_files=($(get_staged_ruby_files))
+
+  if [[ ${#staged_files[@]} -gt 0 ]]; then
+    echo "Running rspec on these files:\n"
+    printf '%s\n' "${staged_files[@]}"
+    echo
+
+    bin/rspec "${staged_files[@]}" "$@"
+  else
+    echo "No Ruby files are staged!"
+  fi
+}
