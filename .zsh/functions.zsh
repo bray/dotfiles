@@ -14,7 +14,7 @@ rubocop_staged() {
     printf '%s\n' "${staged_files[@]}"
     echo
 
-    bin/rubocop "${staged_files[@]}" $1
+    bin/rubocop "${staged_files[@]}" "$@"
   else
     echo "No files are staged!"
   fi
