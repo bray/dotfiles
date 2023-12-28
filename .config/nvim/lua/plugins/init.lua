@@ -36,6 +36,7 @@ require('lazy').setup({
   'gbprod/yanky.nvim',                               -- Yank history
   'nvim-pack/nvim-spectre',                          -- Global search & replace
 
+
   { -- Color theme
     'drewtempelmeyer/palenight.vim',
     lazy = false,
