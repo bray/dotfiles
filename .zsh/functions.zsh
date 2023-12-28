@@ -7,7 +7,7 @@ get_staged_ruby_files() {
 # Run rubocop on only git staged files
 # Can add an optional -a or -A flag
 rubocop_staged() {
-  staged_files=($(get_staged_ruby_files))
+  local staged_files=($(get_staged_ruby_files))
 
   if [[ ${#staged_files[@]} -gt 0 ]]; then
     echo "Running rubocop on these files:\n"
