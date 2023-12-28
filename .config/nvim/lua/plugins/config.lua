@@ -139,7 +139,6 @@ vim.keymap.set('n', '<C-_>', '<cmd>BufferLinePick<cr>', opts)
 local wk = require('which-key')
 wk.register({
   ['<leader>'] = {
-    f = 'Find Files (Telescope)',
     m = 'MRU Files',
     t = {
       name = 'Telescope',
@@ -251,6 +250,39 @@ require('mini.surround').setup({
     delete = 'gsd',
   }
 })
+
+
+
+--------------------------------------------------------------------------------
+-- mini.pick
+--------------------------------------------------------------------------------
+
+-- Center picker window
+local win_config = function()
+  height = math.floor(0.618 * vim.o.lines)
+  width = math.floor(0.618 * vim.o.columns)
+  return {
+    anchor = 'NW', height = height, width = width,
+    row = math.floor(0.5 * (vim.o.lines - height)),
+    col = math.floor(0.5 * (vim.o.columns - width)),
+  }
+end
+
+require('mini.pick').setup({
+  mappings = {
+    delete_word = '<M-bs>',
+  },
+
+  window = {
+    config = win_config,
+  },
+})
+
+vim.keymap.set('n', '<leader>f', function()
+  MiniPick.builtin.files()
+end, {desc = 'Find Files (MiniPick)'})
+
+vim.api.nvim_set_hl(0, 'MiniPickMatchRanges', { fg = '#82B1FF' })
 
 
 
