@@ -1,8 +1,15 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 ##### oh-my-zsh #####
 
 ZSH=$HOME/.oh-my-zsh
 
-ZSH_THEME="bray"
+ZSH_THEME=""
 DISABLE_AUTO_UPDATE="true"
 export PAGER='less -Xr'
 export EDITOR="nvim"
@@ -94,4 +101,5 @@ autoload -Uz compinit && compinit
 source "${XDG_CONFIG_HOME:-$HOME/.config}/asdf-direnv/zshrc"
 
 # Shell prompt
-eval "$(starship init zsh)"
+source ~/powerlevel10k/powerlevel10k.zsh-theme
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
