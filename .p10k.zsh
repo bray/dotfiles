@@ -67,68 +67,8 @@
   typeset -g POWERLEVEL9K_{LEFT,RIGHT}_SUBSEGMENT_SEPARATOR=' '  # separate segments with a space
   typeset -g POWERLEVEL9K_{LEFT,RIGHT}_SEGMENT_SEPARATOR=        # no end-of-line symbol
 
-  # When set to true, icons appear before content on both sides of the prompt. When set
-  # to false, icons go after content. If empty or not set, icons go before content in the left
-  # prompt and after content in the right prompt.
-  #
-  # You can also override it for a specific segment:
-  #
-  #   POWERLEVEL9K_STATUS_ICON_BEFORE_CONTENT=false
-  #
-  # Or for a specific segment in specific state:
-  #
-  #   POWERLEVEL9K_DIR_NOT_WRITABLE_ICON_BEFORE_CONTENT=false
-  typeset -g POWERLEVEL9K_ICON_BEFORE_CONTENT=true
-
   # Add an empty line before each prompt.
   typeset -g POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
-
-  # Connect left prompt lines with these symbols.
-  typeset -g POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX=
-  typeset -g POWERLEVEL9K_MULTILINE_NEWLINE_PROMPT_PREFIX=
-  typeset -g POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX=
-  # Connect right prompt lines with these symbols.
-  typeset -g POWERLEVEL9K_MULTILINE_FIRST_PROMPT_SUFFIX=
-  typeset -g POWERLEVEL9K_MULTILINE_NEWLINE_PROMPT_SUFFIX=
-  typeset -g POWERLEVEL9K_MULTILINE_LAST_PROMPT_SUFFIX=
-
-  # The left end of left prompt.
-  typeset -g POWERLEVEL9K_LEFT_PROMPT_FIRST_SEGMENT_START_SYMBOL=
-  # The right end of right prompt.
-  typeset -g POWERLEVEL9K_RIGHT_PROMPT_LAST_SEGMENT_END_SYMBOL=
-
-  # Ruler, a.k.a. the horizontal line before each prompt. If you set it to true, you'll
-  # probably want to set POWERLEVEL9K_PROMPT_ADD_NEWLINE=false above and
-  # POWERLEVEL9K_MULTILINE_FIRST_PROMPT_GAP_CHAR=' ' below.
-  typeset -g POWERLEVEL9K_SHOW_RULER=false
-  typeset -g POWERLEVEL9K_RULER_CHAR='─'        # reasonable alternative: '·'
-  typeset -g POWERLEVEL9K_RULER_FOREGROUND=242
-
-  # Filler between left and right prompt on the first prompt line. You can set it to '·' or '─'
-  # to make it easier to see the alignment between left and right prompt and to separate prompt
-  # from command output. It serves the same purpose as ruler (see above) without increasing
-  # the number of prompt lines. You'll probably want to set POWERLEVEL9K_SHOW_RULER=false
-  # if using this. You might also like POWERLEVEL9K_PROMPT_ADD_NEWLINE=false for more compact
-  # prompt.
-  typeset -g POWERLEVEL9K_MULTILINE_FIRST_PROMPT_GAP_CHAR=' '
-  if [[ $POWERLEVEL9K_MULTILINE_FIRST_PROMPT_GAP_CHAR != ' ' ]]; then
-    # The color of the filler.
-    typeset -g POWERLEVEL9K_MULTILINE_FIRST_PROMPT_GAP_FOREGROUND=242
-    # Add a space between the end of left prompt and the filler.
-    typeset -g POWERLEVEL9K_LEFT_PROMPT_LAST_SEGMENT_END_SYMBOL=' '
-    # Add a space between the filler and the start of right prompt.
-    typeset -g POWERLEVEL9K_RIGHT_PROMPT_FIRST_SEGMENT_START_SYMBOL=' '
-    # Start filler from the edge of the screen if there are no left segments on the first line.
-    typeset -g POWERLEVEL9K_EMPTY_LINE_LEFT_PROMPT_FIRST_SEGMENT_END_SYMBOL='%{%}'
-    # End filler on the edge of the screen if there are no right segments on the first line.
-    typeset -g POWERLEVEL9K_EMPTY_LINE_RIGHT_PROMPT_FIRST_SEGMENT_START_SYMBOL='%{%}'
-  fi
-
-  #################################[ os_icon: os identifier ]##################################
-  # OS identifier color.
-  typeset -g POWERLEVEL9K_OS_ICON_FOREGROUND=
-  # Custom icon.
-  # typeset -g POWERLEVEL9K_OS_ICON_CONTENT_EXPANSION='⭐'
 
   ################################[ prompt_char: prompt symbol ]################################
   # Green prompt symbol if the last command succeeded.
