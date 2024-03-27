@@ -365,3 +365,11 @@ require('spectre').setup({
   live_update = true,
   is_block_ui_break = true,
 })
+
+
+
+--------------------------------------------------------------------------------
+-- LuaSnip
+--------------------------------------------------------------------------------
+
+require("luasnip.loaders.from_snipmate").lazy_load({paths = "~/.config/nvim/snippets"})
