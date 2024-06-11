@@ -1,2 +1,6 @@
 # Search hidden files / directories (e.g. dotfiles) by default
 --hidden
+
+# Exclude some directories
+--glob=!.git/
+--glob=!.yarn/
