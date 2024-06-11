@@ -12,6 +12,7 @@ alias grep='grep -v grep | grep --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.s
 alias vim='mvim -v'
 alias vi='vim'
 alias nv='nvim'
+alias v='nvim'
 
 alias g='git'
 alias gx='gitx --all'
