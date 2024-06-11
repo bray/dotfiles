@@ -84,6 +84,14 @@ export _ZO_EXCLUDE_DIRS=""
 eval "$(zoxide init zsh --no-cmd)"
 
 
+# Fix https://github.com/ohmyzsh/ohmyzsh/issues/11416
+unalias diff
+diff_path=`which diff`
+function diff() {
+  $diff_path --color $*
+}
+
+
 # Include any additional config in ~/.zsh/
 include_dir=~/.zsh
 if [[ -d $include_dir ]]; then
