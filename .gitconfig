@@ -63,6 +63,7 @@
 [core]
   excludesfile = ~/.gitignore
   pager = "if [[ \"$RAW\" = \"\" ]]; then delta --line-numbers; else less -Xr; fi"
+  attributesfile = ~/.gitattributes
 
 [diff]
   # Show moved lines in a different color
