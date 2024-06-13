@@ -29,9 +29,11 @@ source $ZSH/oh-my-zsh.sh
 # (e.g. a tab would sometimes complete a capital letter instead of a list)
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 
+
 # fix up/down arrow? keep this here
-bindkey "$terminfo[kcuu1]" history-substring-search-up
-bindkey "$terminfo[kcud1]" history-substring-search-down
+# now throws an error in tmux
+#bindkey "$terminfo[kcuu1]" history-substring-search-up
+#bindkey "$terminfo[kcud1]" history-substring-search-down
 
 
 ##### Custom config #####
@@ -42,11 +44,11 @@ setopt correct
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
-export PATH="/usr/local/opt/mysql@5.6/bin:$PATH"
+#export PATH="/usr/local/opt/mysql@5.6/bin:$PATH"
 
-export LDFLAGS="-L/usr/local/opt/libxml2/lib"
-export CPPFLAGS="-I/usr/local/opt/libxml2/include"
-export PKG_CONFIG_PATH="/usr/local/opt/libxml2/lib/pkgconfig"
+#export LDFLAGS="-L/usr/local/opt/libxml2/lib"
+#export CPPFLAGS="-I/usr/local/opt/libxml2/include"
+#export PKG_CONFIG_PATH="/usr/local/opt/libxml2/lib/pkgconfig"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
