@@ -14,11 +14,8 @@ DISABLE_AUTO_UPDATE="true"
 export PAGER='less -Xr'
 export EDITOR="nvim"
 
-export TERM=xterm-256color
-#[ -n "$TMUX" ] && export TERM=screen-256color
 
 
-#export SSL_CERT_FILE=/usr/local/etc/openssl/cert.pem
 
 
 plugins=(history-substring-search osx zsh-autosuggestions zsh-git-fzf)
