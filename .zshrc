@@ -22,7 +22,7 @@ export XDG_CONFIG_HOME="$HOME/.config"
 # TEMP to fix segfaults: https://github.com/ged/ruby-pg/issues/538
 export PGGSSENCMODE="disable"
 
-plugins=(history-substring-search osx zsh-autosuggestions zsh-git-fzf)
+plugins=(history-substring-search macos zsh-autosuggestions zsh-git-fzf)
 
 source $ZSH/oh-my-zsh.sh
 
