@@ -16,6 +16,8 @@ export EDITOR="nvim"
 
 
 
+# Note: this could possibly break stuff that expects it to be ~/Library/Application\ Support
+export XDG_CONFIG_HOME="$HOME/.config"
 
 # TEMP to fix segfaults: https://github.com/ged/ruby-pg/issues/538
 export PGGSSENCMODE="disable"
