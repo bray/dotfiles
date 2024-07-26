@@ -13,7 +13,6 @@
   "mini.nvim": { "branch": "main", "commit": "fd5d244647cf1f37e85ba3e490d5968df33ef430" },
   "nvim-spectre": { "branch": "master", "commit": "a18a58015b46f02b4fe537ebfffd82e46110ff24" },
   "nvim-web-devicons": { "branch": "master", "commit": "a1e6268779411048a87f767a27380089362a0ce2" },
-  "oil.nvim": { "branch": "master", "commit": "f72b9b2637eec2b3db8255c196aa4bf11231af81" },
   "palenight.vim": { "branch": "master", "commit": "5552a6349bcd927df9f17db34f017b77b963e503" },
   "plenary.nvim": { "branch": "master", "commit": "9ce85b0f7dcfe5358c0be937ad23e456907d410b" },
   "range-highlight.nvim": { "branch": "master", "commit": "8b5e8ccb3460b2c3675f4639b9f54e64eaab36d9" },

@@ -93,13 +93,6 @@ require('lazy').setup({
     build = ':TSUpdate'
   },
 
-  { -- File explorer in a buffer
-    'stevearc/oil.nvim',
-    opts = {},
-    dependencies = { 'nvim-tree/nvim-web-devicons' },
-  },
-
-
   { -- Highlight ranges of lines
     'winston0410/range-highlight.nvim',
     opts = {},

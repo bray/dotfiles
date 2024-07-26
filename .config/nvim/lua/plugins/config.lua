@@ -175,43 +175,10 @@ require('nvim-treesitter.configs').setup {
 }
 
 
---------------------------------------------------------------------------------
--- Oil
---------------------------------------------------------------------------------
-
-require('oil').setup {
-  keymaps = {
-    ["g?"] = "actions.show_help",
-    ["<CR>"] = "actions.select",
-    ["<C-v>"] = "actions.select_vsplit",
-    ["<C-s>"] = "actions.select_split",
-    ["<C-t>"] = "actions.select_tab",
-    ["<C-p>"] = "actions.preview",
-    ["<C-c>"] = "actions.close",
-    ["<C-l>"] = "actions.refresh",
-    ["-"] = "actions.parent",
-    ["_"] = "actions.open_cwd",
-    ["`"] = "actions.cd",
-    ["~"] = "actions.tcd",
-    ["g."] = "actions.toggle_hidden",
-  },
-
-  view_options = { show_hidden = true },
-}
-
--- Enable previewer automatically
-vim.api.nvim_create_autocmd("User", {
-  pattern = "OilEnter",
-  callback = vim.schedule_wrap(function(args)
-    local oil = require("oil")
-    if vim.api.nvim_get_current_buf() == args.data.buf and oil.get_cursor_entry() then
-      oil.select({ preview = true })
-    end
-  end),
-})
 
 
-vim.keymap.set('n', '<leader>d', '<CMD>Oil<CR>')
+
+
 
 
 
