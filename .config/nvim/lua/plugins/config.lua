@@ -137,18 +137,16 @@ vim.keymap.set('n', '<C-_>', '<cmd>BufferLinePick<cr>', opts)
 --------------------------------------------------------------------------------
 
 local wk = require('which-key')
-wk.register({
-  ['<leader>'] = {
-    m = 'MRU Files',
-    t = {
-      name = 'Telescope',
-      g = 'Live Grep',
-      b = 'Buffers',
-      h = 'Help Tags',
-      t = 'Telescope (builtin pickers)',
-    },
-    h = 'Hop',
-  },
+wk.add({
+  {'<leader>m',  desc = 'MRU Files'},
+
+  {'<leader>t',  name = '+Telescope'},
+  {'<leader>tg', desc = 'Live Grep'},
+  {'<leader>tb', desc = 'Buffers'},
+  {'<leader>th', desc = 'Help Tags'},
+  {'<leader>tt', desc = 'Telescope (builtin pickers)'},
+
+  {'<leader>h',  desc = 'Hop'},
 })
 
 
