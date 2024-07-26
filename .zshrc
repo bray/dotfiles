@@ -105,11 +105,19 @@ if [[ -d $include_dir ]]; then
   done
 fi
 
+
+# Keeping both asdf and rtx (now mise) for now
+# I want to use rtx, but need to keep asdf for some tools that are tightly
+# integrated with it
+# We need to make sure that rtx takes precedence unless asdf is used explicitly
+
 # asdf Config
 . $HOME/.asdf/asdf.sh
 fpath=(${ASDF_DIR}/completions $fpath)
 autoload -Uz compinit && compinit
-source "${XDG_CONFIG_HOME:-$HOME/.config}/asdf-direnv/zshrc"
+#source "${XDG_CONFIG_HOME:-$HOME/.config}/asdf-direnv/zshrc"
+
+eval "$(~/bin/rtx activate zsh)"
 
 # Shell prompt
 source ~/powerlevel10k/powerlevel10k.zsh-theme
