@@ -84,7 +84,7 @@ require('lazy').setup({
 
   { -- Prettier tabs
     'akinsho/bufferline.nvim',
-    version = 'v4.1.0',
+    version = '*',
     dependencies = 'nvim-tree/nvim-web-devicons'
   },
 
