@@ -87,6 +87,13 @@ require('telescope').setup({
       follow = false,
     },
   },
+
+  extensions = {
+    recent_files = {
+      -- Only show files in the current working directory
+      only_cwd = true
+    }
+  }
 })
 
 require('telescope').load_extension('fzf')
