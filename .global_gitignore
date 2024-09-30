@@ -1,0 +1,8 @@
+.DS_Store
+tags
+tags.lock
+tags.temp
+
+.rspec_parallel
+
+public/assets/
