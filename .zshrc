@@ -75,7 +75,7 @@ zle -N git-fzf-log-bindkey
 bindkey '^l' git-fzf-log-bindkey
 
 
-export PATH="$HOME/bin:$PATH"
+export PATH="$HOME/bin:$HOME/.local/bin:$PATH"
 
 ##### Keep all below this at the bottom #####
 
