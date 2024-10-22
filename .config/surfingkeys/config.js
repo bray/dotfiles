@@ -2,7 +2,7 @@
 
 const disableDomains = [
   'google\.com',
-  'github\.com',
+  'github\.(?:com|dev)',
 ];
 
 settings.blocklistPattern = new RegExp(disableDomains.join('|'));
