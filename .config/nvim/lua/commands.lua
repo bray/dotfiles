@@ -10,3 +10,6 @@ vim.cmd([[
   autocmd BufLeave * let b:winview = winsaveview()
   autocmd BufEnter * if(exists('b:winview')) | call winrestview(b:winview) | endif
 ]])
+
+-- Alias :G blame to :Gb
+vim.api.nvim_create_user_command('Gb', 'G blame', {})
