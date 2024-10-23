@@ -13,6 +13,7 @@ settings.blocklistPattern = new RegExp(disableDomains.join('|'));
 
 const lurkingDomains = [
   'atlassian\.net',
+  'greenhouse\.io',
 ];
 
 settings.lurkingPattern = new RegExp(lurkingDomains.join('|'));
