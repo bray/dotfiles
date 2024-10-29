@@ -114,6 +114,11 @@ require('lazy').setup({
   },
 
   {
+    'mrded/vim-github-codeowners',
+    build = 'npm install',
+  },
+
+  {
     "kdheepak/lazygit.nvim",
     lazy = true,
     cmd = {
