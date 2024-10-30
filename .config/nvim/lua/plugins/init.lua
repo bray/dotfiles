@@ -104,6 +104,8 @@ require('lazy').setup({
   { -- Show indent lines
     'lukas-reineke/indent-blankline.nvim',
     main = 'ibl',
+    -- only until master is fixed
+    commit = '65e20ab94a26d0e14acac5049b8641336819dfc7',
     opts = {},
   },
 
