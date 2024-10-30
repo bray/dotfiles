@@ -2,6 +2,15 @@ name: nvim
 
 windows:
   - notes: cd ~/notes && nvim -S ~/.local/state/nvim/sessions/notes.vim
+
+  # Usage: tmuxinator nvim project_dir=~/code/foo_dir project_name=foo
+  <% if !@settings["project_dir"].nil? %>
+    <% if @settings["project_name"].nil? %>
+      <% raise 'You must also specify the project_name.' %>
+    <% end %>
+  - <%= @settings["project_name"] %>: cd <%= @settings["project_dir"] %> && nvim
+  <% end %>
+
   - nvim-config: cd ~/dotfiles/.config/nvim && nvim -S ~/.local/state/nvim/sessions/nvim_config.vim
 
 # Optional tmux socket
