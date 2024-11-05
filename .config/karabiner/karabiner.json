@@ -4,6 +4,21 @@
             "complex_modifications": {
                 "rules": [
                     {
+                        "description": "Right Control → Hyper Key (⌃⌥⇧⌘)",
+                        "manipulators": [
+                            {
+                                "from": { "key_code": "right_control" },
+                                "to": [
+                                    {
+                                        "key_code": "left_shift",
+                                        "modifiers": ["left_command", "left_control", "left_option"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "description": "[BRAY] Double left shift to caps_lock",
                         "enabled": false,
                         "manipulators": [
