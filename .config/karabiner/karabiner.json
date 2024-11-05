@@ -28,6 +28,29 @@
                                 "type": "basic"
                             }
                         ]
+                    },
+                    {
+                        "description": "[Tmux] Search: Ctrl-/ → Ctrl-Space [ ?",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "slash",
+                                    "modifiers": { "mandatory": ["left_control"] }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "spacebar",
+                                        "modifiers": ["left_control"]
+                                    },
+                                    { "key_code": "open_bracket" },
+                                    {
+                                        "key_code": "slash",
+                                        "modifiers": ["shift"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
                     }
                 ]
             },
