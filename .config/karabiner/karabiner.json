@@ -5,6 +5,7 @@
                 "rules": [
                     {
                         "description": "[BRAY] Double left shift to caps_lock",
+                        "enabled": false,
                         "manipulators": [
                             {
                                 "conditions": [
