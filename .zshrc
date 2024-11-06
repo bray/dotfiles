@@ -30,6 +30,10 @@ source $ZSH/oh-my-zsh.sh
 # (e.g. a tab would sometimes complete a capital letter instead of a list)
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 
+# zsh-autosuggestions: Accept just the next word
+# ^e accepts the entire line
+bindkey '^l' forward-word
+
 
 # fix up/down arrow? keep this here
 # now throws an error in tmux
@@ -69,10 +73,6 @@ complete -C '/usr/local/bin/aws_completer' aws
 git-fzf-checkout-bindkey() { echo; git-fzf checkout; zle reset-prompt; }
 zle -N git-fzf-checkout-bindkey
 bindkey '^o' git-fzf-checkout-bindkey
-
-git-fzf-log-bindkey() { git-fzf log; }
-zle -N git-fzf-log-bindkey
-bindkey '^l' git-fzf-log-bindkey
 
 
 export PATH="$HOME/bin:$HOME/.local/bin:$PATH"
