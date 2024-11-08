@@ -31,10 +31,20 @@
                         ]
                     },
                     {
-                        "description": "Right Control → Hyper Key (⌃⌥⇧⌘)",
+                        "description": "Right Control (or Right Option) → Hyper Key (⌃⌥⇧⌘)",
                         "manipulators": [
                             {
                                 "from": { "key_code": "right_control" },
+                                "to": [
+                                    {
+                                        "key_code": "left_shift",
+                                        "modifiers": ["left_command", "left_control", "left_option"]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": { "key_code": "right_option" },
                                 "to": [
                                     {
                                         "key_code": "left_shift",
