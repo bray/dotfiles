@@ -77,6 +77,18 @@
                                 "type": "basic"
                             }
                         ]
+                    },
+                    {
+                        "description": "Disable Cmd-h to prevent minimizing an app",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "h",
+                                    "modifiers": { "mandatory": ["command"] }
+                                },
+                                "type": "basic"
+                            }
+                        ]
                     }
                 ]
             },
