@@ -294,7 +294,13 @@
                                         "optional": ["any"]
                                     }
                                 },
-                                "to": [{ "key_code": "vk_none" }],
+                                "to": [
+                                    {
+                                        "key_code": "grave_accent_and_tilde",
+                                        "modifiers": ["shift"]
+                                    },
+                                    { "shell_command": "afplay /System/Library/Sounds/Pop.aiff" }
+                                ],
                                 "type": "basic"
                             },
                             {
@@ -305,7 +311,13 @@
                                         "optional": ["any"]
                                     }
                                 },
-                                "to": [{ "key_code": "vk_none" }],
+                                "to": [
+                                    {
+                                        "key_code": "1",
+                                        "modifiers": ["shift"]
+                                    },
+                                    { "shell_command": "afplay /System/Library/Sounds/Pop.aiff" }
+                                ],
                                 "type": "basic"
                             },
                             {
@@ -316,7 +328,13 @@
                                         "optional": ["any"]
                                     }
                                 },
-                                "to": [{ "key_code": "vk_none" }],
+                                "to": [
+                                    {
+                                        "key_code": "2",
+                                        "modifiers": ["shift"]
+                                    },
+                                    { "shell_command": "afplay /System/Library/Sounds/Pop.aiff" }
+                                ],
                                 "type": "basic"
                             },
                             {
@@ -327,7 +345,13 @@
                                         "optional": ["any"]
                                     }
                                 },
-                                "to": [{ "key_code": "vk_none" }],
+                                "to": [
+                                    {
+                                        "key_code": "3",
+                                        "modifiers": ["shift"]
+                                    },
+                                    { "shell_command": "afplay /System/Library/Sounds/Pop.aiff" }
+                                ],
                                 "type": "basic"
                             },
                             {
@@ -338,7 +362,13 @@
                                         "optional": ["any"]
                                     }
                                 },
-                                "to": [{ "key_code": "vk_none" }],
+                                "to": [
+                                    {
+                                        "key_code": "4",
+                                        "modifiers": ["shift"]
+                                    },
+                                    { "shell_command": "afplay /System/Library/Sounds/Pop.aiff" }
+                                ],
                                 "type": "basic"
                             },
                             {
@@ -349,7 +379,13 @@
                                         "optional": ["any"]
                                     }
                                 },
-                                "to": [{ "key_code": "vk_none" }],
+                                "to": [
+                                    {
+                                        "key_code": "5",
+                                        "modifiers": ["shift"]
+                                    },
+                                    { "shell_command": "afplay /System/Library/Sounds/Pop.aiff" }
+                                ],
                                 "type": "basic"
                             },
                             {
@@ -360,7 +396,13 @@
                                         "optional": ["any"]
                                     }
                                 },
-                                "to": [{ "key_code": "vk_none" }],
+                                "to": [
+                                    {
+                                        "key_code": "q",
+                                        "modifiers": ["shift"]
+                                    },
+                                    { "shell_command": "afplay /System/Library/Sounds/Pop.aiff" }
+                                ],
                                 "type": "basic"
                             },
                             {
@@ -371,7 +413,13 @@
                                         "optional": ["any"]
                                     }
                                 },
-                                "to": [{ "key_code": "vk_none" }],
+                                "to": [
+                                    {
+                                        "key_code": "w",
+                                        "modifiers": ["shift"]
+                                    },
+                                    { "shell_command": "afplay /System/Library/Sounds/Pop.aiff" }
+                                ],
                                 "type": "basic"
                             },
                             {
@@ -382,7 +430,13 @@
                                         "optional": ["any"]
                                     }
                                 },
-                                "to": [{ "key_code": "vk_none" }],
+                                "to": [
+                                    {
+                                        "key_code": "e",
+                                        "modifiers": ["shift"]
+                                    },
+                                    { "shell_command": "afplay /System/Library/Sounds/Pop.aiff" }
+                                ],
                                 "type": "basic"
                             },
                             {
@@ -393,7 +447,13 @@
                                         "optional": ["any"]
                                     }
                                 },
-                                "to": [{ "key_code": "vk_none" }],
+                                "to": [
+                                    {
+                                        "key_code": "r",
+                                        "modifiers": ["shift"]
+                                    },
+                                    { "shell_command": "afplay /System/Library/Sounds/Pop.aiff" }
+                                ],
                                 "type": "basic"
                             },
                             {
@@ -404,7 +464,13 @@
                                         "optional": ["any"]
                                     }
                                 },
-                                "to": [{ "key_code": "vk_none" }],
+                                "to": [
+                                    {
+                                        "key_code": "t",
+                                        "modifiers": ["shift"]
+                                    },
+                                    { "shell_command": "afplay /System/Library/Sounds/Pop.aiff" }
+                                ],
                                 "type": "basic"
                             },
                             {
@@ -415,7 +481,13 @@
                                         "optional": ["any"]
                                     }
                                 },
-                                "to": [{ "key_code": "vk_none" }],
+                                "to": [
+                                    {
+                                        "key_code": "a",
+                                        "modifiers": ["shift"]
+                                    },
+                                    { "shell_command": "afplay /System/Library/Sounds/Pop.aiff" }
+                                ],
                                 "type": "basic"
                             },
                             {
@@ -426,7 +498,13 @@
                                         "optional": ["any"]
                                     }
                                 },
-                                "to": [{ "key_code": "vk_none" }],
+                                "to": [
+                                    {
+                                        "key_code": "s",
+                                        "modifiers": ["shift"]
+                                    },
+                                    { "shell_command": "afplay /System/Library/Sounds/Pop.aiff" }
+                                ],
                                 "type": "basic"
                             },
                             {
@@ -437,7 +515,13 @@
                                         "optional": ["any"]
                                     }
                                 },
-                                "to": [{ "key_code": "vk_none" }],
+                                "to": [
+                                    {
+                                        "key_code": "d",
+                                        "modifiers": ["shift"]
+                                    },
+                                    { "shell_command": "afplay /System/Library/Sounds/Pop.aiff" }
+                                ],
                                 "type": "basic"
                             },
                             {
@@ -448,7 +532,13 @@
                                         "optional": ["any"]
                                     }
                                 },
-                                "to": [{ "key_code": "vk_none" }],
+                                "to": [
+                                    {
+                                        "key_code": "f",
+                                        "modifiers": ["shift"]
+                                    },
+                                    { "shell_command": "afplay /System/Library/Sounds/Pop.aiff" }
+                                ],
                                 "type": "basic"
                             },
                             {
@@ -459,7 +549,13 @@
                                         "optional": ["any"]
                                     }
                                 },
-                                "to": [{ "key_code": "vk_none" }],
+                                "to": [
+                                    {
+                                        "key_code": "g",
+                                        "modifiers": ["shift"]
+                                    },
+                                    { "shell_command": "afplay /System/Library/Sounds/Pop.aiff" }
+                                ],
                                 "type": "basic"
                             },
                             {
@@ -470,7 +566,13 @@
                                         "optional": ["any"]
                                     }
                                 },
-                                "to": [{ "key_code": "vk_none" }],
+                                "to": [
+                                    {
+                                        "key_code": "z",
+                                        "modifiers": ["shift"]
+                                    },
+                                    { "shell_command": "afplay /System/Library/Sounds/Pop.aiff" }
+                                ],
                                 "type": "basic"
                             },
                             {
@@ -481,7 +583,13 @@
                                         "optional": ["any"]
                                     }
                                 },
-                                "to": [{ "key_code": "vk_none" }],
+                                "to": [
+                                    {
+                                        "key_code": "x",
+                                        "modifiers": ["shift"]
+                                    },
+                                    { "shell_command": "afplay /System/Library/Sounds/Pop.aiff" }
+                                ],
                                 "type": "basic"
                             },
                             {
@@ -492,7 +600,13 @@
                                         "optional": ["any"]
                                     }
                                 },
-                                "to": [{ "key_code": "vk_none" }],
+                                "to": [
+                                    {
+                                        "key_code": "c",
+                                        "modifiers": ["shift"]
+                                    },
+                                    { "shell_command": "afplay /System/Library/Sounds/Pop.aiff" }
+                                ],
                                 "type": "basic"
                             },
                             {
@@ -503,7 +617,13 @@
                                         "optional": ["any"]
                                     }
                                 },
-                                "to": [{ "key_code": "vk_none" }],
+                                "to": [
+                                    {
+                                        "key_code": "v",
+                                        "modifiers": ["shift"]
+                                    },
+                                    { "shell_command": "afplay /System/Library/Sounds/Pop.aiff" }
+                                ],
                                 "type": "basic"
                             }
                         ]
