@@ -233,7 +233,7 @@ local minifiles_toggle = function(...)
   if not MiniFiles.close() then MiniFiles.open(vim.api.nvim_buf_get_name(0)) end
 end
 
-vim.keymap.set('n', '<leader>d', minifiles_toggle)
+vim.keymap.set('n', '<leader>d', minifiles_toggle, { desc = 'MiniFiles' })
 
 
 -- TODO: tweak this to 1) create a new tab instead of a split, then 2) open the buffer in the new tab (and focus it)
