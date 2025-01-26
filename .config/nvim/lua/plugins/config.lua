@@ -200,9 +200,9 @@ require('mini.ai').setup()
 
 require('mini.surround').setup({
   highlight_duration = 1000,
+  search_method = 'cover_or_nearest',
   mappings = {
     update_n_lines = '',
-    search_method = 'cover_or_nearest',
     replace = 'gr',
     add = 'gsa',
     delete = 'gsd',
