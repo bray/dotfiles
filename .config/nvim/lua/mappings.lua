@@ -2,6 +2,7 @@ local opts = { noremap = true }
 local opts_silent = { noremap = true, silent = true }
 
 -- Use Cmd-s to save
+-- (must set a binding in your terminal emulator from Cmd-c to Ctrl-s)
 vim.keymap.set('n', '<C-s>', '<cmd>w<CR>', opts)
 vim.keymap.set('v', '<C-s>', '<C-c>:w<CR>', opts)
 vim.keymap.set('i', '<C-s>', '<C-o>:w<CR>', opts)
@@ -13,6 +14,7 @@ vim.keymap.set('i', '<M-BS>', '<C-w>', opts)
 vim.keymap.set('n', '<leader>p', '<cmd>set invpaste<cr>', opts)
 
 -- Use Cmd-c to copy to system clipboard
+-- (must set a binding in your terminal emulator from Cmd-c to Ctrl-c)
 vim.keymap.set('v', '<M-c>', '"+y', opts)
 
 -- Close the current window
