@@ -39,13 +39,13 @@ temp_airline_symbols.dirty = ''
 -- temp_airline_symbols.maxlinenr = '☰ '
 vim.g.airline_symbols = temp_airline_symbols
 
--- Remove the unused 'y' section
--- (file encoding by default)
 vim.g['airline#extensions#default#layout'] = {
   { 'a', 'c' },
-  { 'x', 'z', 'warning', 'error' }
+  { 'x', 'y', 'z', 'warning', 'error' }
 }
 
+-- Display the GitHub codeowner(s) of the file
+vim.g.airline_section_y = '%{codeowners#whoBufname()}'
 
 -- Display prettier current line and column
 vim.g.airline_section_z = 'Line: %l / %L (%p%%) | Col: %c'
