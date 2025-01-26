@@ -42,12 +42,10 @@ vim.g.airline_symbols = temp_airline_symbols
 -- Remove the unused 'y' section
 -- (file encoding by default)
 vim.g['airline#extensions#default#layout'] = {
-  { 'a', 'b', 'c' },
+  { 'a', 'c' },
   { 'x', 'z', 'warning', 'error' }
 }
 
--- Display current branch
-vim.g.airline_section_b = '%{airline#util#wrap(airline#extensions#branch#get_head(),80)}'
 
 -- Display prettier current line and column
 vim.g.airline_section_z = 'Line: %l / %L (%p%%) | Col: %c'
