@@ -19,7 +19,6 @@ vim.opt.rtp:prepend(lazypath)
 require('lazy').setup({
   'edkolev/tmuxline.vim',                            -- Needed only to update tmux statusline; run :Tmuxline airline, then :TmuxlineSnapshot
   'jeffkreeftmeijer/vim-numbertoggle',               -- Tiny plugin for better line numbers
-  'kana/vim-arpeggio',                               -- Better jk -> <Esc>
   'smartpde/telescope-recent-files',                 -- MRU files via Telescope
   'tpope/vim-fugitive',                              -- Various :Git commands
   'tpope/vim-rhubarb',                               -- Enables :GBrowse to open files/lines on Github
