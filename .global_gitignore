@@ -6,3 +6,6 @@ tags.temp
 .rspec_parallel
 
 public/assets/
+
+.config/karabiner/automatic_backups/
+.config/karabiner/assets/complex_modifications/
