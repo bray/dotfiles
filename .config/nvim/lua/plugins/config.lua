@@ -50,7 +50,7 @@ vim.g.airline_section_y = '%{codeowners#whoBufname()}'
 -- Display prettier current line and column
 vim.g.airline_section_z = 'Line: %l / %L (%p%%) | Col: %c'
 
-vim.g.airline_theme = 'cobalt2'
+vim.g.airline_theme = 'kolor' -- purple and a little pink
 
 
 
