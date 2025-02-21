@@ -1,0 +1,18 @@
+# Theme and font
+theme = Dracula+
+font-family = JetBrainsMono Nerd Font
+font-size = 16
+
+# Disable ligatures
+font-feature = -calt
+
+# This is the same as iTerm's "use thin strokes for anti-aliased text" setting
+font-thicken = true
+
+# Set cursor style
+shell-integration-features = no-cursor
+cursor-style = block
+cursor-style-blink = false
+
+# Hide titlebar, to be more streamlined
+macos-titlebar-style = hidden
