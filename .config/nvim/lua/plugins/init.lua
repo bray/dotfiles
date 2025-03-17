@@ -114,12 +114,12 @@ require('lazy').setup({
     build = "make install_jsregexp"
   },
 
-  {
+  { -- Show CODEOWNERS in the statusline
     'mrded/vim-github-codeowners',
     build = 'npm install',
   },
 
-  {
+  { -- Use lazygit in Neovim
     "kdheepak/lazygit.nvim",
     lazy = true,
     cmd = {
