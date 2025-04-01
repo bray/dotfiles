@@ -127,7 +127,11 @@ fpath=(${ASDF_DIR}/completions $fpath)
 autoload -Uz compinit && compinit
 #source "${XDG_CONFIG_HOME:-$HOME/.config}/asdf-direnv/zshrc"
 
-eval "$($HOME/.local/bin/mise activate zsh)"
+if [[ -f "$HOME/.local/bin/mise" ]]; then
+  eval "$($HOME/.local/bin/mise activate zsh)"
+elif [[ -f "$HOME/.bin/rtx" ]]; then
+  eval "$($HOME/.bin/rtx activate zsh)"
+fi
 
 # Shell prompt
 source ~/powerlevel10k/powerlevel10k.zsh-theme
