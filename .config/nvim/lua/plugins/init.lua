@@ -37,7 +37,7 @@ require('lazy').setup({
 
 
   { -- Color theme
-    'drewtempelmeyer/palenight.vim',
+    'wilmanbarrios/palenight.nvim',
     lazy = false,
     priority = 1000,
     config = function()
