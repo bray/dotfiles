@@ -43,6 +43,12 @@ bindkey '^l' forward-word
 
 ##### Custom config #####
 
+# Set history file to be different than the default, to try to prevent issues
+# with it getting truncated
+HISTFILE=${XDG_DATA_HOME:-$HOME/.local/share}/zsh/zsh_history
+[[ -d $HISTFILE:h ]] || mkdir -p $HISTFILE:h
+
+
 # Correct only commands, not arguments
 unsetopt correct_all
 setopt correct
