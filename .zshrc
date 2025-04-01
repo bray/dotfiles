@@ -48,6 +48,10 @@ bindkey '^l' forward-word
 HISTFILE=${XDG_DATA_HOME:-$HOME/.local/share}/zsh/zsh_history
 [[ -d $HISTFILE:h ]] || mkdir -p $HISTFILE:h
 
+# Override oh-my-zsh's history settings
+SAVEHIST=500000
+HISTSIZE=600000
+
 
 # Correct only commands, not arguments
 unsetopt correct_all
