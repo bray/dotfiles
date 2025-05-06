@@ -24,6 +24,10 @@ export PGGSSENCMODE="disable"
 
 plugins=(zsh-autosuggestions)
 
+# Start to move away from oh-my-zsh
+export ZSH_BASE_DIR="$HOME/.zsh"
+export ZSH_THIRD_PARTY_DIR="$ZSH_BASE_DIR/third_party"
+
 source $ZSH/oh-my-zsh.sh
 
 # Fixes issue with tab-complete sometimes not working
