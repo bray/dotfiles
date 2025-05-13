@@ -7,3 +7,5 @@ export HOMEBREW_NO_INSTALLED_DEPENDENTS_CHECK=1
 # Somehow, $TMUX is not getting set outside of tmux, which causes a
 # "no current client" error
 [ -z "$TMUX" ] || unset TMUX
+
+export AGE_PUBLIC_KEY="age1w8p76jw8gsg2w7prlpg0xvmgexcqxlup2php7qeqpppsxlvy0seqc0pa04"
