@@ -339,3 +339,11 @@ require('spectre').setup({
 --------------------------------------------------------------------------------
 
 require("luasnip.loaders.from_snipmate").lazy_load({paths = "~/.config/nvim/snippets"})
+
+
+
+--------------------------------------------------------------------------------
+-- Copilot
+--------------------------------------------------------------------------------
+
+vim.g.copilot_node_command = "~/.local/share/mise/installs/node/20.10.0/bin/node"
