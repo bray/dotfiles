@@ -116,8 +116,22 @@ function diff() {
 
 # Include any additional config in ~/.zsh/
 include_dir=~/.zsh
+
+# Define files to exclude (full paths or patterns)
+excluded=(
+  "$include_dir/third_party/**"
+)
+
 if [[ -d $include_dir ]]; then
   for file in ${include_dir}/**/*.zsh; do
+    local skip=false
+
+    for pattern in $excluded; do
+      [[ $file == ${~pattern} ]] && skip=true && break
+    done
+
+    [[ $skip == true ]] && continue
+
     if [[ -e "$file" ]]; then
       source "$file"
     fi
