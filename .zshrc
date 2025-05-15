@@ -76,11 +76,6 @@ export ZSH_AUTOSUGGEST_MANUAL_REBIND='yes'
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-# Initialize skim
-skim_shell_dir="$ZSH_THIRD_PARTY_DIR/skim/shell"
-[[ -f "$skim_shell_dir/key-bindings.zsh" ]] && source "$skim_shell_dir/key-bindings.zsh"
-[[ -f "$skim_shell_dir/completion.zsh" ]] && source "$skim_shell_dir/completion.zsh"
-
 
 # Enable autocomplete for the `aws` commands
 autoload bashcompinit && bashcompinit
