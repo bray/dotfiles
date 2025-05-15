@@ -9,6 +9,7 @@ dir=${0:A:h}
 files=(
   "$dir/completion.zsh"
   "$dir/key-bindings.zsh"
+  "$dir/custom.zsh"
 )
 
 for file in "${files[@]}"; do
