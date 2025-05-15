@@ -26,3 +26,4 @@ alias rc='bundle exec rails console'
 
 alias c='__zoxide_zi'
 alias y='yazi'
+alias awk='gawk'
