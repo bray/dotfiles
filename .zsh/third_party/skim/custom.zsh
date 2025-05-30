@@ -28,7 +28,7 @@ skim-history-widget() {
     --nth=2..                           # Only match against the command
     --no-multi                          # Disable multiple selection
     --preview-window=:hidden            # Hide the preview window
-    --height="${SKIM_TMUX_HEIGHT:-60%}" # Set the height of the skim window
+    --height="${SKIM_TMUX_HEIGHT:-40%}" # Set the height of the skim window
     --bind="${(j:,:)skim_bindings}"     # Add custom key bindings
     --query="$LBUFFER"                  # Set the initial query to the current prompt text
   )
