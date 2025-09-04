@@ -25,3 +25,4 @@ alias sc='ruby script/console'
 alias rc='bundle exec rails console'
 
 alias c='__zoxide_zi'
+alias y='yazi'
