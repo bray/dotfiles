@@ -9,3 +9,8 @@ public/assets/
 
 .config/karabiner/automatic_backups/
 .config/karabiner/assets/complex_modifications/
+
+# For now, at least
+.cursor/rules
+
+.claude/settings.local.json
