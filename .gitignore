@@ -20,3 +20,9 @@ Gemfile.local*
 tags
 .config/tmux/plugins/
 .config/lazygit/state.yml
+
+.claude/todos
+.claude/ide
+.claude/projects
+.claude/shell-snapshots
+.claude/statsig
