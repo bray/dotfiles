@@ -7,7 +7,7 @@ alias rm='rm -i'
 alias top='top -o rsize'
 alias locate='mdfind'
 alias mysql='mysql -uroot'
-alias grep='grep -v grep | grep --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn,.idea,.tox}'
+alias grep='grep --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn,.idea,.tox}'
 
 alias vim='mvim -v'
 alias vi='vim'
