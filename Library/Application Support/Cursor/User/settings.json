@@ -1,0 +1,8 @@
+{
+    "workbench.colorTheme": "Spinel",
+    "editor.fontFamily": "JetBrainsMono Nerd Font",
+    "editor.fontSize": 16,
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    }
+}
