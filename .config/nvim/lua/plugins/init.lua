@@ -18,7 +18,6 @@ vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup({
   'edkolev/tmuxline.vim',                            -- Needed only to update tmux statusline; run :Tmuxline airline, then :TmuxlineSnapshot
-  'jeffkreeftmeijer/vim-numbertoggle',               -- Tiny plugin for better line numbers
   'smartpde/telescope-recent-files',                 -- MRU files via Telescope
   'tpope/vim-fugitive',                              -- Various :Git commands
   'tpope/vim-rhubarb',                               -- Enables :GBrowse to open files/lines on Github
@@ -35,6 +34,10 @@ require('lazy').setup({
   'gbprod/yanky.nvim',                               -- Yank history
   'nvim-pack/nvim-spectre',                          -- Global search & replace
 
+  {
+    'jeffkreeftmeijer/vim-numbertoggle',               -- Tiny plugin for better line numbers
+    cond = not vim.g.vscode
+  },
 
   { -- Color theme
     'wilmanbarrios/palenight.nvim',
