@@ -9,5 +9,12 @@
         "key": "ctrl+t",
         "command": "-editor.action.transposeLetters",
         "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        // Pass through q in normal mode, to get macros working
+        "key": "q",
+        "command": "vscode-neovim.send",
+        "when": "editorTextFocus && neovim.mode != insert",
+        "args": "q",
     }
 ]
