@@ -13,8 +13,16 @@
     {
         // Pass through q in normal mode, to get macros working
         "key": "q",
-        "command": "vscode-neovim.send",
-        "when": "editorTextFocus && neovim.mode != insert",
         "args": "q",
-    }
+        "command": "vscode-neovim.send",
+        "when": "editorTextFocus && neovim.mode != insert"
+    },
+    {   // Next tab
+        "key": "shift+l",
+        "command": "workbench.action.nextEditor"
+    },
+    {   // Previous tab
+        "key": "shift+h",
+        "command": "workbench.action.previousEditor"
+    },
 ]
