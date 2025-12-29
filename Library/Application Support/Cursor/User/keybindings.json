@@ -19,11 +19,13 @@
     },
     {   // Next tab
         "key": "shift+l",
-        "command": "workbench.action.nextEditor"
+        "command": "workbench.action.nextEditor",
+        "when": "editorTextFocus && neovim.mode != insert"
     },
     {   // Previous tab
         "key": "shift+h",
-        "command": "workbench.action.previousEditor"
+        "command": "workbench.action.previousEditor",
+        "when": "editorTextFocus && neovim.mode != insert"
     },
     {
         // Split vertically
