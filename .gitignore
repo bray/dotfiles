@@ -26,4 +26,9 @@ tags
 .claude/projects
 .claude/shell-snapshots
 .claude/statsig
+.claude/stats-cache.json
 .claude/debug
+.claude/plugins/cache
+.claude/plugins/*cache.json
+.claude/plugins/known_marketplaces.json
+.claude/plugins/marketplaces
