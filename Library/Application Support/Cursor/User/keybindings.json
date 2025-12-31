@@ -39,4 +39,16 @@
         "command": "workbench.action.splitEditorDown",
         "when": "editorTextFocus && neovim.mode != insert"
     },
+    {
+        "key": "ctrl+n",
+        "command": "vscode-neovim.send",
+        "args": "<C-n>",
+        "when": "editorTextFocus && neovim.mode == 'insert'"
+      },
+      {
+        "key": "ctrl+p",
+        "command": "vscode-neovim.send",
+        "args": "<C-p>",
+        "when": "editorTextFocus && neovim.mode == 'insert'"
+      }
 ]
