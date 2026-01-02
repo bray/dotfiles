@@ -7,21 +7,18 @@ gui:
   showFileTree: false
   branchColors:
     'br': '#11aaff' # use a light blue for branches beginning with 'br/'
-
 keybinding:
   universal:
     prevPage: '<c-u>' # go to next page in list
     nextPage: '<c-d>' # go to previous page in list
   branches:
-    createTag: null
-    pushTag: null
+    createTag: <disabled>
+    pushTag: <disabled>
   commits:
-    tagCommit: null
-
+    tagCommit: <disabled>
 customCommands:
   - key: 'P'
     command: "git push {{.SelectedRemote.RefName}} {{.SelectedLocalCommit.Sha}}:{{.SelectedLocalBranch.RefName}}"
     context: "commits"
     loadingText: "Pushing commit..."
     description: "Push a specific commit (and any preceding)"
-    stream: yes
