@@ -102,8 +102,9 @@ eval "$(zoxide init zsh --no-cmd)"
 
 
 # Fix https://github.com/ohmyzsh/ohmyzsh/issues/11416
-unalias diff
-diff_path=`which diff`
+unalias diff 2>/dev/null
+unfunction diff 2>/dev/null
+diff_path=$(command -v diff)
 function diff() {
   $diff_path --color $*
 }
