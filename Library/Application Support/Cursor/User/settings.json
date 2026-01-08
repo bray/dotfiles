@@ -7,6 +7,8 @@
     "editor.accessibilitySupport": "off",
     "claudeCode.preferredLocation": "panel",
     "testing.saveBeforeTest": false,
+    "git.blame.statusBarItem.enabled": true,
+    "git.blame.editorDecoration.enabled": false,
     "extensions.experimental.affinity": {
         "asvetliakov.vscode-neovim": 1
     },
