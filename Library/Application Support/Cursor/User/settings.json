@@ -2,8 +2,12 @@
     "workbench.colorTheme": "Spinel",
     "editor.fontFamily": "JetBrainsMono Nerd Font",
     "editor.fontSize": 16,
+    "editor.lineNumbers": "relative",
+    "workbench.editor.centeredLayoutAutoResize": false,
+    "editor.accessibilitySupport": "off",
+    "claudeCode.preferredLocation": "panel",
+    "testing.saveBeforeTest": false,
     "extensions.experimental.affinity": {
         "asvetliakov.vscode-neovim": 1
     },
-    "editor.lineNumbers": "relative"
 }
