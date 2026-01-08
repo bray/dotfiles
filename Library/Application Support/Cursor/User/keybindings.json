@@ -13,8 +13,8 @@
     {
         // Pass through q in normal mode, to get macros working
         "key": "q",
-        "args": "q",
         "command": "vscode-neovim.send",
+        "args": "q",
         "when": "editorTextFocus && neovim.mode != insert"
     },
     {   // Next tab
@@ -50,5 +50,5 @@
         "command": "vscode-neovim.send",
         "args": "<C-p>",
         "when": "editorTextFocus && neovim.mode == 'insert'"
-      }
+    }
 ]
