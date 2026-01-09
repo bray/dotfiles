@@ -21,6 +21,7 @@ tags
 .config/tmux/plugins/
 .config/lazygit/state.yml
 
+.claude/.credentials.json
 .claude/todos
 .claude/ide
 .claude/projects
@@ -32,3 +33,5 @@ tags
 .claude/plugins/*cache.json
 .claude/plugins/known_marketplaces.json
 .claude/plugins/marketplaces
+.claude/cache
+.claude/history.jsonl
