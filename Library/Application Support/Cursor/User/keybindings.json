@@ -39,6 +39,9 @@
         "command": "workbench.action.splitEditorDown",
         "when": "editorTextFocus && neovim.mode != insert"
     },
+    
+    // Ctrl+n and Ctrl+p for completing keywords in Insert mode (*compl-generic*)
+    // And Ctrl+j and Ctrl+k for navigating IntelliSense dropdowns
     {
         "key": "ctrl+n",
         "command": "vscode-neovim.send",
@@ -50,5 +53,15 @@
         "command": "vscode-neovim.send",
         "args": "<C-p>",
         "when": "editorTextFocus && neovim.mode == 'insert'"
-    }
+    },
+    {
+        "key": "ctrl+j",
+        "command": "selectNextSuggestion",
+        "when": "suggestWidgetVisible && textInputFocus"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "selectPrevSuggestion",
+        "when": "suggestWidgetVisible && textInputFocus"
+    },
 ]
