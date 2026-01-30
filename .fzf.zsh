@@ -16,5 +16,5 @@ export FZF_CTRL_T_OPTS="--preview '${FZF_CTRL_T_PREVIEW_OPTS}'"
 export FZF_ALT_C_COMMAND="fd --type d --hidden --follow --exclude .git --exclude tmp/ --exclude public/"
 export FZF_ALT_C_OPTS="--preview 'tree -C {} | head -200'"
 
-#export FZF_CTRL_R_OPTS='--sort'
-#export FZF_CTRL_R_OPTS='--sort --exact'
+# tomasr/molokai theme
+export FZF_CTRL_R_OPTS='--color=bg+:#293739,bg:#1B1D1E,border:#808080,spinner:#E6DB74,hl:#7E8E91,fg:#F8F8F2,header:#7E8E91,info:#A6E22E,pointer:#A6E22E,marker:#F92672,fg+:#F8F8F2,prompt:#F92672,hl+:#F92672'
