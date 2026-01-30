@@ -16,5 +16,25 @@ export FZF_CTRL_T_OPTS="--preview '${FZF_CTRL_T_PREVIEW_OPTS}'"
 export FZF_ALT_C_COMMAND="fd --type d --hidden --follow --exclude .git --exclude tmp/ --exclude public/"
 export FZF_ALT_C_OPTS="--preview 'tree -C {} | head -200'"
 
-# tomasr/molokai theme
-export FZF_CTRL_R_OPTS='--color=bg+:#293739,bg:#1B1D1E,border:#808080,spinner:#E6DB74,hl:#7E8E91,fg:#F8F8F2,header:#7E8E91,info:#A6E22E,pointer:#A6E22E,marker:#F92672,fg+:#F8F8F2,prompt:#F92672,hl+:#F92672'
+export FZF_CTRL_R_OPTS="
+  # tomasr/molokai theme
+  --color '
+    fg:#F8F8F2
+    fg+:#F8F8F2
+
+    bg:#1B1D1E
+    bg+:#293739
+
+    hl:#7E8E91
+    hl+:#F92672
+
+    prompt:#F92672
+    border:#808080
+    header:#7E8E91
+    info:#A6E22E
+
+    spinner:#E6DB74
+    pointer:#A6E22E
+    marker:#F92672
+  '
+"
