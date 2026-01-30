@@ -45,4 +45,12 @@ export FZF_CTRL_R_OPTS="
   --color '
     hl:#FC85B0
   '
+
+  --bind 'result:transform-list-label:
+    if [[ -z \$FZF_QUERY ]]; then
+      echo \"\$FZF_MATCH_COUNT items\"
+    else
+      echo \"\$FZF_MATCH_COUNT matches\"
+    fi
+  '
 "
