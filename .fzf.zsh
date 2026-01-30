@@ -40,4 +40,9 @@ export FZF_CTRL_R_OPTS="
     pointer:#A6E22E
     marker:#F92672
   '
+
+  # My theme modifications
+  --color '
+    hl:#FC85B0
+  '
 "
