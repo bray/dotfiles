@@ -43,7 +43,7 @@ export FZF_CTRL_R_OPTS="
 
   # My theme modifications
   --color '
-    hl:#FC85B0
+    hl:#F92672
   '
 
   --bind 'result:transform-list-label:
