@@ -17,6 +17,8 @@ export FZF_ALT_C_COMMAND="fd --type d --hidden --follow --exclude .git --exclude
 export FZF_ALT_C_OPTS="--preview 'tree -C {} | head -200'"
 
 export FZF_CTRL_R_OPTS="
+  --style full
+
   # tomasr/molokai theme
   --color '
     fg:#F8F8F2
