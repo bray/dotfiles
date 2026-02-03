@@ -53,4 +53,7 @@ export FZF_CTRL_R_OPTS="
       echo \"\$FZF_MATCH_COUNT matches\"
     fi
   '
+
+  --bind 'ctrl-j:jump,jump:accept'
+  --header 'CTRL-J: EasyMotion-like jumping'
 "
