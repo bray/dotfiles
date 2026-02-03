@@ -936,14 +936,6 @@
                     "ignore": false
                 },
                 {
-                    "identifiers": {
-                        "is_keyboard": true,
-                        "product_id": 1552,
-                        "vendor_id": 13364
-                    },
-                    "ignore": true
-                },
-                {
                     "fn_function_keys": [
                         {
                             "from": { "key_code": "f1" },
