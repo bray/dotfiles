@@ -992,7 +992,16 @@
                         "product_id": 1552,
                         "vendor_id": 13364
                     },
-                    "ignore": false
+                    "ignore": false,
+                    "ignore_vendor_events": true
+                },
+                {
+                    "identifiers": {
+                        "is_keyboard": true,
+                        "product_id": 1552,
+                        "vendor_id": 13364
+                    },
+                    "ignore_vendor_events": true
                 }
             ],
             "name": "Default profile",
