@@ -22,16 +22,16 @@ tags
 .config/lazygit/state.yml
 
 .claude/.credentials.json
-.claude/todos
-.claude/ide
-.claude/projects
-.claude/shell-snapshots
-.claude/statsig
-.claude/stats-cache.json
+.claude/cache
 .claude/debug
-.claude/plugins/cache
+.claude/history.jsonl
+.claude/ide
 .claude/plugins/*cache.json
+.claude/plugins/cache
 .claude/plugins/known_marketplaces.json
 .claude/plugins/marketplaces
-.claude/cache
-.claude/history.jsonl
+.claude/projects
+.claude/shell-snapshots
+.claude/stats-cache.json
+.claude/statsig
+.claude/todos
