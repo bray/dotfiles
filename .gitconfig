@@ -66,7 +66,7 @@
 
 [core]
   excludesfile = ~/.gitignore
-  pager = "if [[ \"$RAW\" = \"\" ]]; then delta --line-numbers; else less -Xr; fi"
+  pager = sh -c '[ -z "$RAW" ] && exec delta --line-numbers || exec less -Xr'
   attributesfile = ~/.gitattributes
 
 [diff]
