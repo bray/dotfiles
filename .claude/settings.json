@@ -17,5 +17,6 @@
     "context7@claude-plugins-official": true,
     "pr-review-toolkit@claude-plugins-official": true,
     "github@claude-plugins-official": true
-  }
+  },
+  "effortLevel": "medium"
 }
