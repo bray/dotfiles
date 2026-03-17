@@ -1,0 +1,75 @@
+{
+  "version": 2,
+  "plugins": {
+    "commit-commands@claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "/Users/brianray/.claude/plugins/cache/claude-plugins-official/commit-commands/unknown",
+        "version": "unknown",
+        "installedAt": "2025-12-29T17:14:55.979Z",
+        "lastUpdated": "2025-12-29T17:14:55.979Z",
+        "gitCommitSha": "5f90c444ecc23ee2d88435848d42e94fcfb16bda"
+      }
+    ],
+    "atlassian@claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "/Users/brianray/.claude/plugins/cache/claude-plugins-official/atlassian/unknown",
+        "version": "unknown",
+        "installedAt": "2025-12-29T17:15:21.211Z",
+        "lastUpdated": "2025-12-29T17:15:21.211Z",
+        "gitCommitSha": "c2625747baa8863ed7ca0f9f1f320d7a8ea1d928"
+      }
+    ],
+    "explanatory-output-style@claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "/Users/brianray/.claude/plugins/cache/claude-plugins-official/explanatory-output-style/unknown",
+        "version": "unknown",
+        "installedAt": "2025-12-29T17:15:53.266Z",
+        "lastUpdated": "2025-12-29T17:15:53.266Z",
+        "gitCommitSha": "5f90c444ecc23ee2d88435848d42e94fcfb16bda"
+      }
+    ],
+    "gopls-lsp@claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "/Users/brianray/.claude/plugins/cache/claude-plugins-official/gopls-lsp/1.0.0",
+        "version": "1.0.0",
+        "installedAt": "2025-12-29T17:18:40.390Z",
+        "lastUpdated": "2025-12-29T17:18:40.390Z",
+        "gitCommitSha": "5f90c444ecc23ee2d88435848d42e94fcfb16bda"
+      }
+    ],
+    "context7@claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "/Users/brianray/.claude/plugins/cache/claude-plugins-official/context7/unknown",
+        "version": "unknown",
+        "installedAt": "2025-12-29T17:29:08.466Z",
+        "lastUpdated": "2025-12-29T17:29:08.466Z",
+        "gitCommitSha": "5f90c444ecc23ee2d88435848d42e94fcfb16bda"
+      }
+    ],
+    "pr-review-toolkit@claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "/Users/brianray/.claude/plugins/cache/claude-plugins-official/pr-review-toolkit/unknown",
+        "version": "unknown",
+        "installedAt": "2026-01-08T16:43:29.926Z",
+        "lastUpdated": "2026-01-08T16:43:29.926Z",
+        "gitCommitSha": "0f305febd5b8c891cf3303adffd20a1277fd0811"
+      }
+    ],
+    "github@claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "/Users/brianray/.claude/plugins/cache/claude-plugins-official/github/unknown",
+        "version": "unknown",
+        "installedAt": "2026-01-08T17:01:29.146Z",
+        "lastUpdated": "2026-01-08T17:01:29.146Z",
+        "gitCommitSha": "0f305febd5b8c891cf3303adffd20a1277fd0811"
+      }
+    ]
+  }
+}
