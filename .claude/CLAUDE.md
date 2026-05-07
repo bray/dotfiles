@@ -1,3 +1,13 @@
+## General
+- Never use an em-dash (—) in code comments or documentation; use a regular hyphen (-) instead
+- I work in a TUI that does not render markdown hyperlinks. When citing sources or linking to docs/PRs/issues/files, output plain URLs instead of `[label](url)` syntax. The label-only form silently swallows the URL and leaves me unable to navigate.
+
+
+## File Creation
+- When creating artifact files, save them to `~/claude_artifacts/[repo_name]/[file_name]`
+- Use the name of the repo or working directory as `[repo_name]`
+
+
 ## Tool Selection
 
 - Use `fd` instead of `find` - significantly faster file discovery
