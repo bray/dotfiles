@@ -116,6 +116,11 @@ require('lazy').setup({
     build = "make install_jsregexp"
   },
 
+  {
+    'MeanderingProgrammer/render-markdown.nvim',
+    opts = {},
+  },
+
   { -- Show CODEOWNERS in the statusline
     'mrded/vim-github-codeowners',
     build = 'npm install',

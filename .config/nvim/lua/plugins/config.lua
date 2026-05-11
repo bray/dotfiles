@@ -167,6 +167,76 @@ require('nvim-treesitter.configs').setup {
 
 
 
+-- This is needed to show rendered Markdown except where the cursor is, where it shows the source
+vim.opt.conceallevel = 2
+
+require('render-markdown').setup({
+  heading = {
+    enabled = true,
+
+    render_modes = false,
+    sign = true,
+    icons = { '', '', '', '', '', '' },
+    position = 'overlay',
+    signs = { '󰫎 ' },
+
+    width = 'block',
+    min_width = 80,
+    left_margin = 0,
+    left_pad = 0,
+    right_pad = 0,
+
+    border = false,
+    border_virtual = false,
+    border_prefix = false,
+    above = '▄',
+    below = '▀',
+
+    backgrounds = {
+      'RenderMarkdownH1Bg',
+      'RenderMarkdownH2Bg',
+      'RenderMarkdownH3Bg',
+      'RenderMarkdownH4Bg',
+      'RenderMarkdownH5Bg',
+      'RenderMarkdownH6Bg',
+    },
+
+    foregrounds = {
+      'RenderMarkdownH1',
+      'RenderMarkdownH2',
+      'RenderMarkdownH3',
+      'RenderMarkdownH4',
+      'RenderMarkdownH5',
+      'RenderMarkdownH6',
+    },
+    custom = {},
+  },
+  link = {
+    enabled = true,
+    footnote = {
+      superscript = true,
+      prefix = '',
+      suffix = '',
+    },
+    image = '󰥶 ',
+    email = '󰀓 ',
+    hyperlink = '󰌹 ',
+    highlight = 'RenderMarkdownLink',
+    wiki = { icon = '󱗖 ', highlight = 'RenderMarkdownWikiLink' },
+    custom = {
+      web = { pattern = '^http', icon = '󰖟 ' },
+      youtube = { pattern = 'youtube%.com', icon = '󰗃 ' },
+      github = { pattern = 'github%.com', icon = '󰊤 ' },
+      neovim = { pattern = 'neovim%.io', icon = ' ' },
+      stackoverflow = { pattern = 'stackoverflow%.com', icon = '󰓌 ' },
+      discord = { pattern = 'discord%.com', icon = '󰙯 ' },
+      reddit = { pattern = 'reddit%.com', icon = '󰑍 ' },
+    },
+  },
+})
+
+
+
 --------------------------------------------------------------------------------
 -- Hop
 --------------------------------------------------------------------------------
