@@ -22,7 +22,7 @@ alias be='bundle exec'
 alias bundle_default='bundle install --gemfile Gemfile'
 
 alias sc='ruby script/console'
-alias rc='bundle exec rails console'
+alias rc='DISABLE_PRY_RAILS=1 bundle exec rails console'
 
 alias c='__zoxide_zi'
 alias y='yazi'
