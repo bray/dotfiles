@@ -40,3 +40,4 @@ tags
 .claude/teams
 .claude/todos
 .claude/usage-data
+.claude/session-costs.jsonl
