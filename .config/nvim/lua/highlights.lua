@@ -14,3 +14,8 @@ vim.api.nvim_set_hl(0, 'QuickFixLine', {
 vim.api.nvim_set_hl(0, 'Visual', {
   bg = '#67738c'
 })
+
+-- Treesitter + Palenight overrides
+vim.api.nvim_set_hl(0, '@string.special', {
+  fg = '#f78c6c'
+})
