@@ -86,7 +86,7 @@ require('telescope').load_extension('fzf')
 require('telescope').load_extension('recent_files')
 
 local builtin = require('telescope.builtin')
-vim.keymap.set('n', '<leader>f', builtin.find_files, {})
+vim.keymap.set('n', '<leader>tf', builtin.find_files, {})
 vim.keymap.set('n', '<leader>m', '<cmd>lua require("telescope").extensions.recent_files.pick()<cr>')
 vim.keymap.set('n', '<leader>tg', builtin.live_grep, {})
 vim.keymap.set('n', '<leader>tb', builtin.buffers, {})
@@ -204,39 +204,6 @@ require('mini.surround').setup({
 
 
 --------------------------------------------------------------------------------
--- mini.pick
---------------------------------------------------------------------------------
-
--- Center picker window
-local win_config = function()
-  height = math.floor(0.618 * vim.o.lines)
-  width = math.floor(0.618 * vim.o.columns)
-  return {
-    anchor = 'NW', height = height, width = width,
-    row = math.floor(0.5 * (vim.o.lines - height)),
-    col = math.floor(0.5 * (vim.o.columns - width)),
-  }
-end
-
-require('mini.pick').setup({
-  mappings = {
-    delete_word = '<M-bs>',
-  },
-
-  window = {
-    config = win_config,
-  },
-})
-
-vim.keymap.set('n', '<leader>f', function()
-  MiniPick.builtin.files()
-end, {desc = 'Find Files (MiniPick)'})
-
-vim.api.nvim_set_hl(0, 'MiniPickMatchRanges', { fg = '#82B1FF' })
-
-
-
---------------------------------------------------------------------------------
 -- yazi
 --------------------------------------------------------------------------------
 
@@ -249,6 +216,34 @@ vim.keymap.set({'n', 'v'}, '<leader>-',
   '<cmd>Yazi<cr>',
   {desc = 'Open yazi at the current file'}
 )
+
+
+
+--------------------------------------------------------------------------------
+-- fzf-lua
+--------------------------------------------------------------------------------
+
+require('fzf-lua').setup({
+  -- Profile (theme)
+  'telescope',
+
+  winopts = {
+    -- Disable backdrop darkening
+    backdrop = 100,
+
+    height   = 0.75,
+    row      = 0.5,
+
+    -- TODO: keep looking at options
+    preview = {
+      -- wrap = true,
+    },
+  },
+})
+
+
+vim.keymap.set('n', '<leader>f', '<cmd>FzfLua files<cr>', {desc = 'Find Files (FzfLua)'})
+vim.keymap.set('n', '<leader>z', '<cmd>FzfLua<cr>', {desc = 'Builtin Commands (FzfLua)'})
 
 
 

@@ -70,11 +70,10 @@ require('lazy').setup({
     build = 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build'
   },
 
-  { -- TEMP? It's currently much faster than Telescope
-    'junegunn/fzf.vim',
-    dependencies = {
-      'junegunn/fzf',
-    },
+  {
+    'ibhagwan/fzf-lua',
+    dependencies = { 'nvim-tree/nvim-web-devicons' },
+    opts = {}
   },
 
   { -- ripgrep in vim
