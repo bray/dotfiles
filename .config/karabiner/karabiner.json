@@ -874,7 +874,7 @@
                         "product_id": 263,
                         "vendor_id": 13364
                     },
-                    "ignore": true
+                    "ignore_vendor_events": true
                 },
                 {
                     "fn_function_keys": [
@@ -933,7 +933,8 @@
                         "product_id": 263,
                         "vendor_id": 13364
                     },
-                    "ignore": false
+                    "ignore": false,
+                    "ignore_vendor_events": true
                 },
                 {
                     "fn_function_keys": [
