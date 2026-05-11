@@ -12,5 +12,5 @@ vim.api.nvim_set_hl(0, 'QuickFixLine', {
 
 -- Lighter visual mode
 vim.api.nvim_set_hl(0, 'Visual', {
-  bg = '#4e576a'
+  bg = '#67738c'
 })
