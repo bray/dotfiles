@@ -10,7 +10,8 @@ get_current_dir() { echo "$input" | jq -r '.workspace.current_dir'; }
 # Show git branch if in a git repo
 get_git_branch() {
   if git rev-parse --git-dir > /dev/null 2>&1; then
-    local branch=$(git branch --show-current 2>/dev/null)
+    local branch
+    branch=$(git branch --show-current 2>/dev/null)
     if [ -n "$branch" ]; then
       echo "🌿 $branch"
     fi
