@@ -22,16 +22,7 @@ get_total_cost() { echo "$input" | jq -r '.cost.total_cost_usd' | xargs printf "
 
 get_context_usage() {
   local percent_used
-  local usage=$(echo "$input" | jq '.context_window.current_usage')
-
-  if [ "$usage" != "null" ]; then
-    # Calculate current context from current_usage fields
-    local current_tokens=$(echo "$usage" | jq '.input_tokens + .cache_creation_input_tokens + .cache_read_input_tokens')
-    local context_size=$(echo "$input" | jq -r '.context_window.context_window_size')
-    percent_used=$((current_tokens * 100 / context_size))
-  else
-    percent_used=0
-  fi
+  percent_used=$(echo "$input" | jq -r '.context_window.used_percentage // 0')
 
   echo "Context used: ${percent_used}%"
 }
