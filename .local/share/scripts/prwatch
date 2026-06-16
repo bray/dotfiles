@@ -14,7 +14,15 @@ ALERT_REPEAT="${PRWATCH_REPEAT:-3}"
 log() { printf '%s %s\n' "$(date -u +%Y-%m-%dT%H:%M:%SZ)" "$*" >> "$LOG_FILE"; }
 
 # --- functional core ---
-filter_new_reviews() { :; }   # implemented in Task 2
+# args: reviews_json  seen_ids_json  my_login
+# echoes JSON array of {id, login, state, submitted_at} that are new and not mine.
+filter_new_reviews() {
+  jq -n --argjson reviews "$1" --argjson seen "$2" --arg me "$3" '
+    $reviews
+    | map({id, login: .user.login, state, submitted_at})
+    | map(select(.login != $me and ((.id as $i | $seen | index($i)) | not)))
+  '
+}
 
 # --- impure shell ---
 ensure_state()  { :; }        # Task 3
