@@ -25,13 +25,34 @@ filter_new_reviews() {
 }
 
 # --- impure shell ---
-ensure_state()  { :; }        # Task 3
-fire_alert()    { :; }        # Task 3
+ensure_state() {
+  mkdir -p "$STATE_DIR"
+  if [ ! -f "$STATE_FILE" ]; then
+    local me; me="$(gh api user -q .login)"
+    jq -n --arg me "$me" '{me: $me, watches: []}' > "$STATE_FILE"
+  fi
+}
+
+fire_alert() { # title  message
+  local title="$1" message="$2"
+  # Pass strings as argv so PR titles with quotes/backslashes can't break the AppleScript.
+  osascript - "$title" "$message" "$ALERT_SOUND_NAME" <<'APPLESCRIPT' || true
+on run argv
+  display notification (item 2 of argv) with title (item 1 of argv) sound name (item 3 of argv)
+end run
+APPLESCRIPT
+  local i=0
+  while [ "$i" -lt "$ALERT_REPEAT" ]; do afplay "$ALERT_SOUND" || true; i=$((i+1)); done
+}
 cmd_add()       { :; }        # Task 4
 cmd_rm()        { :; }        # Task 4
 cmd_list()      { :; }        # Task 4
 cmd_check()     { :; }        # Task 5
-cmd_test_alert(){ :; }        # Task 3
+cmd_test_alert() {
+  ensure_state
+  fire_alert "prwatch test alert" "If you see + hear this, alerts work."
+  echo "Fired test alert."
+}
 
 main() {
   set -euo pipefail
