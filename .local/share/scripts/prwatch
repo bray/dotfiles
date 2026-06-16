@@ -92,7 +92,41 @@ cmd_rm() {
      "$STATE_FILE" > "$tmp" && mv "$tmp" "$STATE_FILE"
   echo "Stopped watching $R_REPO#$R_NUMBER"
 }
-cmd_check()     { :; }        # Task 5
+cmd_check() {
+  ensure_state
+  local me; me="$(jq -r '.me' "$STATE_FILE")"
+  local updated="[]" tmp; tmp="$(mktemp)"
+
+  # Process substitution keeps the loop in the current shell, so $updated accumulates.
+  while IFS= read -r watch; do
+    local repo number title seen reviews new allids newseen reviewer state
+    repo="$(jq -r '.repo'   <<<"$watch")"
+    number="$(jq -r '.number' <<<"$watch")"
+    title="$(jq -r '.title'  <<<"$watch")"
+    seen="$(jq -c '.seen_review_ids' <<<"$watch")"
+
+    if ! reviews="$(gh api "repos/$repo/pulls/$number/reviews" 2>>"$LOG_FILE")"; then
+      log "WARN: failed to fetch reviews for $repo#$number; skipping (state unchanged)"
+      updated="$(jq -c --argjson w "$watch" '. + [$w]' <<<"$updated")"
+      continue
+    fi
+
+    new="$(filter_new_reviews "$reviews" "$seen" "$me")"
+    if [ "$(jq 'length' <<<"$new")" -gt 0 ]; then
+      reviewer="$(jq -r '.[-1].login' <<<"$new")"
+      state="$(jq -r '.[-1].state'  <<<"$new")"
+      fire_alert "PR reviewed: $repo#$number" "$reviewer $state - $title"
+      log "ALERT: $repo#$number reviewed by $reviewer ($state)"
+    fi
+
+    allids="$(jq -c '[.[].id]' <<<"$reviews")"
+    newseen="$(jq -c -n --argjson a "$seen" --argjson b "$allids" '($a + $b) | unique')"
+    updated="$(jq -c --argjson w "$watch" --argjson s "$newseen" \
+              '. + [($w | .seen_review_ids = $s)]' <<<"$updated")"
+  done < <(jq -c '.watches[]' "$STATE_FILE")
+
+  jq --argjson w "$updated" '.watches = $w' "$STATE_FILE" > "$tmp" && mv "$tmp" "$STATE_FILE"
+}
 cmd_test_alert() {
   ensure_state
   fire_alert "prwatch test alert" "If you see + hear this, alerts work."
