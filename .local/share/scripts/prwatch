@@ -44,9 +44,54 @@ APPLESCRIPT
   local i=0
   while [ "$i" -lt "$ALERT_REPEAT" ]; do afplay "$ALERT_SOUND" || true; i=$((i+1)); done
 }
-cmd_add()       { :; }        # Task 4
-cmd_rm()        { :; }        # Task 4
-cmd_list()      { :; }        # Task 4
+# Sets globals R_REPO, R_NUMBER from a URL, or a number (+ optional repo arg,
+# default current dir's repo).
+resolve_pr() {
+  local input="${1:?usage: prwatch <add|rm> <pr-url-or-number> [owner/repo]}"
+  if [[ "$input" =~ ^https?://github\.com/([^/]+/[^/]+)/pull/([0-9]+) ]]; then
+    R_REPO="${BASH_REMATCH[1]}"; R_NUMBER="${BASH_REMATCH[2]}"
+  else
+    R_NUMBER="$input"
+    R_REPO="${2:-$(gh repo view --json nameWithOwner -q .nameWithOwner)}"
+  fi
+}
+
+cmd_add() {
+  ensure_state
+  resolve_pr "$@"
+  local dup
+  dup="$(jq --arg r "$R_REPO" --argjson n "$R_NUMBER" \
+        '[.watches[] | select(.repo==$r and .number==$n)] | length' "$STATE_FILE")"
+  if [ "$dup" -gt 0 ]; then echo "Already watching $R_REPO#$R_NUMBER"; return 0; fi
+
+  local meta title url seen added_at tmp
+  meta="$(gh api "repos/$R_REPO/pulls/$R_NUMBER" --jq '{title, url: .html_url}')"
+  title="$(jq -r '.title' <<<"$meta")"
+  url="$(jq -r '.url' <<<"$meta")"
+  seen="$(gh api "repos/$R_REPO/pulls/$R_NUMBER/reviews" --jq '[.[].id]')"  # seed: don't alert on pre-existing
+  added_at="$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+  tmp="$(mktemp)"
+  jq --arg r "$R_REPO" --argjson n "$R_NUMBER" --arg u "$url" --arg t "$title" \
+     --arg a "$added_at" --argjson s "$seen" \
+     '.watches += [{repo:$r, number:$n, url:$u, title:$t, added_at:$a, seen_review_ids:$s}]' \
+     "$STATE_FILE" > "$tmp" && mv "$tmp" "$STATE_FILE"
+  echo "Watching $R_REPO#$R_NUMBER - $title"
+}
+
+cmd_list() {
+  ensure_state
+  jq -r '.watches[] | "\(.repo)#\(.number)  \(.title)\n    \(.url)"' "$STATE_FILE"
+}
+
+cmd_rm() {
+  ensure_state
+  resolve_pr "$@"
+  local tmp; tmp="$(mktemp)"
+  jq --arg r "$R_REPO" --argjson n "$R_NUMBER" \
+     '.watches |= map(select(.repo != $r or .number != $n))' \
+     "$STATE_FILE" > "$tmp" && mv "$tmp" "$STATE_FILE"
+  echo "Stopped watching $R_REPO#$R_NUMBER"
+}
 cmd_check()     { :; }        # Task 5
 cmd_test_alert() {
   ensure_state
