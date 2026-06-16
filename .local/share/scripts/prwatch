@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 # prwatch - loudly alert when a specifically-watched PR gets reviewed.
 
-# Make tools resolve under launchd's bare PATH.
-export PATH="/opt/homebrew/bin:$HOME/.local/share/mise/shims:$HOME/.local/bin:$PATH"
+# Make tools resolve under launchd's bare PATH. Cover both Homebrew prefixes
+# (Apple Silicon /opt/homebrew, Intel /usr/local) so this is machine-agnostic.
+export PATH="/opt/homebrew/bin:/usr/local/bin:$HOME/.local/share/mise/shims:$HOME/.local/bin:$PATH"
 
 STATE_DIR="${PRWATCH_STATE_DIR:-$HOME/.config/prwatch}"
 STATE_FILE="$STATE_DIR/watchlist.json"
@@ -93,6 +94,10 @@ cmd_rm() {
   echo "Stopped watching $R_REPO#$R_NUMBER"
 }
 cmd_check() {
+  mkdir -p "$STATE_DIR"
+  # Under launchd there is no tty; capture output to the log here, because the plist
+  # cannot point StandardOutPath at a $HOME path. Interactive runs still print normally.
+  [ -t 1 ] || exec >>"$LOG_FILE" 2>&1
   ensure_state
   local me; me="$(jq -r '.me' "$STATE_FILE")"
   local updated="[]" tmp; tmp="$(mktemp)"

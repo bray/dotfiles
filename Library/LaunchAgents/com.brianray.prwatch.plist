@@ -3,14 +3,16 @@
 <plist version="1.0">
 <dict>
   <key>Label</key>            <string>com.brianray.prwatch</string>
+  <!-- launchd does NOT expand $HOME or ~ in plist values, so run through a shell
+       that expands $HOME at runtime. This keeps the plist username-agnostic;
+       the script itself writes its log under $HOME/.config/prwatch. -->
   <key>ProgramArguments</key>
   <array>
-    <string>/Users/brianray/.local/bin/prwatch</string>
-    <string>check</string>
+    <string>/bin/bash</string>
+    <string>-c</string>
+    <string>exec "$HOME/.local/bin/prwatch" check</string>
   </array>
   <key>RunAtLoad</key>        <true/>
   <key>StartInterval</key>    <integer>120</integer>
-  <key>StandardOutPath</key>  <string>/Users/brianray/.config/prwatch/prwatch.log</string>
-  <key>StandardErrorPath</key><string>/Users/brianray/.config/prwatch/prwatch.log</string>
 </dict>
 </plist>
