@@ -1,0 +1,42 @@
+#!/usr/bin/env bash
+# prwatch - loudly alert when a specifically-watched PR gets reviewed.
+
+# Make tools resolve under launchd's bare PATH.
+export PATH="/opt/homebrew/bin:$HOME/.local/share/mise/shims:$HOME/.local/bin:$PATH"
+
+STATE_DIR="${PRWATCH_STATE_DIR:-$HOME/.config/prwatch}"
+STATE_FILE="$STATE_DIR/watchlist.json"
+LOG_FILE="$STATE_DIR/prwatch.log"
+ALERT_SOUND="${PRWATCH_SOUND:-/System/Library/Sounds/Hero.aiff}"
+ALERT_SOUND_NAME="${PRWATCH_SOUND_NAME:-Hero}"
+ALERT_REPEAT="${PRWATCH_REPEAT:-3}"
+
+log() { printf '%s %s\n' "$(date -u +%Y-%m-%dT%H:%M:%SZ)" "$*" >> "$LOG_FILE"; }
+
+# --- functional core ---
+filter_new_reviews() { :; }   # implemented in Task 2
+
+# --- impure shell ---
+ensure_state()  { :; }        # Task 3
+fire_alert()    { :; }        # Task 3
+cmd_add()       { :; }        # Task 4
+cmd_rm()        { :; }        # Task 4
+cmd_list()      { :; }        # Task 4
+cmd_check()     { :; }        # Task 5
+cmd_test_alert(){ :; }        # Task 3
+
+main() {
+  set -euo pipefail
+  local cmd="${1:-}"; shift || true
+  case "$cmd" in
+    add)        cmd_add "$@" ;;
+    rm)         cmd_rm "$@" ;;
+    list)       cmd_list "$@" ;;
+    check)      cmd_check "$@" ;;
+    test-alert) cmd_test_alert "$@" ;;
+    *) echo "usage: prwatch {add|rm|list|check|test-alert}" >&2; return 1 ;;
+  esac
+}
+
+# Only run main when executed directly; sourcing (for tests) defines functions only.
+if [ "${BASH_SOURCE[0]}" = "${0}" ]; then main "$@"; fi
