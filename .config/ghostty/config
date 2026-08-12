@@ -16,3 +16,5 @@ cursor-style-blink = false
 
 # Hide titlebar, to be more streamlined
 macos-titlebar-style = hidden
+link-url = true
+link-previews = true
