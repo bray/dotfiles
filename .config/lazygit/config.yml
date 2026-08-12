@@ -7,6 +7,7 @@ gui:
   showFileTree: false
   branchColors:
     'br': '#11aaff' # use a light blue for branches beginning with 'br/'
+  nerdFontsVersion: "3" # enable icons; use "2" or "3" depending on your installed font
 keybinding:
   universal:
     prevPage: '<c-u>' # go to next page in list
