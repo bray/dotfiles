@@ -79,6 +79,7 @@
 
   # navigate: n/N to jump between commits and hunks
   features = decorations navigate
+  hyperlinks = true
 
 [delta "decorations"]
   commit-decoration-style = blue ol bold
