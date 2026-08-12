@@ -23,6 +23,6 @@ customCommands:
     loadingText: "Pushing commit..."
     description: "Push a specific commit (and any preceding)"
 git:
-  pagers:
-    - colorArg: always
-      pager: delta --dark --paging=never
+  diffRenderers:
+    - command: delta --dark --paging=never --line-numbers --hyperlinks --hyperlinks-file-link-format="lazygit-edit://{path}:{line}"
+      colorArg: always
