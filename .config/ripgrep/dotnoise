@@ -1,0 +1,71 @@
+# Noise list for searching dotfiles under $HOME. Used by rgdot() in
+# ~/.zsh/functions.zsh. gitignore syntax. Survives -u/--no-ignore because it is
+# passed with --ignore-file rather than found on disk.
+#
+# Two gotchas:
+#
+# 1. Every multi-segment pattern needs a leading `**/`. A pattern containing a
+#    slash is anchored, and with --ignore-file the anchor is your *current
+#    working directory*, not the search root. Written bare, `.local/share/mise/`
+#    silently matches nothing. Single-name patterns like `.asdf/` are already
+#    unanchored and match at any depth, so they need no prefix.
+#
+# 2. Nothing here can exclude a path that rgdot passes as a root. Ignore rules
+#    apply only *below* a root, and an explicitly named file is always searched.
+#    Whole top-level entries are dropped by the glob in rgdot(); this file
+#    handles everything deeper.
+#
+#    So a name belongs here only if it can occur *nested*. Entries that exist
+#    solely at the top level (.asdf, .rustup, .pry.d, .Trash) live in rgdot's
+#    glob and nowhere else - listing them here would look protective but do
+#    nothing. The few names in both lists are there because they genuinely nest.
+
+# Language runtimes and toolchain installs
+**/.local/share/mise/
+**/.local/share/rtx/
+**/.cargo/registry/
+**/.cargo/git/
+
+# Package-manager caches
+.npm/
+.yarn/
+.gem/
+.bundle/
+.cache/
+
+# Installed third-party code and caches
+**/.local/share/nvim*/
+**/.local/share/ruby-advisory-db/
+**/.local/pipx/
+**/.claude/plugins/cache/
+**/.codex/plugins/cache/
+**/.codex/.tmp/
+
+# Editor scratch space
+**/.cursor/worktrees/
+**/.cursor/extensions/
+**/.vscode/extensions/
+
+# Agent transcripts - mostly noise. ~/.claude/history.jsonl is
+# deliberately NOT covered: it sits directly in .claude/, not under projects/,
+# and it is the durable log of typed prompts that outlives transcript pruning.
+**/.claude/projects/**/*.jsonl
+**/.codex/sessions/**/*.jsonl
+
+# nvim undo binary blobs
+**/nvim*/undo/
+
+# Log and archive noise
+*.log
+*.log.*
+*.tar
+*.tgz
+*.gz
+*.bz2
+*.zip
+
+# Shell/REPL history. Deliberately not a bare `*history*`: that would also drop
+# ~/.claude/history.jsonl. Requiring the underscore is what spares it.
+*_history*
+*lesshst
+*wget-hsts
