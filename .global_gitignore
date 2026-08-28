@@ -22,3 +22,7 @@ claude_artifacts
 
 .worktrees/
 .codex/
+
+# Written by the ChatGPT/Codex app on launch, mirrored from CLAUDE.md.
+# Use `git add -f AGENTS.md` if a repo genuinely wants one committed.
+AGENTS.md
