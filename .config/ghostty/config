@@ -14,6 +14,11 @@ shell-integration-features = no-cursor
 cursor-style = block
 cursor-style-blink = false
 
+# Shift+Enter inserts a newline in Claude Code.
+# Sends a raw LF rather than relying on the kitty keyboard protocol,
+# which tmux drops unless extended-keys is enabled.
+keybind = shift+enter=text:\n
+
 # Hide titlebar, to be more streamlined
 macos-titlebar-style = hidden
 link-url = true
