@@ -17,6 +17,8 @@ site/
 .claude/CLAUDE.local.md
 .claude/settings.local.json
 .claude/file-history/
+.claude/worktrees/
 claude_artifacts
 
 .worktrees/
+.codex/
