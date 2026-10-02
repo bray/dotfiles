@@ -26,3 +26,27 @@
     - Write the PR description you came up with into a file /tmp/pr-description.md (overwrite it if it already exists)
     - I'll edit it in my text editor
     - When I say I'm done, create the PR using the contents of that file as the description
+
+
+## Technical Reference Notes
+
+Domain-specific mental models I should remember across all projects. Add new entries here when a hard-won corrected understanding is worth preserving globally.
+
+### OpenTelemetry histograms -> Datadog distributions
+
+When OTel histograms reach Datadog via the agent's `histograms.mode = distributions` (the recommended/default mode), the data flow is:
+
+1. **Wire format:** the SDK exports one OTLP histogram payload per export window, containing `sum`, `count`, bucket counts, and optionally exact `min`/`max`.
+2. **Agent translation:** the DD agent walks the bucket counts and synthesizes N samples (where N = total count in the histogram) at bucket boundaries. These synthetic samples flow into a Datadog distribution metric.
+3. **DD storage:** DDSketch over the synthesized samples - per-sample fidelity preserved at bucket-boundary resolution.
+4. **DD UI:** "points" count = synthetic sample count = original `record()` emission count. Percentile values are snapped to bucket boundaries, except `min`/`max` which retain exact values when the SDK populated the OTLP optional fields.
+
+Practical consequences:
+- 10 `record()` calls produce 10 visible points in DD's UI even though the wire payload was 1 aggregated histogram
+- Wire-level aggregation saves bandwidth but is invisible to DD's point count
+- p50/p99 will land on histogram bucket boundaries, not exact original sample values
+- `min`/`max` can be exact when SDK exports the OTLP optional fields
+
+Compared to statsd-emitted DD distributions: nearly equivalent in the DD UI. The only fidelity difference is within-bucket value precision - statsd preserves exact sample values; OTLP histograms quantize values to bucket boundaries during the agent's reconstruction.
+
+Common diagnostic gotcha: a metric whose values appear identical across all percentiles in DD usually means all samples landed in a single bucket (often `[max_boundary, +Inf)`). Fix is either varying the input data (if probe-stage) or setting `histogram_bucket_overrides` in the runtime config to bracket the actual value range.
