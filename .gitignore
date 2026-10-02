@@ -47,3 +47,4 @@ tags
 .claude/plugins/synced
 .claude/daemon*
 .claude/remote-settings*
+.claude/settings.*.json
