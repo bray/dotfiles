@@ -1,6 +1,7 @@
 ## General
 - Never use an em-dash (—) in code comments or documentation; use a regular hyphen (-) instead
 - I work in a TUI that does not render markdown hyperlinks. When citing sources or linking to docs/PRs/issues/files, output plain URLs instead of `[label](url)` syntax. The label-only form silently swallows the URL and leaves me unable to navigate.
+- When creating or editing markdown files, do not hard-wrap prose. Write each paragraph and each list item as a single line and let the renderer handle wrapping; only break lines for a new paragraph, a new list item, a heading, or table/code structure. Tables and code blocks keep their normal per-line structure. Why: hard-wrapping prose forces a manual re-flow on every edit and makes diffs noisier for no rendering benefit.
 
 
 ## File Creation
