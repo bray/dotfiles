@@ -41,3 +41,9 @@ tags
 .claude/todos
 .claude/usage-data
 .claude/session-costs.jsonl
+.claude/mcp-needs-auth-cache.json
+.claude/jobs
+.claude/skills/synced
+.claude/plugins/synced
+.claude/daemon*
+.claude/remote-settings*
