@@ -34,6 +34,7 @@ When I ask what we did/said/decided in a past session ("when did you last tell m
     - If you don't have a ticket, ask me for a link to it
   - Always create PRs in draft mode
 - In GitHub PR descriptions and comments, every mention of a Jira ticket must be a markdown link to it: write `[XY-123](https://<org>.atlassian.net/browse/XY-123) says ...`, never a bare `XY-123 says ...`. A bare URL on its own line is fine too. (This is separate from the TUI rule above: GitHub renders markdown links, so use them there.)
+  - Never @-mention teams or individuals in a PR description (e.g. `@org/team`), even when the repo's PR template says to tag a reviewer. I'll request reviewers myself; the mention just fires notifications I didn't intend.
   - If, after you show me your proposed PR body, I say "edit", do this:
     - Write the PR description you came up with into a file /tmp/pr-description.md (overwrite it if it already exists)
     - I'll edit it in my text editor
