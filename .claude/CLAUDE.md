@@ -7,6 +7,7 @@
 ## File Creation
 - When creating artifact files, save them to `~/claude_artifacts/[repo_name]/[file_name]`
 - Use the name of the repo or working directory as `[repo_name]`
+- When giving me text to paste somewhere else (PR review comments, PR descriptions, Slack messages), write the raw markdown to `~/claude_artifacts/[repo_name]/[file_name].md` and run `pbcopy < <file>`, then tell me it's on the clipboard and give the path. Why: copying rendered markdown out of the TUI drops backticks and code fences, so the pasted text loses its formatting.
 
 
 ## Tool Selection
