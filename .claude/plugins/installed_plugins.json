@@ -61,14 +61,153 @@
         "gitCommitSha": "0f305febd5b8c891cf3303adffd20a1277fd0811"
       }
     ],
-    "github@claude-plugins-official": [
+    "github-pending-reviews@ezcater-claude-code-marketplace": [
       {
         "scope": "user",
-        "installPath": "/Users/brianray/.claude/plugins/cache/claude-plugins-official/github/unknown",
-        "version": "unknown",
-        "installedAt": "2026-01-08T17:01:29.146Z",
-        "lastUpdated": "2026-01-08T17:01:29.146Z",
-        "gitCommitSha": "0f305febd5b8c891cf3303adffd20a1277fd0811"
+        "installPath": "/Users/brianray/.claude/plugins/cache/ezcater-claude-code-marketplace/github-pending-reviews/0.1.0",
+        "version": "0.1.0",
+        "installedAt": "2026-04-01T13:57:26.203Z",
+        "lastUpdated": "2026-04-01T13:57:26.203Z",
+        "gitCommitSha": "c41d301189ce19c62ae4b13e3e596286cbb7d5c8"
+      }
+    ],
+    "eztilt-tools@ezcater-claude-code-marketplace": [
+      {
+        "scope": "user",
+        "installPath": "/Users/brianray/.claude/plugins/cache/ezcater-claude-code-marketplace/eztilt-tools/0.1.0",
+        "version": "0.1.0",
+        "installedAt": "2026-04-01T14:04:23.252Z",
+        "lastUpdated": "2026-04-01T14:04:23.252Z",
+        "gitCommitSha": "c41d301189ce19c62ae4b13e3e596286cbb7d5c8"
+      }
+    ],
+    "superpowers@claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "/Users/brianray/.claude/plugins/cache/claude-plugins-official/superpowers/5.0.7",
+        "version": "5.0.7",
+        "installedAt": "2026-04-01T14:05:49.141Z",
+        "lastUpdated": "2026-04-01T14:05:49.141Z",
+        "gitCommitSha": "dd237283dbfe466e11bd4be55acf14ecb8f6636e"
+      }
+    ],
+    "ruby-lsp@claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "/Users/brianray/.claude/plugins/cache/claude-plugins-official/ruby-lsp/1.0.0",
+        "version": "1.0.0",
+        "installedAt": "2026-04-30T17:51:01.299Z",
+        "lastUpdated": "2026-04-30T17:51:01.299Z"
+      }
+    ],
+    "temporal@temporal-marketplace": [
+      {
+        "scope": "user",
+        "installPath": "/Users/brianray/.claude/plugins/cache/temporal-marketplace/temporal/0.4.2",
+        "version": "0.4.2",
+        "installedAt": "2026-05-13T14:19:29.572Z",
+        "lastUpdated": "2026-09-10T16:44:42.944Z",
+        "gitCommitSha": "b394be7ca751a586495c2584cd03d45dbc35b8a7"
+      }
+    ],
+    "datadog@claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "/Users/brianray/.claude/plugins/cache/claude-plugins-official/datadog/0.7.10",
+        "version": "0.7.10",
+        "installedAt": "2026-05-28T20:22:13.838Z",
+        "lastUpdated": "2026-05-28T20:22:13.838Z",
+        "gitCommitSha": "eeb2f746a857f8d97f69cd0968fb63874541c112"
+      }
+    ],
+    "i-have-adhd@i-have-adhd": [
+      {
+        "scope": "user",
+        "installPath": "/Users/brianray/.claude/plugins/cache/i-have-adhd/i-have-adhd/0.3.0",
+        "version": "0.3.0",
+        "installedAt": "2026-08-19T15:22:01.641Z",
+        "lastUpdated": "2026-09-18T13:57:41.167Z",
+        "gitCommitSha": "b15d0be58f55b33972ba3e39709e0e5208ef30cb"
+      }
+    ],
+    "context-beta@ezcater-claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "/Users/brianray/.claude/plugins/cache/ezcater-claude-plugins-official/context-beta/5505d60d395f",
+        "version": "5505d60d395f",
+        "installedAt": "2026-10-02T15:40:36.301Z",
+        "lastUpdated": "2026-11-11T18:24:51.892Z",
+        "gitCommitSha": "5505d60d395f463ea53c4aee8ea456b6ec2db05e"
+      }
+    ],
+    "implementing-beta@ezcater-claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "/Users/brianray/.claude/plugins/cache/ezcater-claude-plugins-official/implementing-beta/13a3890ef7ed",
+        "version": "13a3890ef7ed",
+        "installedAt": "2026-10-02T15:45:05.353Z",
+        "lastUpdated": "2026-10-22T19:59:57.390Z",
+        "gitCommitSha": "13a3890ef7edea0a41f3fdfcd6b7c3365fcd6643"
+      }
+    ],
+    "reviewing-beta@ezcater-claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "/Users/brianray/.claude/plugins/cache/ezcater-claude-plugins-official/reviewing-beta/13a3890ef7ed",
+        "version": "13a3890ef7ed",
+        "installedAt": "2026-10-02T15:45:05.446Z",
+        "lastUpdated": "2026-10-22T19:59:57.393Z",
+        "gitCommitSha": "13a3890ef7edea0a41f3fdfcd6b7c3365fcd6643"
+      }
+    ],
+    "writing-beta@ezcater-claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "/Users/brianray/.claude/plugins/cache/ezcater-claude-plugins-official/writing-beta/13a3890ef7ed",
+        "version": "13a3890ef7ed",
+        "installedAt": "2026-10-02T15:45:05.531Z",
+        "lastUpdated": "2026-10-22T19:59:57.384Z",
+        "gitCommitSha": "13a3890ef7edea0a41f3fdfcd6b7c3365fcd6643"
+      }
+    ],
+    "planning-beta@ezcater-claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "/Users/brianray/.claude/plugins/cache/ezcater-claude-plugins-official/planning-beta/13a3890ef7ed",
+        "version": "13a3890ef7ed",
+        "installedAt": "2026-10-02T19:18:23.027Z",
+        "lastUpdated": "2026-10-22T19:59:57.396Z",
+        "gitCommitSha": "13a3890ef7edea0a41f3fdfcd6b7c3365fcd6643"
+      }
+    ],
+    "cairn-beta@ezcater-claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "/Users/brianray/.claude/plugins/cache/ezcater-claude-plugins-official/cairn-beta/13a3890ef7ed",
+        "version": "13a3890ef7ed",
+        "installedAt": "2026-10-22T20:00:26.485Z",
+        "lastUpdated": "2026-10-22T20:00:26.485Z",
+        "gitCommitSha": "13a3890ef7edea0a41f3fdfcd6b7c3365fcd6643"
+      }
+    ],
+    "planning@ezcater-claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "/Users/brianray/.claude/plugins/cache/ezcater-claude-plugins-official/planning/1.0.1",
+        "version": "1.0.1",
+        "installedAt": "2026-10-22T20:00:51.532Z",
+        "lastUpdated": "2026-10-22T20:00:51.532Z",
+        "gitCommitSha": "1a4b8abb4c0b761e6d7116ee2463d784f6c37aec"
+      }
+    ],
+    "vale@agent-tools": [
+      {
+        "scope": "user",
+        "installPath": "/Users/brianray/.claude/plugins/cache/agent-tools/vale/0.1.0",
+        "version": "0.1.0",
+        "installedAt": "2026-10-27T14:25:05.388Z",
+        "lastUpdated": "2026-10-27T14:25:05.388Z",
+        "gitCommitSha": "5e8704f5c07a78aadeb255121df9235c3785ec74"
       }
     ]
   }
